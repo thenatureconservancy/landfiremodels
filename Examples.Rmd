@@ -31,7 +31,7 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 <div class = "blue">
 ### Montane Sage Steppe by Kori Blankenship
 
-[Download Kori's notes here](https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx)
+[Download Kori's notes here](https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx){target='blank'}
 
 **Model Identifier**
 This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and description and was modified based on several sources to represent current conditions. The primary source was the unpublished “Mountain Big Sagebrush – With Juniper” model created by Miles Hemstrom for the Blue Mtns. 

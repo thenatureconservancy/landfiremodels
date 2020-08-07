@@ -19,7 +19,7 @@ We will walk through the process with the Inter-Mountain Basins Montane Sagebrus
 
 ### Understand and find your Map Zone
 
-First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone. What is a Map Zone? It's basically a product delivery and summary polygon. The polygons are from the [National Landcover Database Program](see https://www.mrlc.gov/national-land-cover-database-nlcd-2016).  
+First you need to know that there are hundreds of Biophysical Settings in the United States, and some of them occur in more than one Map Zone. What is a Map Zone? It's basically a product delivery and summary polygon. The polygons are from the [National Landcover Database Program](https://www.mrlc.gov/national-land-cover-database-nlcd-2016){target='blank'}.  
 
 Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step. 
 
@@ -34,22 +34,22 @@ htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.h
 <br>
 
 ### Download a BpS Description
-Visit the [site description page](http://landfirereview.org/search.php) to search for and retrieve LANDFIRE BpS model descriptions. Download the [Montane Sagebrush Steppe Ecosystem description](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1). This ecosystem covers Map Zone 9.
+Visit the [site description page](http://landfirereview.org/search.php){target='blank'}  to search for and retrieve LANDFIRE BpS model descriptions. Download the [Montane Sagebrush Steppe Ecosystem description](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} . This ecosystem covers Map Zone 9.
 
 ### Load your model
 Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with. 
 
-**You can view and print the instructions [here](./isolateModel.html).**
+**You can view and print the instructions [here](./isolateModel.html){target='blank'}.**
 
 
 ### For more information
 
-*  How to Alter and Run a LANDFIRE Model in ST-Sim, https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s
+*  [How to Alter and Run a LANDFIRE Model in ST-Sim](https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s){target='blank'}
 
 Some features of SyncroSim may be different than what you see in the video due to versioning.
 
 ***
 
 #### What's next?
-+ learn the basics of [changing disturbance probabilities across states and entire models](./modifyModel.html)
-+ learn the basics of [adding and deleting states](./modifyModel.html)
++ learn the basics of [changing disturbance probabilities across states and entire models](./modifyModel.html){target='blank'}
++ learn the basics of [adding and deleting states](./modifyModel.html){target='blank'}

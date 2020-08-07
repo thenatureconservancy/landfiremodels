@@ -110,7 +110,7 @@ Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
 
 ### Application scale of the models
 
-Importantly, these models and descriptions were designed for use over large areas - not your back yard. BpS models were developed for use at the [National Land Cover Database](https://www.landfire.gov/national_veg_models_op2.php){target='blank'} level (hundreds of thousands of acres - see [Get Models](./GetModels.html)). That said, people do use them for smaller areas. Success of downscaling depends on factors such as:
+Importantly, these models and descriptions were designed for use over large areas - not your back yard. BpS models were developed for use at the [National Land Cover Database Map Zone](https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/docs/partitioning-us-into-mapping-zones.pdf){target='blank'} level (hundreds of thousands of acres - see [Get Models](./GetModels.html){target='blank'}). That said, people do use them for smaller areas. Success of downscaling depends on factors such as:
 
 + How much review, and how comfortable are users with the information included in the models?
 + How important are the decisions and how much risk is involved?
@@ -118,7 +118,7 @@ Importantly, these models and descriptions were designed for use over large area
 <br>
 
 ### For more information
-*  [Watch an introduction to SyncroSim](https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s) Note: some features of SyncroSim may be different than what you see in the video due to versioning.
+*  [Watch an introduction to SyncroSim](https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s){target='blank'} Note: some features of SyncroSim may be different than what you see in the video due to versioning.
 
 ____________
 

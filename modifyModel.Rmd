@@ -23,7 +23,7 @@ output:
 These techniques will get you far in your quest to represent current conditions and/or explore the future. We also hope that while in the various screens you see other options that catch your eye.
 
 ## Modifying a reference condition model
-Within SyncroSim there are a wide range of techniques available to modify a model. Here we introduce the main ways for modifying a model while working through the montane sagebrush steppe example obtained from the [Get Models](./Getmodels.html) page.  
+Within SyncroSim there are a wide range of techniques available to modify a model. Here we introduce the main ways for modifying a model while working through the montane sagebrush steppe example obtained from the [Get Models](/Getmodels.html){target='blank'} page.  
 
 ### Change the probability of a disturbance in one state class
 A key starting point in modifying a model is to **change disturbances**.  There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the **replacement fire probability** in one class.  
