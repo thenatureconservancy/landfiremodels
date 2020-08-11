@@ -13,15 +13,26 @@ output:
 
 
 ## Models, Models Everywhere
-<center>
-```{r, echo=FALSE, out.width= "85%"} 
-knitr::include_graphics("images/models.png")
 
-```
-</center>
-<br>
 
 Models are everywhere—sometimes behind the scenes and sometimes right out front. Common examples of models:
+
+```{=html}
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+```
+
+
+```{r, echo=FALSE, fig.cap="Photo: © Chris Leipelt"} 
+knitr::include_graphics("images/models.jpg")
+
+```
 
 + weather forecasts
 + measuring the state of the economy
@@ -29,15 +40,16 @@ Models are everywhere—sometimes behind the scenes and sometimes right out fron
 + forecasting a pandemic
 + maps
 
+<br>
+Regardless of their complexity, all models are by definition a **simplification of reality**. Like the model airplane - it “flies” like an airplane but it cannot carry cargo or passengers.
+<br>
+
 <center>
-```{r, echo=FALSE, out.width= "45%"} 
+```{r, echo=FALSE, out.width= "65%"} 
 knitr::include_graphics("images/model-simple-vs-complex1.jpg")
 
 ```
 </center>
-<br>
-Regardless of their complexity, all models are by definition a **simplification of reality**. Like the model airplane above - it “flies” like an airplane but it cannot carry cargo or passengers.
-
 <br>
 
 >"All models are wrong, so why do we create and use them?" - George Box

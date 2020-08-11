@@ -23,7 +23,7 @@ First you need to know that there are hundreds of Biophysical Settings in the Un
 
 Pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step. 
 
-**For our Montane Sagebrush Steppe ecosystem example we are looking in eastern Oregon, or Map Zone 9.**
+**For our Inter-Mountain Basins Montane Sagebrush Steppe example we are looking in eastern Oregon, or Map Zone 9.**
 
 <br>
 
@@ -34,12 +34,23 @@ htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.h
 <br>
 
 ### Download a BpS Description
-Visit the [site description page](http://landfirereview.org/search.php){target='blank'}  to search for and retrieve LANDFIRE BpS model descriptions. Download the [Montane Sagebrush Steppe Ecosystem description](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} . This ecosystem covers Map Zone 9.
+Visit the [site description page](http://landfirereview.org/search.php){target='blank'}  to search for and retrieve LANDFIRE BpS model descriptions. Download the [Inter-Mountain Basins Montane Sagebrush Steppe  description](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} . This ecosystem covers Map Zone 22.
+<br>
+
+
+### Getting started in SyncroSim
+The native environment of LANDFIRE BpS models is SyncroSim. If you want to explore or use the BpS models, you will want to familiarize yourself with and download the software:
+
+1. Read the [overview of SyncroSim](http://docs.syncrosim.com/getting_started/overview.html){target='blank'}
+2. Download and install [SyncroSim](https://syncrosim.com/){target='blank'} and the [ST-Sim](https://syncrosim.com/packages/){target='blank'} package
+3. Complete the [Quickstart: An Introduction to SyncroSim](http://docs.syncrosim.com/getting_started/quickstart.html){target='blank'}
+
 
 ### Load your model
 Once you have SyncroSim installed, and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with. 
 
 **You can view and print the instructions [here](./isolateModel.html){target='blank'}.**
+<br>
 
 
 ### For more information

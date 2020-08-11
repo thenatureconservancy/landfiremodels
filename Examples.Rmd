@@ -29,7 +29,7 @@ Ask yourself questions such as:
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
-### Montane Sage Steppe by Kori Blankenship
+### Inter-Mountain Basins Montane Sagebrush Steppe by Kori Blankenship
 
 [Download Kori's notes here](https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx){target='blank'}
 
