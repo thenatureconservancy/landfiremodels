@@ -121,5 +121,5 @@ Importantly, these models and descriptions were designed for use over large area
 ____________
 
 #### What's next?
-+ [locate](./GetModels.html), download, import a model
++ [locate](./GetModels.html){target='blank'}, download, import a model
 + make sense of the parts of model description
