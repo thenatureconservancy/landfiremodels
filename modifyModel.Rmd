@@ -13,6 +13,7 @@ output:
 
 ### This page:
 
++ Step-by-step tutorial videos for how to use LANDFIRE data in SyncroSim
 + Introduces some basic changes you can make to a model
     + Change probability in one state
     + Make a "global" change to one disturbance
@@ -23,10 +24,11 @@ output:
 These techniques will get you far in your quest to represent current conditions and/or explore the future. We also hope that while in the various screens you see other options that catch your eye.
 
 ## Modifying a reference condition model
-Within SyncroSim there are a wide range of techniques available to modify a model. Here we introduce the main ways for modifying a model while working through the Inter-Mountain Basins Montane Sagebrush Steppe example obtained from the [Get Models](./GetModels.html){target='blank'}) page.  
+Within SyncroSim there are a wide range of techniques available to modify a model. Here we introduce the main ways for modifying a model while working through the Inter-Mountain Basins Montane Sagebrush Steppe example obtained from the [Get Models](./GetModels.html){target='blank'} page.  
 
 ### Change the probability of a disturbance in one state class
-A key starting point in modifying a model is to **change disturbances**.  There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the **replacement fire probability** in one class.  
+A key starting point in modifying a model is to **change disturbances**.  There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the **replacement fire probability** in one class. To make any of the videos below larger, click play and select full screen view (bottom right corner).   
+<br>
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GxxeSp0mzvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -43,7 +45,6 @@ While getting to know your models we recommend changing one parameter at a time.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/75PogiK56GU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 <br>
-<br>
 
 ### Introduce a new disturbance
 There are many new **transitions** on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new **probabilistic transition**. 
@@ -51,6 +52,7 @@ There are many new **transitions** on the landscape today including exotic pests
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YgTCwCabojo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+<br>
 
 
 ### Add a new state 
@@ -59,6 +61,7 @@ New and/or altered transitions often result in **new states**. For example, in t
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-EbW8vAg_bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+<br>
 
 
 ### Delete a state
@@ -73,4 +76,6 @@ ________________
 
 
 #### What's next?
-+ learn how to incorporate impacts from [climate change](./climateChange.html) into BpS models
+
++ learn about the capability of ST-Sim to incorporate [variability and limits](./advancedModeling.html){target='blank'} into BpS models
++ dive into the complexities of using spatial models

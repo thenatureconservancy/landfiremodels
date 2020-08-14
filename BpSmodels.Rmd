@@ -12,7 +12,7 @@ output:
 ---
 ### This page:
 + Short introduction to the LANDFIRE program
-+ Description of the Biophysical Settings, plus reference conditions delivered in the BpS descriptions and models
++ Description of the Biophysical Settings (BpS), plus reference conditions delivered in the BpS descriptions and models
 + Discussion of application scale
 
 ## LANDFIRE
@@ -22,16 +22,12 @@ In 2004 [LANDFIRE](https://www.landfire.gov/){target='blank'} was created. LANDF
 div.blue { background-color:#E4EEF4; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
-### LANDFIRE BpS
-**[LANDFIRE Biophysical Settings](https://www.landfire.gov/bps.php){target='blank'}** represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement. They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states){target='blank'}. 
+### LANDFIRE Biophysical Settings
+**[LANDFIRE BpS](https://www.landfire.gov/bps.php){target='blank'}** represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement. They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states){target='blank'}. 
 **Biophysical Settings** are mapped (for more information on the spatial data visit [this site](https://www.landfire.gov/bps.php){target='blank'}), described below, and modeled using SyncroSim.  
 
 The **descriptions and models** are the focus of our work here.
 </div>
-<br>
-
-
-
 <br>
 
 ### Reference conditions
@@ -54,7 +50,7 @@ knitr::include_graphics("images/independence-lake.jpg")
 ```
 
 <br>
-Understanding how ecosystems looked and worked prior to Euro-American settlement is a focus of the biophysical settings body of work. The process was to:
+Understanding how ecosystems looked and worked prior to Euro-American settlement is a focus of the BpS body of work. The process was to:
 
 1. **Classify and define the ecosystems.** LANDFIRE calls the historic ecosystems "Biophysical Settings", and used [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states){target='blank'}
 

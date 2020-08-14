@@ -62,5 +62,4 @@ Some features of SyncroSim may be different than what you see in the video due t
 ***
 
 #### What's next?
-+ learn the basics of [changing disturbance probabilities across states and entire models](./modifyModel.html){target='blank'}
-+ learn the basics of [adding and deleting states](./modifyModel.html){target='blank'}
++ learn how to [modify](./modifyModel.html){target='blank'} a model by watching the step-by-step tutorial videos for using LANDFIRE data in SyncroSim

@@ -47,7 +47,25 @@ The **[LANDFIRE](https://landfire.gov/){target='blank'}** Program, in collaborat
 
 ### SyncroSim software
 
-LANDFIRE currently uses the [SyncroSim software](https://syncrosim.com/){target='blank'} and its [ST-Sim package](https://syncrosim.com/packages/){target='blank'} as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free and is the latest in a series of related STSM software packages including Path and the [Vegetation Dynamics Development Tool](https://essa.com/explore-essa/tools/vddt/){target='blank'} (VDDT). SyncroSim is a flexible modeling platform that can be used to simulate virtually any ecosystem and provides user control over much of its functionality. The model is stochastic (randomly determined) and can be run either spatially or non-spatially. 
+LANDFIRE currently uses SyncroSim and its ST-Sim packag as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free and is the latest in a series of related STSM software packages including Path and the [Vegetation Dynamics Development Tool](https://essa.com/explore-essa/tools/vddt/){target='blank'} (VDDT). SyncroSim is a flexible modeling platform that can be used to simulate virtually any ecosystem and provides user control over much of its functionality. The model is stochastic (randomly determined) and can be run either spatially or non-spatially. 
+
+#### Step 1: Download SyncroSim: 
++ available here: [SyncroSim software](https://syncrosim.com/){target='blank'}
+Make sure you download the full package (SyncroSim-setup.exe - check your downloads file. Note - SyncroSim is _not_ the same as SyncroSim Lite)
+
+#### Step 2: Download St-Sim 
+There are two options for downloading and installing the St-Sim package.
+
++ Option 1: in the SyncroSim shell, navigate to 'File' -> 'Packages' -> select 'St-Sim state-and-transition model'-> 'Install'
+<center>
+```{r, echo=FALSE, out.width= "85%"} 
+knitr::include_graphics("images/syncrosim.jpg")
+
+```
+</center>
+<br>
+
++ Option 2: Download it here:  [ST-Sim package](https://syncrosim.com/packages/){target='blank'} 
 
 
 ### Review
@@ -60,11 +78,9 @@ knitr::include_graphics("images/visual.jpg")
 ```
 </center>
 
-**See Contacts and Resources for full reference list**
+See [References](./References.html){target='blank'} for full reference list
 
-____________
+***
 
 #### What's next?
-+ dig in to the nuances of [BpS models](./BpSmodels.html)
-+ [locate and download your models](./GetModels.html) of interest from Map Zone
-+ tinker around with [modifying your model](./modifyModel.html) by introducing disturbances to state classes and entire models  
++ understanding the [characteristics of the model](https://rswaty.github.io/USGSwebsiteDraft/perspectives.html) and taking a bird's eye view when considering BpS models

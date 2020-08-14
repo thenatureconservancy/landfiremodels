@@ -10,11 +10,11 @@ output:
 ---
 
 ### This page:
-+ See how Jim Smith, Kori Blankenship and Randy Swaty attempted to modernize some BpS models, with a focus on the Sage-Steppe
++ See examples of how to modernize three BpS models, with a focus on the Inter-Mountain Basins Montane Sagebrush Steppe
 + Explore example models--then ask yourself "did they do a good job?"
 
-## Context time
-The models below are example models aimed at illustrating modification methods. They are not intended to be realistic ecological models…they are for illustration purposes. We hope that users will primarily use our models to learn, but also assume some people could be tempted to use them as “starter models”.  We’d rather they not do that as we are not experts in the actual ecosystems. We hope they serve to say "wow, these models are highly customizable".
+## Context
+The models below are example models aimed at illustrating modification methods. They are not intended to be realistic ecological models, rather we provide them for illustration purposes. We hope that users will primarily use our models to learn, but also assume some people could be tempted to use them as “starter models”. We’d rather they not do that as we are not experts in the actual ecosystems. We hope they serve to say "wow, these models are highly customizable".
 
 ## As you explore these models
 
@@ -26,20 +26,25 @@ Consider the followin:
 
 ## Examples from the field
 
+<br>
 
-### Example 1: Inter-Mountain Basins Montane Sagebrush Steppe
+### Example 1: Inter-Mountain Basins Montane Sagebrush Steppe 
+Note: This is the example that has been used throughout the website
 
 By: Kori Blankenship, [Download Kori's notes here](https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx){target='blank'}
 
 **Model Identifier**
-This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and description and was modified based on several sources to represent current conditions. The primary source was the unpublished “Mountain Big Sagebrush – With Juniper” model created by Miles Hemstrom for the Blue Mtns. 
+This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and description and was modified based on several sources to represent current conditions. The primary source was the unpublished “Mountain Big Sagebrush – With Juniper” model created by Miles Hemstrom for the Blue Mountains. 
 
 **Original Model Description**
 The Inter-Mountain Basins Montane Sagebrush Steppe is found on moderately to deep soils that are well drained and predominantly Mollisols across the northwestern US. It typically occurs as elevations ranging from 3,250 to 10,000ft depending partially on the geography.
-Mountain big sagebrush (Artemisia tridentata spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, Rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.
+Mountain big sagebrush (_Artemisia tridentata_ spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, Rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.
 
+**Modification Goal**
+Represent current conditions in the Blue Mountains ecoregion including the impacts of exotic species, juniper encroachment, altered fire regimes, and livestock grazing. 
 
 **Model Modification Steps**
+(note: explanations for each one below are available [here](https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx){target='blank'})
 
 * Added three new states to represent invasion of juniper into sagebrush and the presence of invasive annual grasses with and without tress. 
 * Added 4 new transitions:
@@ -53,10 +58,7 @@ Mountain big sagebrush (Artemisia tridentata spp. vaseyana) is the dominant big 
 * Used initial conditions based on LANDFIRE 2014 succession class data
 * Adjusted the Run and Time Since Transition settings
 
-<style>
-div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
+***
 
 ### Example 2: Central Mixed Grass Prairie
 
@@ -83,10 +85,8 @@ Investigate how grazing management may have changed landscape conditions since p
     * Added a Livestock grazing transition to the Late 2 Closed state class that moves pixels to the Late 3 All state class at 10% frequency. This transition represents overgrazing a mature prairie. 
     * Added a Livestock grazing transition to the Late 1 Closed state class that moves pixels to the Late 3 All state class at a lower frequency (5%) because the Late 1 Closed state is more difficult to overgraze. This transition represents overgrazing a mature prairie. 
     * Added a Livestock Grazing transition to the Late 3 All overgrazed succession state that maintains that succession state by continuing to overgraze at a frequency of 20%. 
-    
-</div>
-<br>    
-<br>
+
+***
 
 ### Example 3: Laurentian-Acadian Northern Hardwoods Forest - Hemlock 
 
@@ -111,5 +111,8 @@ These uneven-aged forests occur on coarse-textured ground and end moraines lying
     * ecological harvest 
 * Set initial conditions to match current dominance by the Maple Monoculture class
 
-
+***
+#### What's next?
++ [Resources & FAQs](./contactsResources.html){target='blank'}
++ [References](./References.html){target='blank'}
 

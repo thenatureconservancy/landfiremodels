@@ -17,7 +17,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### FAQ
 
-We will be building up a Frequently Asked Questions section as soon as we recieve questions from YOU! Please e-mail your questions to [The Nature Conservancy's LANDFIRE e-mail.](mailto:landfire@tnc.org)  
+We will be building up a Frequently Asked Questions section as soon as we recieve questions from YOU!
+
+Please e-mail your questions to [The Nature Conservancy's LANDFIRE e-mail.](mailto:landfire@tnc.org)  
 
 
 
