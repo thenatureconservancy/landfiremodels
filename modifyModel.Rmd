@@ -68,7 +68,7 @@ New and/or altered transitions often result in **new states**. For example, in t
 Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to **delete an entire state**. Here we will show you how to do that.  
 
 <center>
-<iframe width="650" height="390" src="https://www.youtube.com/embed/Z9O3VHv0Vs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="780" height="480" src="https://www.youtube.com/embed/Z9O3VHv0Vs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 
