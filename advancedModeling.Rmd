@@ -144,7 +144,7 @@ We have demonstrated how to modify and apply STSMs **aspatially**. However, ST-S
 knitr::include_graphics("images/spatial.JPG")
 
 ```
-A map of initial conditions can be specified as input to the STSM which can then produce a post-simulation output map. In addition, some “contagion” functionality is available that allows for disturbances to “spread” across the simulated from a starting point (fire, insects/disease, etc.). 
+A map of initial conditions can be specified as input to the STSM which can then produce a post-simulation output map. In addition, some “contagion” functionality is available that allows for disturbances to “spread” across the simulated landscape from a starting point (fire, insects/disease, etc.). 
 
 ```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
 knitr::include_graphics("images/spatial multiplier.JPG")

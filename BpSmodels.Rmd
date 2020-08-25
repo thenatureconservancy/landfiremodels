@@ -11,7 +11,7 @@ output:
 
 ---
 ### This page:
-+ Short introduction to the LANDFIRE program
++ Short introduction to the Conservancy's LANDFIRE program
 + Description of the Biophysical Settings (BpS), plus reference conditions delivered in the BpS descriptions and models
 + Discussion of application scale
 
@@ -56,15 +56,14 @@ Understanding how ecosystems looked and worked prior to Euro-American settlement
 
 2. The LANDFIRE team held expert workshops to:
     * **Describe the BpSs**, including their nested **[succession classes](https://www.landfire.gov/sclass.php){target='blank'},** up to 5 for each BpS including their canopy height, composition and percent cover. 
-    * **Use state and transition modeling techniques** to get an estimate of how much of each succession class would have been on the landscape historically, (prior to Euro-American settlement). The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into SyncroSim (just like you will be doing soon!).
+    * **Use state and transition modeling techniques** to get an estimate of how much of each succession class would have been on the landscape historically, (prior to Euro-American settlement). Boxes represent state classes of vegetation condition and the arrows represent the transition from one state class to another, these are assigned probabilities to simulate future conditions.The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into SyncroSim (just like you will be doing soon!).
     
-From 2018 to 2019, TNC's LANDFIRE team led a review of these models and descriptions, adding some new features to all of them (e.g., disturbance information), and updating content for over 300 of them.  
-
+From 2015 to 2019, the Conservancy's LANDFIRE team led a review of the models that resulted in updating content for over 300 of them.
 
 <br>
 
 #### Descriptions
-Each BpS has an [extensive description](http://landfirereview.org/search.php){target='blank'} See the description from the [Inter-Mountain Basins Montane Sagebrush Steppe Ecosystem](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} example. Included in each description:
+Each BpS has an [extensive description](http://landfirereview.org/search.php){target='blank'}. See the description from the [Inter-Mountain Basins Montane Sagebrush Steppe Ecosystem](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} example. Each description includes:
 
 <style>
   .col2 {
@@ -77,10 +76,10 @@ Each BpS has an [extensive description](http://landfirereview.org/search.php){ta
 
 
 <div class="col2">
-* Biophysical Setting Name and Number
-* Map Zones the description covers
-* Descriptive Geographic Range text
-* Biophysical Site Description
+* Biophysical setting name and number
+* A list of map zones the description covers
+* Descriptive geographic range text
+* Biophysical site description
 * Disturbance description
 * Descriptions of each succession class
 * Relevant literature
@@ -90,7 +89,7 @@ Each BpS has an [extensive description](http://landfirereview.org/search.php){ta
 
 #### Models
 
-Models include the information contained in the SyncroSim library. Downloading and running the BpS models using the SyncroSim software gives users immediate access to over 900 models that were created and analyzed by our team. 
+Models include the information contained in the SyncroSim library. Downloading and running the BpS models using the SyncroSim software gives users immediate access to over 900 models that were created by experts in collaboration with LANDFIRE. We used a standardized set of disturbances, but the optional types allowed for other disturbances to be modeled. 
 
 <center>
 ```{r, echo=FALSE, out.width= "75%"} 

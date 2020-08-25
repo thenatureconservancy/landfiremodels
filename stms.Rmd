@@ -47,7 +47,7 @@ The **[LANDFIRE](https://landfire.gov/){target='blank'}** Program, in collaborat
 
 ### SyncroSim software
 
-LANDFIRE currently uses SyncroSim and its ST-Sim packag as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free and is the latest in a series of related STSM software packages including Path and the [Vegetation Dynamics Development Tool](https://essa.com/explore-essa/tools/vddt/){target='blank'} (VDDT). SyncroSim is a flexible modeling platform that can be used to simulate virtually any ecosystem and provides user control over much of its functionality. The model is stochastic (randomly determined) and can be run either spatially or non-spatially. 
+LANDFIRE currently uses SyncroSim and its ST-Sim packag as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free and is the latest in a series of related STSM software packages including Path and the [Vegetation Dynamics Development Tool](https://essa.com/explore-essa/tools/vddt/){target='blank'} (VDDT). SyncroSim is a flexible modeling platform that can be used to simulate virtually any ecosystem and provides user control over much of its functionality. The model is stochastic (randomly determined) and can be run either spatially or non-spatially. We recommend that users read the [overview of SyncroSim](http://docs.syncrosim.com/getting_started/overview.html){target='blank'} and follow the steps below for downloading Syncrosim and St-Sim.
 
 #### Step 1: Download SyncroSim: 
 + available here: [SyncroSim software](https://syncrosim.com/){target='blank'}
@@ -83,4 +83,4 @@ See [References](./References.html){target='blank'} for full reference list
 ***
 
 #### What's next?
-+ understanding the [characteristics of the model](https://rswaty.github.io/USGSwebsiteDraft/perspectives.html) and taking a bird's eye view when considering BpS models
++ understanding the [characteristics of the model](./perspectives.html){target='blank'} and taking a bird's eye view when considering the BpS model approach

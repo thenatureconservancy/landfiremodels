@@ -18,7 +18,7 @@ The models below are example models aimed at illustrating modification methods. 
 
 ## As you explore these models
 
-Consider the followin:
+Consider the following:
 
 * Do these model modifications apply to my ecosystems?
 * Could there be unintended consequences from these changes that trickle through the model?
@@ -38,7 +38,7 @@ This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and descriptio
 
 **Original Model Description**
 The Inter-Mountain Basins Montane Sagebrush Steppe is found on moderately to deep soils that are well drained and predominantly Mollisols across the northwestern US. It typically occurs as elevations ranging from 3,250 to 10,000ft depending partially on the geography.
-Mountain big sagebrush (_Artemisia tridentata_ spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, Rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.
+Mountain big sagebrush (_Artemisia tridentata_ spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.
 
 **Modification Goal**
 Represent current conditions in the Blue Mountains ecoregion including the impacts of exotic species, juniper encroachment, altered fire regimes, and livestock grazing. 
@@ -48,11 +48,11 @@ Represent current conditions in the Blue Mountains ecoregion including the impac
 
 * Added three new states to represent invasion of juniper into sagebrush and the presence of invasive annual grasses with and without tress. 
 * Added 4 new transitions:
-    *	**Encroachment represents** Juniper encroachment into the late seral native shrubland
+    *	**Encroachment** represents juniper encroachment into the late seral native shrubland
     *	**Grazing** represents the impact of moderate livestock grazing and does not cause a state change
     *	**GrazeDegrade** represents the combined effects of heavy livestock grazing within two years post-fire disturbance which causes a transition to an exotic state
-    *	Recovery represents natural recovery of native vegetation from exotic vegetation
-* Added new transitions to and from the new states (see full description for details)
+    *	**Recovery** represents natural recovery of native vegetation from exotic vegetation
+* Added new transitions to and from the new states
 * Added mixed fire to native sage states
 * Updated replacement fire probabilities
 * Used initial conditions based on LANDFIRE 2014 succession class data
@@ -76,7 +76,7 @@ Investigate how grazing management may have changed landscape conditions since p
 **Model Modification Steps**
 
 * Adjust Run Parameters  
-    * The LANDFIRE Reference Condition model as downloaded had 0% pixels in Early Open class so we used 1% (100 acres) as the initial condition for this class and lowered the highest class by 1% to keep the total at 100%.
+    * The LANDFIRE BpS model as downloaded had 0% pixels in Early Open class so we used 1% (100 acres) as the initial condition for this class and lowered the highest class by 1% to keep the total at 100%.
     * Change timesteps to 100 years (assuming grazing practices changed approximately 100 years ago).
     * Changed number of iterations to 5 to increase turnaround time for runs, but would likely increase that number to 10 or more operationally.
     * Changed the number of cells to 10,000 and cell size to 1 acre to represent a 10,000 landscape. 

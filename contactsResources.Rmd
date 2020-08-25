@@ -32,6 +32,10 @@ If you need help with LANDFIRE data, contact helpdesk@landfire.gov.
 
 If you need help with Syncrosim software, try posting a question on the [SyncroSim forum](https://syncrosim.com/forums/){target='blank'}.
 
+<br>
+
+#### Important links
+
 * [LANDFIRE BpS model download](http://www.landfirereview.org/search.php){target='blank'}
 * [LANDFIRE homepage](https://www.landfire.gov/){target='blank'}
 * [LANDFIRE Guides and Tutorials](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/Library/Pages/library.aspx){target='blank'}

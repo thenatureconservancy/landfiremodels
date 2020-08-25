@@ -15,7 +15,7 @@ output:
 ## Models, Models Everywhere
 
 
-Models are everywhere—sometimes behind the scenes and sometimes right out front. Common examples of models:
+Models are everywhere, they may be behind the scenes or in full view. Some common examples of models:
 
 ```{=html}
 <style type="text/css">
@@ -133,4 +133,4 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 #### What's next?
 + dig in to the nuances of [BpS models](./BpSmodels.html)
 + [locate and download your models](./GetModels.html) of interest from Map Zone
-+ tinker around with [modifying your model](./modifyModel.html) by introducing disturbances to state classes and entire models  
++ tinker around with [modifying your model](./modifyModel.html) by introducing new disturbances and states  
