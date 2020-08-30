@@ -32,6 +32,23 @@ Consider the following:
 Note: This is the example that has been used throughout the website
 
 By: Kori Blankenship, [Download Kori's notes here](https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx){target='blank'}
+By: Jim Smith
+```{=html}
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+```
+
+```{r, echo=FALSE, fig.cap="Photo: © Hannah Letinich, TNC. Beezley Hills Preserve, Moses Coulee, Washington"} 
+knitr::include_graphics("images/sb2.jpg")
+
+```
+
 
 **Model Identifier**
 This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and description and was modified based on several sources to represent current conditions. The primary source was the unpublished “Mountain Big Sagebrush – With Juniper” model created by Miles Hemstrom for the Blue Mountains. 
@@ -63,6 +80,23 @@ Represent current conditions in the Blue Mountains ecoregion including the impac
 ### Example 2: Central Mixed Grass Prairie
 
 By: Jim Smith
+```{=html}
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+```
+
+```{r, echo=FALSE, fig.cap="Photo: © Jim Smith, TNC. Black Earth Prarie, Wisconsin"} 
+knitr::include_graphics("images/BlackEarthPrairieWisc.jpg")
+
+```
+
+
 
 **Model Identifier**
 Note that the modifications illustrated in this example were applied to a locally-modified LANDFIRE BpS model 11320_32_34_35-Central Mixed Grass Prairie . You do not have to begin the modification process with a LANDFIRE model. You can utilize any model that serves as a useful starting point for your project.
@@ -90,6 +124,21 @@ Investigate how grazing management may have changed landscape conditions since p
 ### Example 3: Laurentian-Acadian Northern Hardwoods Forest - Hemlock 
 
 By: Randy Swaty
+```{=html}
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+```
+
+```{r, echo=FALSE, fig.cap="Photo: © A. Blake Bardner, TNC. Young forest in TNC's Campbell Parcel, Equinox Highlands, Vermont"} 
+knitr::include_graphics("images/hw.jpg")
+
+```
 
 **Model Identifier**
 The starter model for this example was 13021_41_50_51, the Laurentian-Acadian Northern Hardwoods Forest - Hemlock that occurs in Minnesota, Wisconsin and Michigan.  
