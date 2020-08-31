@@ -30,11 +30,15 @@ Within SyncroSim there are a wide range of techniques available to modify a mode
 A key starting point in modifying a model is to **change disturbances**.  There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the **replacement fire probability** in one class. To make any of the videos below larger, click play and select full screen view (bottom right corner).   
 <br>
 
+
 <center>
 <iframe width="780" height="480" src="https://www.youtube.com/embed/GxxeSp0mzvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 <br>
+
+**Download Video 1 script for printing [here.](scripts/video1oneDist.pdf){target='blank'}**
+
 <br>
 
 ### Change the probability of a disturbance across the entire model
@@ -44,7 +48,13 @@ While getting to know your models we recommend changing one parameter at a time.
 
 <iframe width="780" height="480" src="https://www.youtube.com/embed/75PogiK56GU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+
 <br>
+
+**Download Video 2 script for printing [here.](scripts/video2changeTransAcrossBpS.pdf){target='blank'}**
+
+<br>
+
 
 ### Introduce a new disturbance
 There are many new **transitions** on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new **probabilistic transition**. 
@@ -52,6 +62,11 @@ There are many new **transitions** on the landscape today including exotic pests
 <center>
 <iframe width="780" height="480" src="https://www.youtube.com/embed/YgTCwCabojo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+
+<br>
+
+**Download Video 3 script for printing [here.](scrivideo3newdisturbance.pdf.pdf){target='blank'}**
+
 <br>
 
 
@@ -61,7 +76,13 @@ New and/or altered transitions often result in **new states**. For example, in t
 <center>
 <iframe width="780" height="480" src="https://www.youtube.com/embed/-EbW8vAg_bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+
 <br>
+
+**Download Video 4 script for printing [here.](scrivideo4newState.pdf.pdf){target='blank'}**
+
+<br>
+
 
 
 ### Delete a state
@@ -70,6 +91,12 @@ Occasionally, because of natural factors (e.g., an exotic pest) or user error yo
 <center>
 <iframe width="780" height="480" src="https://www.youtube.com/embed/Z9O3VHv0Vs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
+
+<br>
+
+**Download Video 5 script for printing [here.](scripts/video5deleteState.pdf){target='blank'}**
+
+<br>
 
 
 ________________

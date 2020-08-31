@@ -12,7 +12,7 @@ output:
 * Get a description and model by:
     + Understanding and finding your Map Zone
     + Downloading a BpS description
-    + Loading a model into SyncroSim
+    + Loading a model into SyncroSim (*see and ideally print special instructions*)
     
 We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the northwestern United States.  **This ecosystem will be the subject of later tutorials**. 
 
@@ -38,11 +38,24 @@ Visit the [LANDFIRE BpS Download](http://landfirereview.org/search.php){target='
 <br>
 
 
-### Load your model
-Once you have SyncroSim installed [(see stms tab)](./stms.html){target='blank'} and the LANDFIRE Package loaded, you will go through a few steps to isolate one model to work with. 
+### Isolate and load your model
+Once you have SyncroSim installed [(see STSM tab)](./stms.html){target='blank'} and both ST-Sim and lfvegmodels packages loaded, you will want to isolate one (of the ~900) BpS models to work with.  The lfvegmodels package loads all of the models into your SyncroSim environment--you do not need to work with all 900 models (though that is possible)!
 
-**You can view and print the instructions [here](./isolateModel.html){target='blank'}.**
 <br>
+
+<style>
+div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+**Download instructions for isolating and loading a single BpS model [here](./isolateModel.html){target='blank'}.**
+
+</div>
+<br>
+
+
+<br>
+
+
 
 
 ### For more information

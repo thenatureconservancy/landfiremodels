@@ -47,16 +47,32 @@ The **[LANDFIRE](https://landfire.gov/){target='blank'}** Program, in collaborat
 
 ### SyncroSim software
 
-LANDFIRE currently uses SyncroSim and its ST-Sim packag as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free and is the latest in a series of related STSM software packages including Path and the [Vegetation Dynamics Development Tool](https://essa.com/explore-essa/tools/vddt/){target='blank'} (VDDT). SyncroSim is a flexible modeling platform that can be used to simulate virtually any ecosystem and provides user control over much of its functionality. The model is stochastic (randomly determined) and can be run either spatially or non-spatially. We recommend that users read the [overview of SyncroSim](http://docs.syncrosim.com/getting_started/overview.html){target='blank'} and follow the steps below for downloading Syncrosim and St-Sim.
+LANDFIRE currently uses SyncroSim and its ST-Sim package as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free and is the latest in a series of related STSM software packages including Path and the [Vegetation Dynamics Development Tool](https://essa.com/explore-essa/tools/vddt/){target='blank'} (VDDT). SyncroSim is a flexible modeling platform that can be used to simulate virtually any ecosystem and provides user control over much of its functionality. The model is stochastic (randomly determined) and can be run either spatially or non-spatially. We recommend that users read the [overview of SyncroSim](http://docs.syncrosim.com/getting_started/overview.html){target='blank'} and follow the steps below for downloading Syncrosim and St-Sim.
+
+To assist modelers use LANDFIRE Biophysical Settings models the "lfvegmodels" package is under development, to be fully implemented within the SyncroSim software by the of September, 2020.
 
 #### Step 1: Download SyncroSim: 
 + available here: [SyncroSim software](https://syncrosim.com/){target='blank'}
 Make sure you download the full package (SyncroSim-setup.exe - check your downloads file. Note - SyncroSim is _not_ the same as SyncroSim Lite)
 
-#### Step 2: Download St-Sim 
-There are two options for downloading and installing the St-Sim package.
+#### Step 2: Get required packages:
+To work through this tutorial you will need to load 2 packages: 1) St-Sim and 2) landfirevegmodels.  There are (or soon will be) 2 options for loading these packages.  The landfirevegmodels package is under development so is in a provisional site, and will be integrated into the SyncroSim based package install pane by the end of September, 2020.
 
-+ Option 1: in the SyncroSim shell, navigate to 'File' -> 'Packages' -> select 'St-Sim state-and-transition model'-> 'Install'
+**Option 1** Download package files (currently the only option for lfvegmodels as of September 2020):
+
++ ST-Sim is located [here](https://syncrosim.com/packages/){target='blank'}. Download into your Downloads folder.
++ The landfirevegmodels package is located [here](https://github.com/ApexRMS/landfirevegmodels/releases){target='blank'}.  You will download the 'landfirevegmodels-1-0-2.ssimpkg' file.  Download into your Downloads folder.
+
+Once downloaded you will load the packages in SyncroSim by clicking File -> Packages... -> Install from File (top right corner of Packages pane), then navigating to your Downloads folder where the two .ssim files should be. 
+
+<br>
+
+**Option 2** Install from Packages pane in SyncroSim:
+
+*As of September 2020 this option is available for the ST-Sim package, but not the lfvegmodels package.*
+
+
+In the SyncroSim shell, navigate to 'File' -> 'Packages' -> select 'ST-Sim state-and-transition model' (or after September, 2020 'lfvegmodels') -> 'Install'
 <center>
 ```{r, echo=FALSE, out.width= "85%"} 
 knitr::include_graphics("images/syncrosim.jpg")
@@ -65,7 +81,6 @@ knitr::include_graphics("images/syncrosim.jpg")
 </center>
 <br>
 
-+ Option 2: Download it here:  [ST-Sim package](https://syncrosim.com/packages/){target='blank'} 
 
 
 ### Review
