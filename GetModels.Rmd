@@ -34,7 +34,18 @@ htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.h
 <br>
 
 ### Download a BpS Description
-Visit the [LANDFIRE BpS Download](http://landfirereview.org/search.php){target='blank'}  to search for and retrieve LANDFIRE BpS models and descriptions. Download the [Inter-Mountain Basins Montane Sagebrush Steppe  description](http://landfirereview.org/search.php?q=Inter-Mountain%20Basins%20Montane%20Sagebrush%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} . This ecosystem covers Map Zones 6, 12, 17, 18, 28
+Visit the [LANDFIRE BpS Download](http://landfirereview.org/search.php){target='blank'}  to search for and retrieve LANDFIRE BpS models and descriptions. Download the [Inter-Mountain Basins Montane Sagebrush Steppe  description](http://landfirereview.org/search.php?q=Inter-Mountain%20Basins%20Montane%20Sagebrush%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} for Map Zones 6, 12, 17, 18, 28.
+
+
+<center>
+```{r, echo=FALSE, out.width= "75%"} 
+knitr::include_graphics("images/sageSteppeDownload.JPG")
+
+```
+
+Screenshot of BpS description download site with the correct Inter-Mountain Basins Montane Sagebrush Steppe version identified.
+</center>
+<br>
 <br>
 
 
