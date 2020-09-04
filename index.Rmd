@@ -60,3 +60,11 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 3. We explore options for **modifying vegetation models** to represent current or projected future landscape conditions
 
 4. We introduce techniques for accounting for **climate change impacts** in the LANDFIRE vegetation models
+
+<br>
+
+<center> 
+
+ <font size="4"> **This website was developed by The Nature Conservancy LANDFIRE Team under Agreement G18AC00378 with the U.S. Geological Survey.** </font> 
+ </center> 
+ 
