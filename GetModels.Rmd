@@ -58,7 +58,12 @@ Once you have SyncroSim installed [(see STSM tab)](./stms.html){target='blank'} 
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
+<center> 
+
+ <font size="4">
 **Download instructions for isolating and loading a single BpS model [here](./isolateLoadModel.html){target='blank'}.**
+</font> 
+ </center> 
 
 </div>
 <br>
