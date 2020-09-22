@@ -11,7 +11,7 @@ output:
 
 ---
 ### This page:
-+ Describe the advanced modeling options available in [ST-Sim](https://syncrosim.com/packages/){target='blank'}
++ Describe *some* of the advanced modeling options available in [ST-Sim](https://syncrosim.com/packages/){target='blank'}
 + Explore ways to manipulate transition targets, multipliers, and state and transition attributes 
 + Investigate the + and - of using spatial models
 <br>
