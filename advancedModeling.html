@@ -355,7 +355,7 @@ div.tocify {
   <a href="perspectives.html">Perpectives</a>
 </li>
 <li>
-  <a href="BpSmodels.html">BpSmodels</a>
+  <a href="BpSmodels.html">BpS models</a>
 </li>
 <li>
   <a href="GetModels.html">Get Models</a>
@@ -402,7 +402,7 @@ div.tocify {
 <li>Explore ways to manipulate transition targets, multipliers, and state and transition attributes</li>
 <li>Investigate the + and - of using spatial models <br> <br></li>
 </ul>
-<p>We have only skimmed the surface of the possibilities to begin working in the <a href="https://syncrosim.com/packages/" target="blank">ST-Sim</a> platform thus far. Below we will briefly describe a few more advanced modeling options to whet your appetite. More advanced modeling options and more detailed descriptions of these and other advanced modeling options can be viewed at the <a href="http://www.apexrms.com/" target="blank">Apex website</a> and documentation specific to ST-Sim can be found <a href="http://docs.stsim.net/" target="blank">here</a>. Several videos linked below were developed by Apex as a part of their training materials so they are considerably longer and more detailed than other videos on this website.</p>
+<p>We have only skimmed the surface of the possibilities to begin working in the <a href="https://syncrosim.com/packages/" target="blank">ST-Sim</a> platform thus far. Below we will briefly describe a few more advanced modeling options to whet your appetite. Advanced modeling options and more detailed descriptions of these can be viewed at the <a href="http://www.apexrms.com/" target="blank">Apex website</a> and documentation specific to ST-Sim can be found <a href="http://docs.stsim.net/" target="blank">here</a>. Several videos linked below were developed by Apex as a part of their training materials so they are considerably longer and more detailed than other videos on this website.</p>
 <p>Visit the websites above to ensure you are seeing the latest version of the software. We encourage you to explore other advanced modeling options once you are familiar with the platform, but to not jump too quickly into advanced modeling options or complex models. This can cause confusion and slow progress.</p>
 <p><strong>Ecosystems management is complex</strong>. As you model you will most likely ask “<em>what if I could (fill in the blank) in the model</em>?”</p>
 <style type="text/css">
@@ -425,7 +425,7 @@ Photo: © TNC. Controlled burn in Shawnee County, Kansas
 <ul>
 <li>Ex: you may ask “<em>what would happen if we applied 1,000, 2,000 or 3,000 ha of controlled burning per year?</em>” Syncrosim can help answer that question.</li>
 </ul></li>
-<li><strong>Add variability</strong> to annual disturbance probabilities:
+<li><strong>Add variability to annual disturbance probabilities:</strong>
 <ul>
 <li>Ex: an ecosystem may experience an insect that has relatively predictable population cycles, with maximum population size every 7 years. You can incorporate this in SyncroSim.</li>
 </ul></li>
@@ -439,40 +439,43 @@ Photo: © TNC. Controlled burn in Shawnee County, Kansas
 <h3>Transition Targets</h3>
 <p><img src="images/transition-targets.JPG" width="65%" style="float:right; padding:10px" /></p>
 <p>The <strong>transition targets property</strong> allows the modeler to define targets/limits for the area to transition over time across the landscape for specific types of transitions. Targets can be established as operational constraints based on area, or when costs are added on available budgets. The target can be specified by iteration, BpS, and timestep.</p>
-<p>For example, you can <strong>limit the amount of any probabilistic transition/disturbance to a specific number of acres in each timestep and iteration</strong> for a BpS based on the budget you expect to be available, or on the operational constraint created by your organization’s capacity or regulatory issues. If you expect your budget or capacity to increase over time, you can increase the target over the timesteps. This option is available for all disturbances/probabilistic transitions.</p>
+<p>For example, you can limit the amount of any probabilistic transition/disturbance to a specific number of acres in each timestep and iteration for a BpS based on the budget you expect to be available, or on the operational constraint created by your organization’s capacity or regulatory issues. If you expect your budget or capacity to increase over time, you can increase the target over the timesteps. This option is available for all disturbances/probabilistic transitions.</p>
 <p>Note that you can also set transition targets using a <strong>probability distribution</strong> (such as Normal, Uniform or Beta) if you believe the transition target constraint will vary over time according to distribution (rather than a specific amount). Once selected, you can specify the standard deviation, minimum and maximum values for the distribution, and how often to draw a new value from the distribution.</p>
 </div>
 <div id="transition-multipliers" class="section level3">
 <h3>Transition Multipliers</h3>
 <p>It is useful to be able to vary transition probabilities over time not just operational limits (see Transition Targets). <strong>Transition multipliers</strong> allow the user to modify how often a probabilistic transition/disturbance/change will be imposed on a pixel across timesteps or iterations.</p>
 <p><img src="images/transition-multipliers.JPG" width="65%" style="float:right; padding:10px" /></p>
-<p>For example, under different climate change scenarios, transition probabilities will vary over time (i.e. fire may increase, succession/growth may speed up or slow down, strata may change locations on the landscape). The <strong>transition multiplier values property</strong> specifies multipliers to be applied to transition probabilities over the course of the simulation (i.e. increase the amount of thinning by 50% for the first 10 timesteps, and then increase by 100% for the remaining timesteps). The user can also use an <strong>expected distribution of multipliers</strong> they create from past events or recent information, or they can select the Beta or Normal statistical distributions packaged with the software. Using statistical distributions may require additional information such as minimum, maximum and standard deviation. <br> <br> Temporal Variability in Transitions <br></p>
+<p>For example, under different climate change scenarios, transition probabilities will vary over time (i.e. fire may increase, succession/growth may speed up or slow down, strata may change locations on the landscape). The <strong>transition multiplier values property</strong> specifies multipliers to be applied to transition probabilities over the course of the simulation (i.e. increase the amount of thinning by 50% for the first 10 timesteps, and then increase by 100% for the remaining timesteps). The user can also use an <strong>expected distribution of multipliers</strong> they create from past events or recent information, or they can select the Beta or Normal statistical distributions packaged with the software. Using statistical distributions may require additional information such as minimum, maximum and standard deviation.</p>
+<div id="temporal-variability-in-transitions" class="section level4">
+<h4>Temporal Variability in Transitions</h4>
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TV4p4NspIME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/TV4p4NspIME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </center>
 <p><br></p>
+</div>
 <div id="statistical-variability" class="section level4">
 <h4>Statistical variability</h4>
-<p>A second application of the <strong>transition multiplier</strong> is when the modeler wishes to incorporate <strong>statistical variability</strong> into the model parameters over the timesteps and iterations because the actual value is unknown or varies across timesteps.</p>
+<p>A second application of the <strong>transition multiplier</strong> is when the modeler wishes to incorporate statistical variability into the model parameters over the timesteps and iterations because the actual value is unknown or varies across timesteps.</p>
 <p>For example, the probability of fire can vary each year. We can use <strong>transition multipliers</strong> to sample fire probabilities from a fire history we provide, or from a statistical distribution (instead of using a single probability over time or varying the probability by specific amounts). <br></p>
 </div>
 <div id="transition-multipliers-bps" class="section level4">
 <h4>Transition multipliers &amp; BpS</h4>
-These videos describe how <strong>transition multipliers</strong> have been used with <strong>LANDFIRE BpS models</strong>.
+These videos describe how transition multipliers have been used with LANDFIRE BpS models.
 <center>
 <p><br></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/86AC9e8H9vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/86AC9e8H9vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </center>
 <p><br></p>
-<p>For a more detailed description of using a distribution as a transition multiplier in a real application view <a href="https://www.youtube.com/embed/d855SupanQU?start=3">this video.</a></p>
+<p>For a more detailed description of using a distribution as a transition multiplier in a real application view <a href="https://www.youtube.com/embed/d855SupanQU?start=3" target="blank">this video.</a></p>
 <p><br></p>
 </div>
 </div>
 <div id="state-and-transition-attributes" class="section level3">
 <h3>State and Transition Attributes</h3>
-<p>Suppose that you wish to <strong>estimate values that are associated with various model states and/or model transitions</strong>. Attributes can be used to roll up simulation results according to areas aggregated by either <strong>state classes or transitions</strong>.</p>
+<p>Suppose that you wish to estimate values that are associated with various model states and/or model transitions. Attributes can be used to roll up simulation results according to areas aggregated by either state classes or transitions.</p>
 <p><img src="images/transition-attributes.JPG" width="65%" style="float:right; padding:10px" /></p>
 <p>For example, how much smoke would be produced in a surface fire in a specific seral state (add an attribute reflecting average smoke production to surface fire transition)?</p>
 <p>What is the total habitat score for a particular species under each simulated scenario (add a habitat value score attribute to each seral state)? These values can then be summarized over the simulations to provide additional results that can be compared across scenarios. Do I produce more or less smoke in this scenario? Do I increase or decrease the habitat score in this scenario?</p>
@@ -482,7 +485,7 @@ These videos describe how <strong>transition multipliers</strong> have been used
 Here’s one application example from <a href="http://www.apexrms.com/" target="blank">Apex RMS</a>
 <center>
 <p><br></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b3MQfyYE6ZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/b3MQfyYE6ZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </center>
 <p><br></p>
@@ -490,14 +493,14 @@ Here’s one application example from <a href="http://www.apexrms.com/" target="
 </div>
 <div id="spatial-models" class="section level3">
 <h3>Spatial Models</h3>
-<p>We have demonstrated how to modify and apply STSMs <strong>aspatially</strong>. However, ST-Sim does allow the user to run these models using <strong>spatial functionality</strong> <em>if</em> the required data sets and information are available. <img src="images/spatial.JPG" width="65%" style="float:right; padding:10px" /> A map of initial conditions can be specified as input to the STSM which can then produce a post-simulation output map. In addition, some “contagion” functionality is available that allows for disturbances to “spread” across the simulated landscape from a starting point (fire, insects/disease, etc.).</p>
+<p>We have demonstrated how to modify and apply STSMs aspatially. However, ST-Sim does allow the user to run these models using spatial functionality <em>if</em> the required data sets and information are available. <img src="images/spatial.JPG" width="65%" style="float:right; padding:10px" /> A map of initial conditions can be specified as input to the STSM which can then produce a post-simulation output map. In addition, some “contagion” functionality is available that allows for disturbances to “spread” across the simulated landscape from a starting point (fire, insects/disease, etc.).</p>
 <p><img src="images/spatial%20multiplier.JPG" width="65%" style="float:right; padding:10px" /></p>
 <div id="limitations" class="section level4">
 <h4>Limitations</h4>
 <p>Running these models spatially can provide significant value, however, there are two cautions:</p>
 <ol style="list-style-type: decimal">
 <li>significant input information is required to make this spatial option useful</li>
-<li>we recommend completing a thorough review of your model <strong>aspatially</strong> to ensure you are satisfied <strong>before moving to the spatial option</strong> <br> <br></li>
+<li>we recommend completing a thorough review of your model aspatially** to ensure you are satisfied before moving to the spatial option <br> <br></li>
 </ol>
 </div>
 </div>
@@ -505,14 +508,15 @@ Here’s one application example from <a href="http://www.apexrms.com/" target="
 <h3>Spatial Modeling Using St-Sim</h3>
 <p>Incorporating spatial functionality increases the complexity of the model as well as the modeling options. Additional training or support from Apex RMS may be warranted as you move toward spatial implementation. <br> <br> Spatial Modeling Using ST-Sim <br></p>
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k0UeCCIGuf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/k0UeCCIGuf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </center>
 <hr />
 <div id="whats-next" class="section level4">
 <h4>What’s next?</h4>
 <ul>
-<li>learn how to incorporate impacts from <a href="./climateChange.html" target="blank">climate change</a> into BpS models</li>
+<li>learn how to incorporate <a href="./climateChange.html" target="blank">climate change</a> impacts into BpS models</li>
+<li>see a simple set of simulations (designed to reflect climate change impacts) and how they may impact our <a href="./GetModels.html" target="blank">Inter-Mountain Basins Montane Sagebrush Steppe BpS</a></li>
 </ul>
 </div>
 </div>

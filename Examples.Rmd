@@ -32,7 +32,7 @@ Consider the following:
 Note: This is the example that has been used throughout the website
 
 By: Kori Blankenship, [Download Kori's notes here](https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx){target='blank'}
-By: Jim Smith
+
 ```{=html}
 <style type="text/css">
   .figure {

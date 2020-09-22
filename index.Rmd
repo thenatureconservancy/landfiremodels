@@ -15,7 +15,7 @@ Hello and welcome to The Nature Conservancy's LANDFIRE vegetation dynamics model
 
 **How to use this website?** We designed this website as a resource for both new and seasoned Biophysical Setting (BpS) modelers. We use the Montane Sage-Steppe ecosystem model throughout the website. By weaving this model into all the tutorials, we can dive deeper into exploring, modifying, and understanding the model’s “story”. We hope you find our website useful and most importantly, we hope you use these BpS models to their fullest extent. 
 
-If you are already familiar with this modeling framework and ready to **get started,** skip ahead to [get your models](./GetModels.html).
+If you are already familiar with this modeling framework and ready to get started, skip ahead to [get your models](./GetModels.html){target='blank'} .
 
 <br>
 
@@ -33,10 +33,10 @@ Photo: © Ian Shive, TNC. Sierra Mountain Foothills, Mojave Desert, Central Cali
 
 ## Why integrate this into your current work?
 
-This framework provides a **national baseline** for assessing **current** vegetation conditions while accounting for **historical** ecology. Integrating this knowledge with current projections of climate and other factors has the potential to improve the way we manage land while providing ecological context. This modeling framework can help you make projections about
+This framework provides a national baseline for assessing current vegetation conditions while accounting for historical ecology. Integrating this knowledge with current projections of climate and other factors has the potential to improve the way we manage land while providing ecological context. This modeling framework can help you make projections about
 future landscape conditions as management and natural environments evolve. When used within the intended context, BpS modeling can be a powerful tool for managers. 
 
->Biophysical models help users investigate the effects from (simulated) ecosystem disturbances, and learn how changes in management actions might impact an ecosystem **before** allocating time or resources to on the ground operations
+>Biophysical models help users investigate the effects from (simulated) ecosystem disturbances, and learn how changes in management actions might impact an ecosystem before allocating time or resources to on the ground operations
 
 
 <center>
@@ -53,18 +53,23 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 
 ## What will you learn?
 
-1. We demonstrate the flexible software environment, [**SyncroSim**](https://syncrosim.com/){target='blank'} which allows users to explore and manipulate LANDFIRE's vegetation dynamics models
+1. We demonstrate the flexible software environment, [SyncroSim](https://syncrosim.com/){target='blank'} which allows users to explore and manipulate LANDFIRE's vegetation dynamics models
 
-2. We illustrate how LANDFIRE’s vegetation dynamics models can be used to investigate **historical vegetation dynamics** and use these historical models to jumpstart your exploration into current and possible future landscape conditions in your area of interest
+2. We illustrate how LANDFIRE’s vegetation dynamics models can be used to investigate historical vegetation dynamics and use these historical models to jumpstart your exploration into current and possible future landscape conditions in your area of interest
 
-3. We explore options for **modifying vegetation models** to represent current or projected future landscape conditions
+3. We explore options for modifying vegetation models to represent current or projected future landscape conditions
 
-4. We introduce techniques for accounting for **climate change impacts** in the LANDFIRE vegetation models
+4. We introduce techniques for that simulate impacts from climate change in the LANDFIRE vegetation models
 
-<br>
+________________
+
+#### What's next?
++ learn what a [state-and-transition model](./stms.html){target='blank'} (STSM) is
++ learn how 900 LANDFIRE STSMs were built and how to use them with SyncroSim
 
 <center> 
+<br>
 
- <font size="4"> **This website was developed by The Nature Conservancy LANDFIRE Team under Agreement G18AC00378 with the U.S. Geological Survey.** </font> 
+ <font size="4"> This website was developed by [The Nature Conservancy LANDFIRE Team](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/contacts/Pages/default.aspx){target='blank'} under Agreement G18AC00378 with the U.S. Geological Survey.</font> 
  </center> 
  

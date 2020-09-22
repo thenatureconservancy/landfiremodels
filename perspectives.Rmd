@@ -41,10 +41,11 @@ knitr::include_graphics("images/models.jpg")
 + maps
 
 <br>
-Regardless of their complexity, all models are by definition a **simplification of reality**. Like the model airplane - it “flies” like an airplane but it cannot carry cargo or passengers.
+Regardless of their complexity, all models are by definition a simplification of reality. Like the model airplane - it “flies” like an airplane but it cannot carry cargo or passengers.
 
 <br>
 <br>
+
 <center>
 ```{r, echo=FALSE, out.width= "45%"} 
 knitr::include_graphics("images/model-simple-vs-complex1.jpg")
@@ -56,7 +57,9 @@ knitr::include_graphics("images/model-simple-vs-complex1.jpg")
 >"All models are wrong, so why do we create and use them?" - George Box
 
 <br>
-We create and use models because (as Box _also_ said) they can be useful. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. **Balance and relevance** are what can make a model illuminating.
+We create and use models because (as Box _also_ said) they can be useful. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. 
+
+**Balance and relevance** are what can make a model illuminating.
 
 <center>
 ```{r, echo=FALSE, out.width= "45%"} 
@@ -87,26 +90,26 @@ Image courtesy: [Francesco Pochetti](francescopochetti.com){target='blank'}
 
 The model should provide useful information but must also function for the user (i.e. have the right level of complexity). Complexity should have a purpose: to provide more refined information, or in some cases provide the same information with more fidelity. 
 
-**Complex models:**
+### Complex models
 
 + typically require more input information
 + are more difficult to develop and de-bug
 + take longer to run 
 
->[LANDFIRE BpS models](./BpSmodels.html), with their limited number of states and transitions, are less complex and provide relatively few and coarser level outputs. This also makes them easier to create and use. 
+>[LANDFIRE BpS models](./BpSmodels.html){target='blank'}, with their limited number of states and transitions, are less complex and provide relatively few and coarser level outputs. This also makes them easier to create and use. 
 
 Models such as [SIMPPLLE](https://www.fs.usda.gov/treesearch/pubs/40241){target='blank'} and [LANDIS II](http://www.landis-ii.org/){target='blank'} sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost.
 
 <br>
 
-### Understanding the characterstics of any model:
+### Understanding the characterstics of any model
 <br>
 <style>
-div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
-- What factors/inputs does it include? 
-- What factors/inputs does it not include? 
+- What factors/inputs are included?
+- What factors/inputs are _not_ included? 
 - Can you provide the inputs at the level of accuracy required? 
 - What modeling technique was used? 
 - How was the model intended to be applied? 
@@ -120,17 +123,17 @@ div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 
 2. Have a goal and a plan. Don’t just wing it!
 
-3. Work through the model changes in a stepwise fashion. Add **states and transitions** one at a time.
+3. Work through the model changes in a stepwise fashion. Add states and transitions one at a time.
 
 4. Review the results and plan the next steps.
 
-5. Keep it **simple.** The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.
+5. Keep it simple. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.
 
 6. Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.
 
 ***
 
 #### What's next?
-+ dig in to the nuances of [BpS models](./BpSmodels.html)
-+ [locate and download your models](./GetModels.html) of interest from Map Zone
-+ tinker around with [modifying your model](./modifyModel.html) by introducing new disturbances and states  
++ dig in to the nuances of [BpS models](./BpSmodels.html){target='blank'}
++ [locate and download your models](./GetModels.html){target='blank'} of interest from Map Zone
++ tinker around with [modifying your model](./modifyModel.html){target='blank'} by introducing new disturbances and states  

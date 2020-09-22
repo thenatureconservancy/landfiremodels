@@ -14,7 +14,8 @@ output:
     + Downloading a BpS description
     + Loading a model into SyncroSim (*see and ideally print special instructions*)
     
-We will walk through the process with the Inter-Mountain Basins Montane Sagebrush Steppe Biophysical Setting of the northwestern United States.  **This ecosystem will be the subject of later tutorials**. 
+<br>
+We will walk through the process with the **Inter-Mountain Basins Montane Sagebrush Steppe** Biophysical Setting of the northwestern United States. This ecosystem will be the subject of later tutorials. 
 
 
 ### Understand and find your Map Zone
@@ -23,7 +24,7 @@ First you need to know that there are hundreds of Biophysical Settings in the Un
 
 In the map below, pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step. 
 
-**For our Inter-Mountain Basins Montane Sagebrush Steppe example we are looking in eastern Oregon, or Map Zone 9.**
+**For the Inter-Mountain Basins Montane Sagebrush Steppe example, scroll to eastern Oregon, Map Zone 9.**
 
 <br>
 
@@ -34,8 +35,9 @@ htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.h
 <br>
 
 ### Download a BpS Description
-Visit the [LANDFIRE BpS Download](http://landfirereview.org/search.php){target='blank'}  to search for and retrieve LANDFIRE BpS models and descriptions. Download the [Inter-Mountain Basins Montane Sagebrush Steppe  description](http://landfirereview.org/search.php?q=Inter-Mountain%20Basins%20Montane%20Sagebrush%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} for Map Zones 6, 12, 17, 18, 28.
-
+Visit the [LANDFIRE BpS Download](http://landfirereview.org/search.php){target='blank'} to search for and retrieve LANDFIRE BpS models and descriptions. Download the [Inter-Mountain Basins Montane Sagebrush Steppe description](http://landfirereview.org/search.php?q=Inter-Mountain%20Basins%20Montane%20Sagebrush%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} for Map Zones 6, 12, 17, 18, 28.
+<br>
+<br>
 
 <center>
 ```{r, echo=FALSE, out.width= "75%"} 
@@ -50,7 +52,7 @@ Screenshot of BpS description download site with the correct Inter-Mountain Basi
 
 
 ### Isolate and load your model
-Once you have SyncroSim installed [(see STSM tab)](./stms.html){target='blank'} and both ST-Sim and lfvegmodels packages loaded, you will want to isolate one (of the ~900) BpS models to work with.  The lfvegmodels package loads all of the models into your SyncroSim environment--you do not need to work with all 900 models (though that is possible)!
+Once you have SyncroSim installed [(see STSM tab)](./stms.html){target='blank'} and both ST-Sim and lfvegmodels packages loaded, you will want to isolate one (of the ~ 900) BpS models to work with. The lfvegmodels package loads all of the models into your SyncroSim environment -- you do not need to work with all 900 models (though that is possible)!
 
 <br>
 
@@ -61,7 +63,7 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 <center> 
 
  <font size="4">
-**Download instructions for isolating and loading a single BpS model [here](./isolateLoadModel.html){target='blank'}.**
+**[Instructions for isolating and loading a single BpS model](./isolateLoadModel.html){target='blank'}.**
 </font> 
  </center> 
 
@@ -76,9 +78,7 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 
 ### For more information
 
-*  [How to Alter and Run a LANDFIRE Model in ST-Sim](https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s){target='blank'}
-
-Some features of SyncroSim may be different than what you see in the video due to versioning.
+Watch [How to Alter and Run a LANDFIRE Model in ST-Sim](https://www.youtube.com/watch?v=XUUm-RG4eK0&list=PLDFF9036BBFE46CE6&index=7&t=0s){target='blank'}. Some features of SyncroSim may be different than what you see in the video due to versioning.
 
 ***
 

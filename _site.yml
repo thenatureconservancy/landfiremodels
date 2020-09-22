@@ -6,7 +6,7 @@ navbar:
     href: stms.html
   - text: Perpectives
     href: perspectives.html
-  - text: BpSmodels 
+  - text: BpS models 
     href: BpSmodels.html
   - text: Get Models
     href: GetModels.html

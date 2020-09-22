@@ -26,7 +26,7 @@ div.blue { background-color:#E4EEF4; border-radius: 5px; padding: 20px;}
 **[LANDFIRE BpS](https://www.landfire.gov/bps.php){target='blank'}** represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement. They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states){target='blank'}. 
 **Biophysical Settings** are mapped (for more information on the spatial data visit [this site](https://www.landfire.gov/bps.php){target='blank'}), described below, and modeled using SyncroSim.  
 
-The **descriptions and models** are the focus of our work here.
+The descriptions and models are the focus of our work here.
 </div>
 <br>
 
@@ -55,7 +55,7 @@ Understanding how ecosystems looked and worked prior to Euro-American settlement
 1. **Classify and define the ecosystems.** LANDFIRE calls the historic ecosystems "Biophysical Settings", and used [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states){target='blank'}
 
 2. The LANDFIRE team held expert workshops to:
-    * **Describe the BpSs**, including their nested states or **[succession classes](https://www.landfire.gov/sclass.php){target='blank'}.** BpS can have up to 5 succession classes, each of which is described by its canopy height, canopy cover, and species composition. 
+    * **Describe the BpSs**, including their nested states or [succession classes](https://www.landfire.gov/sclass.php){target='blank'}. BpS can have up to 5 succession classes, each of which is described by its canopy height, canopy cover, and species composition. 
     * **Use state and transition modeling techniques** to get an estimate of how much of each succession class would have been on the landscape historically, (prior to Euro-American settlement). Boxes represent state classes of vegetation condition and the arrows represent the transition from one state class to another, these are assigned probabilities to simulate future conditions.The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into SyncroSim (just like you will be doing soon!).
     
 From 2015 to 2019, the Conservancy's LANDFIRE team led a review of the models that resulted in updating content for over 300 of them.
@@ -63,7 +63,9 @@ From 2015 to 2019, the Conservancy's LANDFIRE team led a review of the models th
 <br>
 
 #### Descriptions
-Each BpS has an [extensive description](http://landfirereview.org/search.php){target='blank'}. See the description from the [Inter-Mountain Basins Montane Sagebrush Steppe Ecosystem](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} example. Each description includes:
+Each BpS has an [extensive description](http://landfirereview.org/search.php){target='blank'}. See the description from the [Inter-Mountain Basins Montane Sagebrush Steppe Ecosystem](http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&hPP=20&idx=lf_landfire_dev&p=0&is_v=1){target='blank'} example. 
+
+Each description includes:
 
 <style>
   .col2 {
@@ -91,7 +93,7 @@ Each BpS has an [extensive description](http://landfirereview.org/search.php){ta
 
 Models include the information contained in the SyncroSim library. Downloading and running the BpS models using the SyncroSim software gives users immediate access to over 900 models that were created by experts in collaboration with LANDFIRE. We used a standardized set of disturbances, but the optional types allowed for other disturbances to be modeled. 
 
-LANDFIRE BpS models are standardized in several ways. Modelers defined each BpS with five or fewer succession classes (i.e. states) and used a subset of the SyncroSim software functions. In addition, modelers used a pre-defined list of disturbances to attribute disturbance transitions. This list included “optional” types that allowed modelers to define and model any disturbance they wanted to include. Modeled states and transitions are described in the model description discussed above. Pairing the model with the description helps the user understand what the various states and transitions represent. It may also offer users additional information such as how disturbance probabilities were calculated, and any assumptions made by model developers
+LANDFIRE BpS models are standardized in several ways. Modelers defined each BpS with five or fewer succession classes (i.e. states) and used a subset of the SyncroSim software functions. In addition, modelers used a pre-defined list of disturbances to attribute disturbance transitions. This list included “optional” types that allowed modelers to define and model any disturbance they wanted to include. Modeled states and transitions are described in the model description discussed above. Pairing the model with the description helps the user understand what the various states and transitions represent. It may also offer users additional information such as how disturbance probabilities were calculated, and any assumptions made by model developers.
 
 <center>
 ```{r, echo=FALSE, out.width= "75%"} 
@@ -105,7 +107,7 @@ Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
 
 ### Application scale of the models
 
-Importantly, these models and descriptions were designed for use over large areas - not your back yard. BpS models were developed for use at the [National Land Cover Database Map Zone](https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/docs/partitioning-us-into-mapping-zones.pdf){target='blank'} level (hundreds of thousands of acres - see [Get Models](./GetModels.html){target='blank'}). That said, people do use them for smaller areas. Success of downscaling depends on factors such as:
+These models and descriptions were designed for use over large areas - not your back yard. BpS models were developed for use at the [National Land Cover Database Map Zone](https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/docs/partitioning-us-into-mapping-zones.pdf){target='blank'} level (hundreds of thousands of acres - see [Get Models](./GetModels.html){target='blank'}). That said, people do use them for smaller areas. Success of downscaling depends on factors such as:
 
 + How much review, and how comfortable are users with the information included in the models?
 + How important are the decisions and how much risk is involved?
