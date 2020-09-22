@@ -4,7 +4,7 @@ navbar:
   left:
   - text: STSMs
     href: stms.html
-  - text: Perpectives
+  - text: Perspectives
     href: perspectives.html
   - text: BpSmodels 
     href: BpSmodels.html

@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #### FAQ
 
-We will be building up a Frequently Asked Questions section as soon as we recieve questions from YOU!
+We will be building up a Frequently Asked Questions section as soon as we receive questions from YOU!
 
 Please e-mail your questions to [The Nature Conservancy's LANDFIRE e-mail.](mailto:landfire@tnc.org)  
 
@@ -36,9 +36,9 @@ If you need help with Syncrosim software, try posting a question on the [SyncroS
 
 #### Important links
 
-* [LANDFIRE BpS model download](http://www.landfirereview.org/search.php){target='blank'}
+* [LANDFIRE BpS Description download](http://www.landfirereview.org/search.php){target='blank'}
 * [LANDFIRE homepage](https://www.landfire.gov/){target='blank'}
 * [LANDFIRE Guides and Tutorials](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/Library/Pages/library.aspx){target='blank'}
-* [ApexRMS](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/Library/Pages/library.aspx){target='blank'} (website for SyncroSim software)
+* [ApexRMS](http://www.apexrms.com/){target='blank'} (website for SyncroSim software)
 * [SyncroSim documentation](http://docs.syncrosim.com/){target='blank'}
 * [SyncroSim publications](http://docs.stsim.net/publications.html){target='blank'}
