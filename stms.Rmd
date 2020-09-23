@@ -41,7 +41,7 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 
 The **[LANDFIRE](https://landfire.gov/){target='blank'}** Program, in collaboration with experts around the country, created a set of over 900 STSMs for ecosystems in the United States. Each LANDFIRE STSM represents a **Biophysical Setting** – a vegetation concept that describes the vegetation community likely to have been dominant on the landscape prior to European American settlement given an approximation of historical disturbance regimes and the current biophysical environment. 
 
-**[LANDFIRE BpS models](https://www.landfire.gov/bps-models.php){target='blank'}** are **reference condition models** that define natural vegetation communities and their historical disturbance regimes. On the **[modify](./modifyModel.html)** page you will learn more about these models and how to **modify** them to represent current landscapes and simulate possible future conditions.
+**[LANDFIRE BpS models](https://www.landfire.gov/bps-models.php){target='blank'}** are reference condition models that define natural vegetation communities and their historical disturbance regimes. On the [modify](./modifyModel.html){target='blank'} page you will learn more about these models and how to modify them to represent current landscapes and simulate possible future conditions.
 </div>
 <br>
 
@@ -55,7 +55,7 @@ To assist modelers use LANDFIRE Biophysical Settings models the "lfvegmodels" pa
 + available here: [SyncroSim software](https://syncrosim.com/){target='blank'}
 Make sure you download the full package (SyncroSim-setup.exe - check your downloads file. Note - SyncroSim is _not_ the same as SyncroSim Lite)
 
-#### Step 2: Install required packages:
+#### Step 2: Install required packages (**do not skip this step**):
 To work through this tutorial you will need to load 2 packages: 1) St-Sim and 2) landfirevegmodels.   
 
 In SyncroSim, navigate to 'File' -> 'Packages' -> select 'ST-Sim state-and-transition model' and 2020 'lfvegmodels')-> 'Install' -> OK (see screenshot below).
@@ -71,7 +71,7 @@ knitr::include_graphics("images/packages.JPG")
 
 
 ### Review
-State-and-transition simulation models use inputs such as the **rates of growth** and the **probabilities of disturbance** to simulate the dynamics of ecosystems. Using SyncroSim software users can build, modify, and run STSMs to explore landscape change over time and space.
+State-and-transition simulation models use inputs such as the rates of growth and the probabilities of disturbance to simulate the dynamics of ecosystems. Using SyncroSim software users can build, modify, and run STSMs to explore landscape change over time and space.
 
 <center>
 ```{r, echo=FALSE, out.width= "55%"} 

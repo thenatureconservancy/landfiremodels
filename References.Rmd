@@ -39,3 +39,8 @@ Swearingen, A., J. Price, J. Silbernagel, R. Swaty, and N. Miller. 2015. [State-
 Thomas, C.M., Sofaer, H.R., Cline, S.A. and Jarnevich, C.S., 2019. [Integrating landscape simulation models with economic and decision tools for invasive species control](https://www.reabic.net/journals/mbi/2019/1/MBI_2019_CullinaneThomas_etal.pdf){target='blank'}. Management of Biological Invasions 10:6-22.
 
 Westoby, M., B. Walker, and I. Noy-Meir. 1989. [Opportunistic management for rangelands not at equilibrium](http://rangelandarchive.ucdavis.edu/files/187350.pdf){target='blank'}. Journal of Range Management. 42:266-274.
+
+
+
+ <font size="4"> **This website was developed by The Nature Conservancy LANDFIRE Team under Agreement G18AC00378 with the U.S. Geological Survey.** </font> 
+ </center> 

@@ -26,78 +26,70 @@ These techniques will get you far in your quest to represent current conditions 
 ## Modifying a reference condition model
 Within SyncroSim there are a wide range of techniques available to modify a model. Here we introduce the main ways for modifying a model while working through the Inter-Mountain Basins Montane Sagebrush Steppe example obtained from the [Get Models](./GetModels.html){target='blank'} page.  
 
-### Change the probability of a disturbance in one state class
-A key starting point in modifying a model is to **change disturbances**.  There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the **replacement fire probability** in one class. To make any of the videos below larger, click play and select full screen view (bottom right corner).   
+1. Feel ready to start tinkering with the model? Read on. 
+2. Feel unsure and need more guidance? See this [extensive list](http://www.apexrms.com/tutorials/){target='blank'} of tutorial from ApexRMS.
+<br>
 <br>
 
+### Change the probability of a disturbance in one state class
+A key starting point in modifying a model is to **change disturbances**. There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the replacement fire probability in one class. 
+
+Download Video 1 script for printing [here.](scripts/video1oneDist.pdf){target='blank'}
+
+To make any of the videos below larger, click play and select full screen view (bottom right corner).   
+<br>
 
 <center>
-<iframe width="780" height="480" src="https://www.youtube.com/embed/GxxeSp0mzvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/GxxeSp0mzvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
-
 <br>
-
-**Download Video 1 script for printing [here.](scripts/video1oneDist.pdf){target='blank'}**
-
 <br>
 
 ### Change the probability of a disturbance across the entire model
-While getting to know your models we recommend changing one parameter at a time. This will allow you to get a feel for how it works, and for the sensitivities to adjust to various changes. That said, there are times where you may make "global" changes to the model. For example, you may "turn off" all fires as a way to explore impacts of **fire suppression**. Or, you may not have perfect fire suppression, but suppress 90% of all fires. Instead of changing one fire transition at a time we will show you how to use **transition multipliers** to modify a type of transition everywhere it occurs in the model in a few easy steps. 
+While getting to know your models we recommend changing one parameter at a time. This will allow you to get a feel for how it works, and for the sensitivities to adjust to various changes. That said, there are times where you may make "global" changes to the model. For example, you may "turn off" all fires as a way to explore impacts of fire suppression. Or, you may not have perfect fire suppression, but suppress 90% of all fires. Instead of changing one fire transition at a time we will show you how to use **transition multipliers** to modify a type of transition everywhere it occurs in the model in a few easy steps. 
+
+Download Video 2 script for printing [here.](scripts/video2changeTransAcrossBpS.pdf){target='blank'} 
+<br>
 
 <center>
-
-<iframe width="780" height="480" src="https://www.youtube.com/embed/75PogiK56GU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/75PogiK56GU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
-
 <br>
-
-**Download Video 2 script for printing [here.](scripts/video2changeTransAcrossBpS.pdf){target='blank'}**
-
 <br>
-
 
 ### Introduce a new disturbance
-There are many new **transitions** on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new **probabilistic transition**. 
+There are many new transitions on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new **probabilistic transition**. 
+
+Download Video 3 script for printing [here.](scrivideo3newdisturbance.pdf.pdf){target='blank'} 
+<br>
 
 <center>
-<iframe width="780" height="480" src="https://www.youtube.com/embed/YgTCwCabojo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/YgTCwCabojo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
-
 <br>
-
-**Download Video 3 script for printing [here.](scrivideo3newdisturbance.pdf.pdf){target='blank'}**
-
 <br>
-
 
 ### Add a new state 
 New and/or altered transitions often result in **new states**. For example, in the Great Lakes combinations of modern transitions have resulted in what some call "maple monocultures". These are forests that would typically have 5+ species represented, but now generally have one, sugar maple. Here we demonstrate how to **add a state**.
 
+Download Video 4 script for printing [here.](scrivideo4newState.pdf.pdf){target='blank'}
+<br>
+
 <center>
-<iframe width="780" height="480" src="https://www.youtube.com/embed/-EbW8vAg_bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/-EbW8vAg_bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
-
 <br>
-
-**Download Video 4 script for printing [here.](scrivideo4newState.pdf.pdf){target='blank'}**
-
 <br>
-
-
 
 ### Delete a state
-Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to **delete an entire state**. Here we will show you how to do that.  
+Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to **delete an entire state**. Here we will show you how to do that. 
+
+Download Video 5 script for printing [here.](scripts/video5deleteState.pdf){target='blank'}  
+<br>
 
 <center>
-<iframe width="780" height="480" src="https://www.youtube.com/embed/Z9O3VHv0Vs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="896" height="504" src="https://www.youtube.com/embed/Z9O3VHv0Vs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
-
-<br>
-
-**Download Video 5 script for printing [here.](scripts/video5deleteState.pdf){target='blank'}**
-
-<br>
-
 
 ________________
 
