@@ -141,26 +141,26 @@ knitr::include_graphics("images/hw.jpg")
 ```
 
 **Model Identifier**
-The starter model for this example was 13021_41_50_51, the Laurentian-Acadian Northern Hardwoods Forest - Hemlock that occurs in Minnesota, Wisconsin and Michigan.  
+The starter model for this example was from LANDFIRE, Biophysical Setting 13021_41_50_51, the Laurentian-Acadian Northern Hardwoods Forest - Hemlock that occurs in Minnesota, Wisconsin and Michigan.  
 
 **Original Model Description**
 These uneven-aged forests occur on coarse-textured ground and end moraines lying predominantly north of the tension zone and were dominated by a mix of sugar maple, hemlock, yellow birch, eastern white pine, balsam fir, quaking aspen and paper birch depending on the location (e.g., beech is restricted to eastern part of the range).  
 
 **Modification Goal**
-Explore how current threats such as beech bark disease and management impacts this ecosystem.  
+Explore how current threats such as beech bark disease and management impacts this ecosystem.  For example, researchers have long noted a pattern of "maplification" or management towards maple monocultures (see [Bal et al., 2015](https://academic.oup.com/forestry/article/88/1/64/2756083){target = 'blank'}).  We explored potential strategies to rediversify these stands.  
 
 **Model Modification Steps**
 
 * Added 2 new states
-    * "Maple Monoculture"
-    * Beech  resprout
+    * "Maple monoculture", a state that has only sugar maple trees and is a result of some types of management.
+    * Beech  resprout, the result of beech bark disease infecting most of the beech trees where beech is a major component of the overstory.  At times beech will resprout after the main trunk has died.
 * Added new transitions
     * single tree selection–leads to maple monoculture
-    * clearcut
-    * deer
+    * clearcut, represents small openings created around seed trees (typically yellow birch or conifers)
+    * deer, which impacts recruitment
     * beech bark disease
-    * ecological harvest 
-* Set initial conditions to match current dominance by the Maple Monoculture class
+    * ecological harvest, silvicultural treatments aimed at increacing diversity. 
+* Set initial conditions to match current dominance by the maple monoculture class
 
 ***
 #### What's next?
