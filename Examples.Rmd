@@ -105,7 +105,7 @@ Note that the modifications illustrated in this example were applied to a locall
 This type occurs on sandy loam, loamy, or clayey upland sites of the southern Great Plains. It is dominated by midgrasses with some mix of tall and short grass.  
 
 **Modification Goal**
-Investigate how grazing management may have changed landscape conditions since pre-European settlement. 
+Investigate how grazing management may have changed landscape conditions since European colonization of North America. 
 
 **Model Modification Steps**
 
@@ -147,7 +147,7 @@ The starter model for this example was from LANDFIRE, Biophysical Setting 13021_
 These uneven-aged forests occur on coarse-textured ground and end moraines lying predominantly north of the tension zone and were dominated by a mix of sugar maple, hemlock, yellow birch, eastern white pine, balsam fir, quaking aspen and paper birch depending on the location (e.g., beech is restricted to eastern part of the range).  
 
 **Modification Goal**
-Explore how current threats such as beech bark disease and management impacts this ecosystem.  For example, researchers have long noted a pattern of "maplification" or management towards maple monocultures (see [Bal et al., 2015](https://academic.oup.com/forestry/article/88/1/64/2756083){target = 'blank'}).  We explored potential strategies to rediversify these stands.  
+Explore how current threats such as beech bark disease and management impacts this ecosystem.  For example, researchers have long noted a pattern of "maplification" or management towards maple monocultures (see [Bal et al., 2015](https://doi.org/10.1093/forestry/cpu051){target='blank'}). We explored potential strategies to rediversify these stands.  
 
 **Model Modification Steps**
 

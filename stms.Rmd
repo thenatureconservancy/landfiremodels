@@ -39,7 +39,7 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 
-The **[LANDFIRE](https://landfire.gov/){target='blank'}** Program, in collaboration with experts around the country, created a set of over 900 STSMs for ecosystems in the United States. Each LANDFIRE STSM represents a **Biophysical Setting** – a vegetation concept that describes the vegetation community likely to have been dominant on the landscape prior to European American settlement given an approximation of historical disturbance regimes and the current biophysical environment. 
+The **[LANDFIRE](https://landfire.gov/){target='blank'}** Program, in collaboration with experts around the country, created a set of over 900 STSMs for ecosystems in the United States. Each LANDFIRE STSM represents a **Biophysical Setting** – a vegetation concept that describes the vegetation community likely to have been dominant on the landscape prior to European colonization of North America given an approximation of historical disturbance regimes and the current biophysical environment. 
 
 **[LANDFIRE BpS models](https://www.landfire.gov/bps-models.php){target='blank'}** are reference condition models that define natural vegetation communities and their historical disturbance regimes. On the [modify](./modifyModel.html){target='blank'} page you will learn more about these models and how to modify them to represent current landscapes and simulate possible future conditions.
 </div>
