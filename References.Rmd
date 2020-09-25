@@ -7,7 +7,7 @@ output: html_document
 
 <br>
 
-
+Bal, T.L., Storer, A.J., Jurgensen, M.F., Doskey, P.V. and Amacher, M.C., 2015. [Nutrient stress predisposes and contributes to sugar maple dieback across its northern range: a review](https://doi.org/10.1093/forestry/cpu051){target='blank'}. Forestry: An International Journal of Forest Research, 88(1), pp.64-83.
 
 Blankenship, K., L. Frid, J. L. Smith. 2015. [A state-and-transition simulation modeling approach for estimating the historical range of variability](https://www.aimspress.com/article/10.3934/environsci.2015.2.253){target='blank'}. AIMS Environmental Science 2:253-268. 
 

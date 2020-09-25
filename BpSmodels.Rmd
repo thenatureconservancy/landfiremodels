@@ -25,7 +25,7 @@ div.blue { background-color:#E4EEF4; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
 ### LANDFIRE Biophysical Settings
-**[LANDFIRE BpS](https://www.landfire.gov/bps.php){target='blank'}** represent vegetation that may have been dominant on the landscape just prior to Euro-American settlement. They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states){target='blank'}. 
+**[LANDFIRE BpS](https://www.landfire.gov/bps.php){target='blank'}** represent vegetation that may have been dominant on the landscape just prior to European colonization of North America. They are based on [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states){target='blank'}. 
 **Biophysical Settings** are mapped (for more information on the spatial data visit [this site](https://www.landfire.gov/bps.php){target='blank'}), described below, and modeled using SyncroSim.  
 
 The descriptions and models are the focus of our work here.
@@ -52,13 +52,13 @@ knitr::include_graphics("images/independence-lake.jpg")
 ```
 
 <br>
-Understanding how ecosystems looked and worked prior to Euro-American settlement is a focus of the BpS body of work. The process was to:
+Understanding how ecosystems looked and worked prior to European colonization of North America is a focus of the BpS body of work. The process was to:
 
 1. **Classify and define the ecosystems.** LANDFIRE calls the historic ecosystems "Biophysical Settings", and used [NatureServe's Ecological Systems](https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states){target='blank'}
 
 2. The LANDFIRE team held expert workshops to:
     * **Describe the BpSs**, including their nested states or [succession classes](https://www.landfire.gov/sclass.php){target='blank'}. BpS can have up to 5 succession classes, each of which is described by its canopy height, canopy cover, and species composition. 
-    * **Use state and transition modeling techniques** to get an estimate of how much of each succession class would have been on the landscape historically, (prior to Euro-American settlement). Boxes represent state classes of vegetation condition and the arrows represent the transition from one state class to another, these are assigned probabilities to simulate future conditions.The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into SyncroSim (just like you will be doing soon!).
+    * **Use state and transition modeling techniques** to get an estimate of how much of each succession class would have been on the landscape historically, (prior to European colonization of North America). Boxes represent state classes of vegetation condition and the arrows represent the transition from one state class to another, these are assigned probabilities to simulate future conditions.The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into SyncroSim (just like you will be doing soon!).
     
 From 2015 to 2019, the Conservancy's LANDFIRE team led a review of the models that resulted in updating content for over 300 of them.
 
