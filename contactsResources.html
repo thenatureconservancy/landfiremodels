@@ -311,6 +311,12 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
 
@@ -414,9 +420,9 @@ div.tocify {
 <li><a href="http://www.landfirereview.org/search.php" target="blank">LANDFIRE BpS Description download</a></li>
 <li><a href="https://www.landfire.gov/" target="blank">LANDFIRE homepage</a></li>
 <li><a href="https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/Library/Pages/library.aspx" target="blank">LANDFIRE Guides and Tutorials</a></li>
-<li><a href="http://www.apexrms.com/" target="blank">ApexRMS</a> (website for SyncroSim software)</li>
+<li><a href="http://www.apexrms.com/" target="blank">ApexRMS</a> (developers of SyncroSim software)</li>
 <li><a href="http://docs.syncrosim.com/" target="blank">SyncroSim documentation</a></li>
-<li><a href="http://docs.stsim.net/publications.html" target="blank">SyncroSim publications</a></li>
+<li><a href="http://docs.stsim.net/publications.html" target="blank">ST-Sim publications</a></li>
 </ul>
 </div>
 
@@ -475,8 +481,8 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
-    options.smoothScroll = true;
+    options.showAndHide = false;
+    options.smoothScroll = false;
 
     // tocify
     var toc = $("#TOC").tocify(options).data("toc-tocify");

@@ -4,9 +4,12 @@ author:
 date:
 output:
   html_document:
-    toc: true
-    toc_float: true
+    fig_caption: yes
+    toc: yes
     toc_depth: 4
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 ### This page:
 * Get a description and model by:

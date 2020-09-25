@@ -4,8 +4,12 @@ author:
 date: 
 output:
   html_document:
+    fig_caption: yes
     toc: yes
-    toc_float: yes
+    toc_depth: 4
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 ### This page:
 + Introduction to general modeling principles

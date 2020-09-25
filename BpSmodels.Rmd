@@ -4,10 +4,12 @@ author: ""
 date: ""
 output:
   html_document:
+    fig_caption: yes
     toc: yes
     toc_depth: 4
-    toc_float: yes
-    fig_caption: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 
 ---
 ### This page:

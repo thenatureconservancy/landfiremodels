@@ -3,10 +3,13 @@ title: "Resources & FAQs"
 author: 
 date: 
 output:
-   html_document:
+  html_document:
+    fig_caption: yes
     toc: yes
     toc_depth: 4
-    toc_float: yes
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
 ```{r setup, include=FALSE}
@@ -39,6 +42,6 @@ If you need help with Syncrosim software, try posting a question on the [SyncroS
 * [LANDFIRE BpS Description download](http://www.landfirereview.org/search.php){target='blank'}
 * [LANDFIRE homepage](https://www.landfire.gov/){target='blank'}
 * [LANDFIRE Guides and Tutorials](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/Library/Pages/library.aspx){target='blank'}
-* [ApexRMS](http://www.apexrms.com/){target='blank'} (website for SyncroSim software)
+* [ApexRMS](http://www.apexrms.com/){target='blank'} (developers of SyncroSim software)
 * [SyncroSim documentation](http://docs.syncrosim.com/){target='blank'}
-* [SyncroSim publications](http://docs.stsim.net/publications.html){target='blank'}
+* [ST-Sim publications](http://docs.stsim.net/publications.html){target='blank'}
