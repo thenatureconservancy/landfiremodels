@@ -12,8 +12,7 @@ output:
       smooth_scroll: false
 
 ---
-
-
+***
 
 ### This page:
 
@@ -24,6 +23,8 @@ output:
     + Add or delete a state
     + Add a disturbance
 + Sets the stage for climate change and other modeling
+
+***
 
 These techniques will get you far in your quest to represent current conditions and/or explore the future. We also hope that while in the various screens you see other options that catch your eye.
 
@@ -64,7 +65,7 @@ Download Video 2 script for printing [here.](scripts/video2changeTransAcrossBpS.
 ### Introduce a new disturbance
 There are many new transitions on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new **probabilistic transition**. 
 
-Download Video 3 script for printing [here.](scrivideo3newdisturbance.pdf.pdf){target='blank'} 
+Download Video 3 script for printing [here.](scripts/video3newdisturbance.pdf){target='blank'} 
 <br>
 
 <center>
@@ -76,7 +77,7 @@ Download Video 3 script for printing [here.](scrivideo3newdisturbance.pdf.pdf){t
 ### Add a new state 
 New and/or altered transitions often result in **new states**. For example, in the Great Lakes combinations of modern transitions have resulted in what some call "maple monocultures". These are forests that would typically have 5+ species represented, but now generally have one, sugar maple. Here we demonstrate how to **add a state**.
 
-Download Video 4 script for printing [here.](scrivideo4newState.pdf.pdf){target='blank'}
+Download Video 4 script for printing [here.](scripts/video4newState.pdf){target='blank'}
 <br>
 
 <center>
@@ -90,7 +91,6 @@ Occasionally, because of natural factors (e.g., an exotic pest) or user error yo
 
 Download Video 5 script for printing [here.](scripts/video5deleteState.pdf){target='blank'}  
 <br>
-
 <center>
 <iframe width="896" height="504" src="https://www.youtube.com/embed/Z9O3VHv0Vs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>

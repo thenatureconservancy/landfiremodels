@@ -11,11 +11,15 @@ output:
       collapsed: false
       smooth_scroll: false
 ---
+
+***
+
 ### This page:
 + Context about climate change and ecosystem impacts
 + Ways that BpS models can enhance understanding of potential responses of ecosystems  to climate change
 + Examples of how to alter disturbances and states to explore potential climate change impacts in the BpS modeling framework
 
+***
 
 ## Climate Change and STSM Modeling
 
@@ -24,27 +28,30 @@ The goal of this section is to help you identify questions that the LANDFIRE BpS
 ### Background 
 Directional changes in climate factors, such as increases in minimum or maximum temperatures, changes in precipitation patterns, and increases in evaporation and transpiration rates, are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed ecological responses, in addition to ecological theory, allow us to generate hypotheses on how these changes may play out. As noted on the  [Perspectives tab](./Perspectives.html){target='blank'}, all models are a simplification of reality, and while we don’t recommend trying to model the full complexity of climate change impacts, there are many different aspects of climate change that you can productively explore with BpS models in the SyncroSim platform.
 
+```{=html}
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+```
+
+```{r, echo=FALSE, fig.cap="Photo: © Marcie Eggers, TNC. Close-up of fern about to spring open in the Atlantic Forest rainforest, Guaraquecaba, Brazil"} 
+knitr::include_graphics("images/fern.jpg")
+
+```
+
 Climate drivers like **temperature** and **moisture availability** play critical roles in shaping the life history of plants and associated species in terrestrial ecosystems. As the accumulation of greenhouse gasses and other anthropogenic factors have accelerated the rate of climate change, we are seeing a wide array of responses in plants, and other species like insect pests that can strongly influence vegetation dynamics.
 
 The most frequently documented responses to climate change include changes in phenology (the timing of seasonal events, such as budburst), spatial shifts in range boundaries, and shifts in density patterns within a species’ range due to changes in recruitment or mortality.
 
 Over evolutionary time, species have developed traits that reflect the influence of climate, other abiotic factors, and species interactions such as competition for resources. The suite of species that make up an ecosystem are likely to respond differently to climate change, leading to shifts in plant community composition.
 
-
-<center>
-```{r, echo=FALSE, out.width= "45%"} 
-knitr::include_graphics("images/fern.jpg")
-
-```
-</center>
 <br>
-<center>
-Photo: © Marci Eggers, TNC. 
-Close-up of of fern about to spring open in the Atlantic Forest rainforest, Guaraquecaba, Brazil.
-</center>
 
-
-<br>
 <style>
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
@@ -86,7 +93,6 @@ You will notice in the plot of drought frequency, the probability of drought sta
 
 In other vegetation classes with a more diverse set of co-dominant species, such as mixed hardwood forests of the southern Appalachians, the transition within LANDFIRE BpS models represent an average across multiple species.  This does not mean that you can’t gain insight by exploring climate change drivers with these models, but it is important to remember that different species are likely to respond to climate drivers in unique ways. 
 
-
 ## Reviewing the tools
 In the section below, we briefly review the windows in SyncroSim where you make basic changes to BpS models.
 
@@ -117,9 +123,9 @@ knitr::include_graphics("images/states.jpg")
 
 <br>
 
-## Additional BpS and climate change examples
+## Additional Examples
 
-#### More intense fires
+### More intense fires
 Increases in the intensity of fires is a trend that has been observed in forests with high vegetation density, often in combination with drought. To represent this process, you would increase the probability of high intensity fires in your model – or potentially add this type of disturbance if it was not already in the model.
 
 <center>
@@ -134,7 +140,7 @@ Photo: © Ben Jiang, TNC. One of the 2018 California wildfires.
 </center>
 <br>
 
-#### Longer fire seasons
+### Longer fire seasons
 
 * [Cattau et al. 2020](https://doi.org/10.1111/geb.13058){target='blank'} examine the extension of the duration of the fire season due to climate change both by natural ignition sources and human-caused fires. This would involve decreasing the fire return interval (i.e., increasing the probability) within this modeling platform. 
 
@@ -172,17 +178,17 @@ knitr::include_graphics("images/large-fire.jpg")
 
 
 
-#### Larger fires
+### Larger fires
 
 Similarly, as climate continues to change we are seeing an increase in the spatial extent of fires.  In the aspatial LANDFIRE BpS models, you can simulate this in the same way as you would model an increase in fire frequency – by using a higher fire frequency value. As a result of using the same approach for both patterns (larger fires, and more frequent fires), it is not possible to separate out impacts in the aspatial models. With spatial models, you can add this additional complexity.
 
 <br>
 
-#### Insect outbreaks
+### Insect outbreaks
 Insect outbreaks that promote a state change in vegetation are not found in all of the “out of the box” BpS models, but the option to add this transition is available. For example, insect outbreaks can be added and varied in all of the ways described above for fire. Adding a separate insect outbreak component may be highly relevant, especially if there is evidence to support impacts that are independent of other drivers. In the case of drought-stressed trees contributing to high tree mortality, understanding variations in drought risk, for example associated with topography or soil water holding capacity, may allow you to partition out impacts by site conditions.
  
 
-### Transitions in vegetation classes
+## Transitions in vegetation classes
 
 
 ```{=html}

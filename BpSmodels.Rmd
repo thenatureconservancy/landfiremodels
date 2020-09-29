@@ -12,10 +12,14 @@ output:
       smooth_scroll: false
 
 ---
+***
+
 ### This page:
 + Short introduction to the LANDFIRE program
 + Description of the Biophysical Settings (BpS), plus reference conditions delivered in the BpS descriptions and models
 + Discussion of application scale
+
+***
 
 ## LANDFIRE
 In 2004 [LANDFIRE](https://www.landfire.gov/){target='blank'} was created. *"LANDFIRE is a shared program between the wildland fire management programs of the U.S. Department of Agriculture Forest Service and U.S. Department of the Interior that provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas".*  
@@ -115,6 +119,7 @@ These models and descriptions were designed for use over large areas - not your 
 + How important are the decisions and how much risk is involved?
 + How much supporting information is there?
 <br>
+
 
 ### For more information
 *  [Watch an introduction to SyncroSim](https://www.youtube.com/watch?v=e1BBcbImrrM&list=PLDFF9036BBFE46CE6&index=6&t=0s){target='blank'} Note: some features of SyncroSim may be different than what you see in the video due to versioning.

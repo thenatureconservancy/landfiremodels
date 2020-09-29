@@ -400,6 +400,7 @@ div.tocify {
 </div>
 
 
+<hr />
 <div id="this-page" class="section level3">
 <h3>This page:</h3>
 <ul>
@@ -409,21 +410,22 @@ div.tocify {
 </li>
 <li>Getting started with <a href="https://syncrosim.com/" target="blank">SyncroSim</a></li>
 </ul>
+<hr />
 </div>
-<div id="state-and-transition-models" class="section level3">
-<h3>State-and-transition models</h3>
+<div id="state-and-transition-models" class="section level2">
+<h2>State-and-transition models</h2>
 <p>A <strong>state-and-transition model</strong> (STM) conceptualizes vegetation in terms of discrete states and the transitions or pathways between them <a href="http://rangelandarchive.ucdavis.edu/files/187350.pdf" target="blank">(Westoby 1989)</a>. States are often used to represent discrete development (seral) stages, and transitions may represent disturbances such as hurricanes, fire, or grazing, but can also represent management actions such as thinning, livestock management, or herbicide application. Conceptual state-and-transition models, called <a href="https://www.nrcs.usda.gov/wps/portal/nrcs/main/national/technical/ecoscience/desc/" target="blank">Environmental Site Descriptions</a> (ESDs), have been developed through an inter-agency partnership and widely used to monitor, evaluate, and manage rangelands.</p>
 </div>
-<div id="state-and-transition-simulation-model" class="section level3">
-<h3>State-and-transition <em>simulation</em> model</h3>
+<div id="state-and-transition-simulation-model" class="section level2">
+<h2>State-and-transition <em>simulation</em> model</h2>
 <p>When a STM is built in a software environment with rates of growth between states and probabilities for each transition, it is known as a <strong>state-and-transition simulation model</strong> (STSM; <a href="https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12597" target="blank">Daniel et al. 2016</a>). A STSM can be used to <strong>simulate the dynamics of a system over time and space.</strong> STSMs have been widely applied in natural resource management to estimate historical conditions (<a href="https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/eap.2013" target="blank">Donato et al. 2020</a>, <a href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_004.pdf" target="blank">Blankenship et al. 2012</a>), simulate the spread of invasive species (<a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2730" target="blank">Jarnevich et al. 2019</a>), test various management scenarios (<a href="https://www.conservationgateway.org/Documents/Enhanced%20conservation%20action%20planning_assessing%20landscape%20condition.pdf" target="blank">Low et al. 2010</a>, <a href="https://www.aimspress.com/article/10.3934/environsci.2015.2.180" target="blank">Costanza et al. 2015a</a>), and forecast future landscape conditions under different climates (<a href="https://www.springer.com/gp/book/9783319249285" target="blank">Provencher et al. 2016</a>, <a href="https://www.aimspress.com/fileOther/PDF/environmental/201503737.pdf" target="blank">Swearingen et al. 2015</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0301479714006112" target="blank">Costanza et al. 2015b</a>).</p>
 <br> Click through the example below to see how a STSM works:
 <center>
 <iframe title="My embedded document" src="kbslick5.html" frameborder="0" width="100%" height="450"></iframe>
 </center>
 </div>
-<div id="landfire-bps-models-a-complete-set-for-the-u.s." class="section level3">
-<h3>LANDFIRE BpS models: a complete set for the U.S.</h3>
+<div id="landfire-bps-models-a-complete-set-for-the-u.s." class="section level2">
+<h2>LANDFIRE BpS models: a complete set for the U.S.</h2>
 <style>
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
@@ -433,28 +435,31 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </div>
 <p><br></p>
 </div>
-<div id="syncrosim-software" class="section level3">
-<h3>SyncroSim software</h3>
+<div id="syncrosim-software" class="section level2">
+<h2>SyncroSim software</h2>
 <p>LANDFIRE currently uses <a href="http://docs.syncrosim.com/" target="blank">SyncroSim</a> and its <a href="http://docs.stsim.net/" target="blank">ST-Sim package</a> as the modeling platform to develop and deliver its STSMs. SyncroSim is available for free and is the latest in a series of related STSM software packages including Path and the <a href="https://essa.com/explore-essa/tools/vddt/" target="blank">Vegetation Dynamics Development Tool</a> (VDDT). SyncroSim is a flexible platform designed to manage data for simulation modeling. Packages developed for SyncroSim can be used for any kind of simulation model with structured input and output data. ST-Sim is a SyncroSim package for State-and-Transition Simulation Modeling. ST-Sim can be used to model vegetation, land use and land cover change for virtually any kind of ecosystem and landscape. The model is stochastic (randomly determined) and can be run either spatially or non-spatially. While LANDFIRE BpS models are non-spatial, there are many examples of spatial STSMs (see <a href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_002.pdf">Daniel and Frid 2011</a>{target = ‘blank’}. We recommend that users read the <a href="http://docs.syncrosim.com/getting_started/overview.html" target="blank">overview of SyncroSim</a> and follow the steps below for downloading Syncrosim and St-Sim.</p>
 <p>To assist modelers use LANDFIRE Biophysical Settings models the “lfvegmodels” package is under development, to be fully implemented within the SyncroSim software by the of September, 2020.</p>
-<div id="step-1-download-syncrosim" class="section level4">
-<h4>Step 1: Download SyncroSim:</h4>
+<div id="step-1-download-syncrosim" class="section level3">
+<h3>Step 1: Download SyncroSim</h3>
 <ul>
-<li>available here: <a href="https://syncrosim.com/" target="blank">SyncroSim software</a> Make sure you download the full package (SyncroSim-setup.exe - check your downloads file. Note - SyncroSim is <em>not</em> the same as SyncroSim Lite)</li>
+<li>available here: <a href="https://syncrosim.com/" target="blank">SyncroSim software</a> Make sure you download the full package (SyncroSim-setup.exe - check your downloads file. Note - SyncroSim is <em>not</em> the same as SyncroSim Lite) <br> <br></li>
 </ul>
 </div>
-<div id="step-2-install-required-packages-do-not-skip-this-step" class="section level4">
-<h4>Step 2: Install required packages (<strong>do not skip this step</strong>):</h4>
-<p>To work through this tutorial you will need to load 2 packages: 1) St-Sim and 2) landfirevegmodels.</p>
-<p>In SyncroSim, navigate to ‘File’ -&gt; ‘Packages’ -&gt; select ‘ST-Sim state-and-transition model’ and 2020 ‘lfvegmodels’)-&gt; ‘Install’ -&gt; OK (see screenshot below).</p>
+<div id="step-2-install-required-packages" class="section level3">
+<h3>Step 2: Install required packages</h3>
+<p><strong>Do not skip this step.</strong></p>
+<ul>
+<li><p>To work through this tutorial you will need to load 2 packages: 1) St-Sim and 2) landfirevegmodels.</p></li>
+<li><p>In SyncroSim, navigate to ‘File’ -&gt; ‘Packages’ -&gt; select ‘ST-Sim state-and-transition model’ and 2020 ‘lfvegmodels’)-&gt; ‘Install’ -&gt; OK (see screenshot below).</p></li>
+</ul>
 <center>
 <img src="images/packages.JPG" width="85%" />
 </center>
 <p><br></p>
 </div>
 </div>
-<div id="review" class="section level3">
-<h3>Review</h3>
+<div id="review" class="section level2">
+<h2>Review</h2>
 <p>State-and-transition simulation models use inputs such as the rates of change and the probabilities of disturbance to simulate the dynamics of ecosystems. Using SyncroSim software users can build, modify, and run STSMs to explore landscape change over time and space.</p>
 <center>
 <img src="images/visual.jpg" width="55%" />

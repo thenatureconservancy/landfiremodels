@@ -1,7 +1,7 @@
 ---
 title: "Isolate and load your model"
-author: "Randy Swaty"
-date: "6/16/2020"
+author: "Quickstart Guide"
+date: 
 output:
   html_document:
     theme: journal
@@ -14,8 +14,6 @@ output:
   pdf_document:
     toc: yes
 ---
-
-
 <style>
 body {
     font-family: Georgia,"Times New Roman",Times,serif;
@@ -31,10 +29,9 @@ body {
     background-color: darkseagreen;
 }
 </style>
+---
 
-## Welcome and goals
-In this tutorial we will:
-
+### This page:
 1. Load the LANDFIRE BpS Reference Condition Models library
 2. Make a new library with one Biophysical Setting.
 
@@ -42,7 +39,8 @@ While we are focused on the sage-brush steppe, and introducing transitions you m
 
 In this document the ">" sign will be analogous to "then click", meaning a single left mouse click unless otherwise noted.
 
-## Load the LANDFIRE BpS Reference Condition Models library
+### Load the LANDFIRE BpS Reference Condition Models library
+
 Within SyncroSim there are 3 main levels of organization: 1) libraries, 2) projects and 3) scenarios.  Most of your work will be at the scenario level, but first we have to load the LANDFIRE BpS Reference Condition Models (May 28, 2020) into the SyncroSim software.  To do this you will:
 
 1. Open SyncroSim
@@ -50,7 +48,8 @@ Within SyncroSim there are 3 main levels of organization: 1) libraries, 2) proje
 3. Pour a beverage and wait. You are downloading the library that contains nearly 1,000 vegetation models.  It may take a while.
 4. Once complete you will see the library in the Library Explorer pane.
 
-## Create a new library with the Sage Steppe BpS model scenario
+### Create a new library with the Sage Steppe BpS model scenario
+
 The LANDFIRE BpS Reference Condition Models library is the master library with all of the LANDFIRE BpS models for the entire country.  Unless you are doing something like testing fire suppression for every BpS in the country or something similar you will want to create a new library with only the BpSs you are interested in.  
 
 To create the new library you will:
@@ -63,18 +62,19 @@ To create the new library you will:
 6. Hit OK.  It takes a little time to make the new library. 
 
 <center>
-```{r, echo=FALSE, out.width= "45%"} 
+```{r, echo=FALSE, out.width= "100%"} 
 knitr::include_graphics("images/oneStrata.JPG")
 
 ```
 </center>
 <br>
 <center>
-Photo: © Marci Eggers, TNC. 
-Close-up of of fern about to spring open in the Atlantic Forest rainforest, Guaraquecaba, Brazil.
+Screenshot of Inter-Mountain Basins Montane Sagebrush Steppe Export LFVM Strata
 </center>
- 
-NICE you now have a library with just one BpS in it.  
+
+<br>
+
+NICE. You now have a library with just one BpS in it.  
 
 
 

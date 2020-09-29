@@ -4,6 +4,8 @@ author: "TNC's LANDFIRE team"
 date: "7/16/2020"
 output: html_document
 ---
+## From Randy's Isolate and Load your model
+
 
 
 ## From BpS Models

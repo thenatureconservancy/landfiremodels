@@ -37,10 +37,12 @@ Photo: © Ian Shive, TNC. Sierra Mountain Foothills, Mojave Desert, Central Cali
 
 ## Why integrate this into your current work?
 
-This framework provides a national baseline for assessing current vegetation conditions while accounting for historical ecology. Integrating this knowledge with current projections of climate and other factors has the potential to improve the way we manage land while providing ecological context. This modeling framework can help you make projections about
+This framework provides a national baseline for assessing current vegetation conditions while accounting for historical ecology. Integrating this knowledge with current projections of climate and other factors has the potential to improve the way we manage land while providing ecological context. 
+
+>This modeling framework can help you make projections about
 future landscape conditions as management and natural environments evolve. When used within the intended context, BpS modeling can be a powerful tool for managers. 
 
->Biophysical models help users investigate the effects from (simulated) ecosystem disturbances, and learn how changes in management actions might impact an ecosystem before allocating time or resources to on the ground operations
+Biophysical models help users investigate the effects from (simulated) ecosystem disturbances, and learn how changes in management actions might impact an ecosystem before allocating time or resources to on the ground operations
 
 
 <center>

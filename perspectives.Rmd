@@ -11,9 +11,13 @@ output:
       collapsed: false
       smooth_scroll: false
 ---
+***
+
 ### This page:
 + Introduction to general modeling principles
 + Modeling advice for using BpS models
+
+***
 
 
 ## Models, Models Everywhere
@@ -106,7 +110,7 @@ Models such as [SIMPPLLE](https://www.fs.usda.gov/treesearch/pubs/40241){target=
 
 <br>
 
-### Understanding the characterstics of any model
+### Understanding model characterstics
 <br>
 <style>
 div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}

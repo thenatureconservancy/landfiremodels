@@ -11,13 +11,16 @@ output:
       collapsed: false
       smooth_scroll: false
 ---
+***
 
 ### This page:
 + See examples of how to modernize three BpS models, with a focus on the Inter-Mountain Basins Montane Sagebrush Steppe
 + Explore example models--then ask yourself "did they do a good job?"
 
+***
+
 ## Context
-The models below are example models aimed at illustrating modification methods. They are not intended to be realistic ecological models, rather we provide them for illustration purposes. We hope that users will primarily use our models to learn, but also assume some people could be tempted to use them as “starter models”. We’d rather they not do that as we are not experts in the actual ecosystems. We hope they serve to say "wow, these models are highly customizable".
+These example models are aimed at illustrating modification methods. They are not intended to be realistic ecological models, rather we provide them for illustration purposes. We hope that users will primarily use our models to learn, but also assume some people could be tempted to use them as “starter models”. We’d rather they not do that as we are not experts in the actual ecosystems. We hope they serve to say "wow, these models are highly customizable".
 
 ## As you explore these models
 
@@ -27,11 +30,9 @@ Consider the following:
 * Could there be unintended consequences from these changes that trickle through the model?
 * Do these modifications make the model more "realistic" or do they more serve to document new transitions that need more research?
 
-## Examples from the field
-
 <br>
 
-### Example 1: Inter-Mountain Basins Montane Sagebrush Steppe 
+## Example 1: Inter-Mountain Basins Montane Sagebrush Steppe 
 Note: This is the example that has been used throughout the website
 
 By: Kori Blankenship, [Download Kori's notes here](https://tnc.box.com/s/ah8wy1p79ords5rl1esf74k0raxh6ivx){target='blank'}
@@ -80,7 +81,7 @@ Represent current conditions in the Blue Mountains ecoregion including the impac
 
 ***
 
-### Example 2: Central Mixed Grass Prairie
+## Example 2: Central Mixed Grass Prairie
 
 By: Jim Smith
 ```{=html}
@@ -124,7 +125,7 @@ Investigate how grazing management may have changed landscape conditions since E
 
 ***
 
-### Example 3: Laurentian-Acadian Northern Hardwoods Forest - Hemlock 
+## Example 3: Laurentian-Acadian Northern Hardwoods Forest - Hemlock 
 
 By: Randy Swaty
 ```{=html}

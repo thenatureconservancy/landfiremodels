@@ -13,15 +13,16 @@ output:
 
 
 ---
+***
+
 ### This page:
 + Describe *some* of the advanced modeling options available in [ST-Sim](https://syncrosim.com/packages/){target='blank'}
 + Explore ways to manipulate transition targets, multipliers, and state and transition attributes 
 + Investigate the + and - of using spatial models
-<br>
-<br>
 
+***
 
-We have only skimmed the surface of the possibilities to begin working in the  [ST-Sim](https://syncrosim.com/packages/){target='blank'} platform thus far. Below we will briefly describe a few more advanced modeling options to whet your appetite. Advanced modeling options and more detailed descriptions of these can be viewed at the [Apex website](http://www.apexrms.com/){target='blank'} and documentation specific to ST-Sim can be found [here](http://docs.stsim.net/){target='blank'}. Several videos linked below were developed by Apex as a part of their training materials so they are considerably longer and more detailed than other videos on this website.
+We have just skimmed the surface of the possibilities to begin working in the  [ST-Sim](https://syncrosim.com/packages/){target='blank'} platform. Here we briefly describe a few advanced modeling options; more detailed descriptions of these can be viewed at the [Apex website](http://www.apexrms.com/){target='blank'} and documentation specific to ST-Sim can be found [here](http://docs.stsim.net/){target='blank'}. Several videos below were developed by Apex so they are considerably longer and more detailed than other videos on this website.
 
 Visit the websites above to ensure you are seeing the latest version of the software. We encourage you to explore other advanced modeling options once you are familiar with the platform, but to not jump too quickly into advanced modeling options or complex models. This can cause confusion and slow progress.
 
@@ -55,7 +56,7 @@ Here we demonstrate how to address potential scenarios that you may encounter in
   + Ex: you may know that a “value” of interest (i.e. some beetle species) occurs exclusively within a state class. You can track these "values" in SyncroSim.
   
 
-### Transition Targets
+## Transition Targets
 
 ```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
 knitr::include_graphics("images/transition-targets.JPG")
@@ -68,7 +69,7 @@ For example, you can limit the amount of any probabilistic transition/disturbanc
 
 Note that you can also set transition targets using a **probability distribution** (such as Normal, Uniform or Beta) if you believe the transition target constraint will vary over time according to distribution (rather than a specific amount). Once selected, you can specify the standard deviation, minimum and maximum values for the distribution, and how often to draw a new value from the distribution.
 
-### Transition Multipliers
+## Transition Multipliers
 
 It is useful to be able to vary transition probabilities over time not just operational limits (see Transition Targets). **Transition multipliers** allow the user to modify how often a probabilistic transition/disturbance/change will be imposed on a pixel across timesteps or iterations. 
 
@@ -80,21 +81,21 @@ knitr::include_graphics("images/transition-multipliers.JPG")
 
 For example, under different climate change scenarios, transition probabilities will vary over time (i.e. fire may increase, succession/growth may speed up or slow down, strata may change locations on the landscape). The **transition multiplier values property** specifies multipliers to be applied to transition probabilities over the course of the simulation (i.e. increase the amount of thinning by 50% for the first 10 timesteps, and then increase by 100% for the remaining timesteps). The user can also use an **expected distribution of multipliers** they create from past events or recent information, or they can select the Beta or Normal statistical distributions packaged with the software. Using statistical distributions may require additional information such as minimum, maximum and standard deviation. 
 
-#### Temporal Variability in Transitions
+### Temporal Variability in Transitions
 
 <center>
 <iframe width="896" height="504" src="https://www.youtube.com/embed/TV4p4NspIME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 <br>
 
-#### Statistical variability
+### Statistical Variability
 A second application of the **transition multiplier** is when the modeler wishes to incorporate statistical variability into the model parameters over the timesteps and iterations because the actual value is unknown or varies across timesteps. 
 
 For example, the probability of fire can vary each year. We can use **transition multipliers** to sample fire probabilities from a fire history we provide, or from a statistical distribution (instead of using a single probability over time or varying the probability by specific amounts). 
 <br>
 
 
-#### Transition multipliers & BpS
+### Transition multipliers & BpS
 
 These videos describe how transition multipliers have been used with LANDFIRE BpS models. 
 <center>
@@ -111,7 +112,7 @@ For a more detailed description of using a distribution as a transition multipli
 
 <br>
 
-### State and Transition Attributes
+## State and Transition Attributes
 
 Suppose that you wish to estimate values that are associated with various model states and/or model transitions. Attributes can be used to roll up simulation results according to areas aggregated by either state classes or transitions. 
 
@@ -139,7 +140,7 @@ We encourage you to progress slowly and use advanced modeling options step-by-st
 <br>
 <br>
 
-### Spatial Models
+## Spatial Models
 
 We have demonstrated how to modify and apply STSMs aspatially. However, ST-Sim does allow the user to run these models using spatial functionality _if_ the required data sets and information are available. 
 ```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
@@ -153,7 +154,7 @@ knitr::include_graphics("images/spatial multiplier.JPG")
 
 ```
 
-#### Limitations
+### Limitations
 Running these models spatially can provide significant value, however, there are two cautions:
 
 1. significant input information is required to make this spatial option useful
@@ -162,7 +163,7 @@ Running these models spatially can provide significant value, however, there are
 <br>
 
 
-### Spatial Modeling Using St-Sim
+## Spatial Modeling Using St-Sim
 
 Incorporating spatial functionality increases the complexity of the model as well as the modeling options. Additional training or support from Apex RMS may be warranted as you move toward spatial implementation.
 <br>
@@ -176,6 +177,6 @@ Spatial Modeling Using ST-Sim
 
 ***
 
-#### What's next?
+### What's next?
 + learn how to incorporate [climate change](./climateChange.html){target='blank'} impacts into BpS models
 + see a simple set of simulations (designed to reflect climate change impacts) and how they may impact our [Inter-Mountain Basins Montane Sagebrush Steppe BpS](./GetModels.html){target='blank'}
