@@ -70,7 +70,7 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 ________________
 
 #### What's next?
-+ learn what a [state-and-transition modeVegetationModeling.html){target='blank'} (STSM) is
++ learn what a [state-and-transition model](./VegetationModeling.html){target='blank'} (STSM) is
 + learn how 900 LANDFIRE STSMs were built and how to use them with SyncroSim
 + get acquainted with biophysical settings 
 
