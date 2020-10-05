@@ -2,16 +2,12 @@ name: R Markdown Websites Tutorial
 navbar:
   title: HOME
   left:
-  - text: STSMs
-    href: stms.html
+  - text: Vegetation Modeling
+    href: VegetationModeling.html
   - text: Perspectives
     href: perspectives.html
-  - text: BpS models 
-    href: BpSmodels.html
-  - text: Get Models
-    href: GetModels.html
-  - text: Modify Models
-    href: modifyModel.html
+  - text: Modeling Work
+    href: ModelingWork.html
   - text: Advanced Options
     href: advancedModeling.html
   - text: Climate Change

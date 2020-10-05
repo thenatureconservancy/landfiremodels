@@ -142,6 +142,7 @@ div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 ***
 
 #### What's next?
-+ dig in to the nuances of [BpS models](./BpSmodels.html){target='blank'}
-+ [locate and download your models](./GetModels.html){target='blank'} of interest from Map Zone
-+ tinker around with [modifying your model](./modifyModel.html){target='blank'} by introducing new disturbances and states  
++ [locate](./GetModels.html){target='blank'}, download, import a model
++ make sense of the parts of model description
+[locate and download your models](./GetModels.html){target='blank'} of interest from Map Zone
++ learn how to [modify](./modifyModel.html){target='blank'} a model by watching the step-by-step tutorial videos for using LANDFIRE data in SyncroSim

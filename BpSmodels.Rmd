@@ -97,7 +97,7 @@ Each description includes:
 
 #### Models
 
-Models include the information contained in the SyncroSim library. Downloading and running the BpS models using the SyncroSim software gives users immediate access to over 900 models that were created by experts in collaboration with LANDFIRE. We used a standardized set of disturbances, but the optional types allowed for other disturbances to be modeled. 
+Models include the information contained in the SyncroSim library. Downloading and running the BpS models using the SyncroSim software gives users immediate access to over 900 models that were created by experts in collaboration with LANDFIRE. 
 
 LANDFIRE BpS models are standardized in several ways. Modelers defined each BpS with five or fewer succession classes (i.e. states) and used a subset of the SyncroSim software functions. In addition, modelers used a pre-defined list of disturbances to attribute disturbance transitions. This list included “optional” types that allowed modelers to define and model any disturbance they wanted to include. Modeled states and transitions are described in the model description discussed above. Pairing the model with the description helps the user understand what the various states and transitions represent. It may also offer users additional information such as how disturbance probabilities were calculated, and any assumptions made by model developers.
 
@@ -127,5 +127,3 @@ These models and descriptions were designed for use over large areas - not your 
 ____________
 
 #### What's next?
-+ [locate](./GetModels.html){target='blank'}, download, import a model
-+ make sense of the parts of model description
