@@ -19,7 +19,7 @@ Hello and welcome to The Nature Conservancy's LANDFIRE vegetation dynamics model
 
 **How to use this website?** We designed this website as a resource for both new and seasoned Biophysical Setting (BpS) modelers. We use the Montane Sage-Steppe ecosystem model throughout the website. By weaving this model into all the tutorials, we can dive deeper into exploring, modifying, and understanding the model’s “story”. We hope you find our website useful and most importantly, we hope you use these BpS models to their fullest extent. 
 
-If you are already familiar with this modeling framework and ready to get started, skip ahead to [get your models](./GetModels.html){target='blank'} .
+If you are already familiar with this modeling framework and ready to get started, skip ahead to [get your modelModelingWork.html){target='blank'}.
 
 <br>
 
@@ -70,8 +70,9 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 ________________
 
 #### What's next?
-+ learn what a [state-and-transition model](./stms.html){target='blank'} (STSM) is
++ learn what a [state-and-transition modeVegetationModeling.html){target='blank'} (STSM) is
 + learn how 900 LANDFIRE STSMs were built and how to use them with SyncroSim
++ get acquainted with biophysical settings 
 
 <center> 
 <br>

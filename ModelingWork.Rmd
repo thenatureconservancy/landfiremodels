@@ -1,5 +1,5 @@
 ---
-title: "Working with Models"
+title: "Get to (Modeling) Work"
 author: 
 date:
 output:
@@ -62,7 +62,7 @@ Correct Inter-Mountain Basins Montane Sagebrush Steppe BpS model and description
 
 
 ## Isolate and load your model
-Once you have SyncroSim installed [(see STSM tab)](./stms.html){target='blank'} and both ST-Sim and lfvegmodels packages loaded, you will want to isolate one (of the ~ 900) BpS models to work with. The lfvegmodels package loads all of the models into your SyncroSim environment -- you do not need to work with all 900 models (though that is possible)!
+Once you have SyncroSim installed [(see Vegetation Modeling)](./VegetationModeling.html){target='blank'} and both ST-Sim and lfvegmodels packages loaded, you will want to isolate one (of the ~ 900) BpS models to work with. The lfvegmodels package loads all of the models into your SyncroSim environment -- you do not need to work with all 900 models (though that is possible)!
 
 <br>
 
