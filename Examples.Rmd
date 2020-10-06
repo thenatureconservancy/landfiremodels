@@ -47,12 +47,15 @@ By: Kori Blankenship, [Download Kori's notes here](https://tnc.box.com/s/ah8wy1p
   }
 </style>
 ```
+<br>
+Click arrows to see photo of Sagebrush Steppe and distribution map of the *example* we are working with here (not an all inclusive distribution map):
+<center>
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-```{r, echo=FALSE, fig.cap="Photo: © Hannah Letinich, TNC. Beezley Hills Preserve, Moses Coulee, Washington"} 
-knitr::include_graphics("images/sb2.jpg")
-
+htmltools::tags$iframe(title = "My embedded document", src = "sageSlick2.html", frameborder = "0", width = "100%", height="450")
 ```
 
+</center>
 
 **Model Identifier**
 This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and description and was modified based on several sources to represent current conditions. The primary source was the unpublished “Mountain Big Sagebrush – With Juniper” model created by Miles Hemstrom for the Blue Mountains. 
