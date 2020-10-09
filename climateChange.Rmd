@@ -26,7 +26,7 @@ output:
 The goal of this section is to help you identify questions that the LANDFIRE BpS models (with their built-in simplifications, strengths, and constraints) are best suited to help you explore.
 
 ### Background 
-Directional changes in climate factors, such as increases in minimum or maximum temperatures, changes in precipitation patterns, and increases in evaporation and transpiration rates, are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed ecological responses, in addition to ecological theory, allow us to generate hypotheses on how these changes may play out. There are many different aspects of climate change that you can productively explore with BpS models in the SyncroSim platform.
+Directional changes in climate factors, such as increases in minimum or maximum temperatures, changes in precipitation patterns, and increases in evaporation and transpiration rates, are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed ecological responses such as species range shifts, and changes in growth and mortality, in addition to ecological theory, allow us to generate hypotheses on how these changes may influence large-scale vegetation patterns. Many of these hypotheses can be productively explored with BpS models in the SyncroSim platform.
 
 ```{=html}
 <style type="text/css">
@@ -44,23 +44,18 @@ knitr::include_graphics("images/fern.jpg")
 
 ```
 
-Climate drivers like **temperature** and **moisture availability** play critical roles in shaping the life history of plants and associated species in terrestrial ecosystems. As the accumulation of greenhouse gasses and other anthropogenic factors have accelerated the rate of climate change, we are seeing a wide array of responses in plants, and other species like insect pests that can strongly influence vegetation dynamics.
+Before jumping in to modeling, it’s important to recognize that BpS models focus on vegetation communities, and this focus on communities has some limitations in a climate change modeling context.  Over evolutionary time, species have developed traits that reflect the influence of climate, other abiotic factors, and species interactions such as competition for resources. The suite of species that make up an ecosystem are likely to respond differently to climate change. While growth and mortality rates for entire vegetation classes can easily be modified with these models, for some questions, such as those focused on changes in species dynamics or changes on composition within a vegetation class, models that focus at this level will be more appropriate.  
 
-The most frequently documented responses to climate change include changes in phenology (the timing of seasonal events, such as budburst), spatial shifts in range boundaries, and shifts in density patterns within a species’ range due to changes in recruitment or mortality.
-
-Over evolutionary time, species have developed traits that reflect the influence of climate, other abiotic factors, and species interactions such as competition for resources. The suite of species that make up an ecosystem are likely to respond differently to climate change, leading to shifts in plant community composition.
-
+<br>
+<br>
 <br>
 
 <style>
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "blue">
-Notably for applications with BpS models, **changes in climate are influencing disturbance regimes**. For example:
 
-1.	Increased temperature, with or without a decrease in precipitation, can lead to increased evaporative demand, and higher drought risk.  Drought tends to lengthen fire seasons and increase fire intensity.
-2.	Higher temperatures (or stronger temperature gradients) can increase the intensity and dominant direction of wind, and probability of severe storms (i.e. hurricanes).
-3.	Increasing temperatures strongly affect poikilothermic (cold-blooded) species like insect pests, contributing to increased growth rates and higher population sizes (more generations per year). 
+The “sweet spot” for LANDFIRE BpS models in a climate change context is exploring **how climate change can influence disturbance regimes**, and as a result **influence the relative proportion of each ecosystem state over time**. These tools allow users to consider the influence of processes that occur across a wide range of frequencies, including those that play out over time periods much longer than human experience. By iterating through a series of models with different parameter settings, you can [illuminate](./Perspectives.html){target='blank'} how climate-linked events with a range of different frequencies can interact to shape the distribution of vegetation classes on the landscape, and gain an understanding of the sensitivity of these patterns to observed and projected changes. 
 
 
 </div>
@@ -68,11 +63,7 @@ Notably for applications with BpS models, **changes in climate are influencing d
 
 ## Climate change and BpS models
 
-As described on the [Vegetation Modeling](./VegetationModeling.html){target='blank'} page, LANDFIRE BpS models are comprised of a set of **states** and **transitions**. Each state is a recognizable seral stage or “condition” of a particular vegetation type, and these states are linked by **deterministic transitions** (usually representing growth towards an older, taller age class), and stochastic transitions representing disturbances such as fire (with an associated probability of transition to a new state), windthrow, “weather stress” such as drought, insect outbreaks, etc. These transitions describe how one vegetation state changes to a different state. 
-
-The “sweet spot” for LANDFIRE BpS models in a climate change context is exploring **how climate change can influence disturbance regimes**, and as a result **influence the relative proportion of each ecosystem state over time**. These tools allow users to consider the influence of processes that occur across a wide range of frequencies, including those that play out over time periods much longer than human experience. By iterating through a series of models with different parameter settings, you can [illuminate](./Perspectives.html){target='blank'} how climate-linked events with a range of different frequencies can interact to shape the distribution of vegetation classes on the landscape, and gain an understanding of the sensitivity of these patterns to observed and projected changes.  
-
-For example, in the **Inter-Mountain Basins Montane Sagebrush Steppe BpS**, the dominant species is mountain big sagebrush. Wildfire and drought are typical disturbances in this ecosystem, as indicated by the transition icons above and below the states in the model shown below.  
+As described on the [Vegetation Modeling](./VegetationModeling.html){target='blank'} page, LANDFIRE BpS models are comprised of a set of **states** and **transitions**. Each state is a recognizable seral stage or “condition” of a particular vegetation type, and these states are linked by **deterministic transitions** (usually representing growth towards an older, taller age class), and stochastic transitions representing disturbances such as fire (with an associated probability of transition to a new state), windthrow, “weather stress” such as drought, insect outbreaks, etc. These transitions describe how one vegetation state changes to a different state, and while they have been designed to represent rates for historic reference conditions, you can update these values to represent the influence of current and future climates. A first step at incorporating climate change into vegetation modeling with BpS models might focus on one of the following relationships in the **Inter-Mountain Basins Montane Sagebrush Steppe BpS** where the dominant species is mountain big sagebrush. Wildfire and drought are typical disturbances in this ecosystem, as indicated by the transition icons above and below the states in the model shown below.  
 
 Exploring climate change impacts may involve modifying the disturbance frequencies in a systematic way, following the current model structure. You might increase the rate of drought by increasing the drought probability value for the two drought transitions shown along the top. 
 
@@ -187,6 +178,7 @@ Similarly, as climate continues to change we are seeing an increase in the spati
 ### Insect outbreaks
 Insect outbreaks that promote a state change in vegetation are not found in all of the “out of the box” BpS models, but the option to add this transition is available. For example, insect outbreaks can be added and varied in all of the ways described above for fire. Adding a separate insect outbreak component may be highly relevant, especially if there is evidence to support impacts that are independent of other drivers. In the case of drought-stressed trees contributing to high tree mortality, understanding variations in drought risk, for example associated with topography or soil water holding capacity, may allow you to partition out impacts by site conditions.
  
+<br>
 
 ## Transitions in vegetation classes
 
@@ -202,7 +194,7 @@ Insect outbreaks that promote a state change in vegetation are not found in all 
 </style>
 ```
 
-```{r, echo=FALSE, out.width='65%', fig.cap=" Photo: © Devan King/TNC"} 
+```{r, echo=FALSE, out.width='85%', fig.cap=" Photo: © Devan King/TNC"} 
 knitr::include_graphics("images/soil.jpg")
 
 ```
