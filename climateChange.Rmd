@@ -220,3 +220,5 @@ Further, if you are interested in exploring vegetation responses within what the
 #### What's next?
 + explore [3 real-life model examples](./Examples.html){target='blank'} that have undergone scrutiny and analysis by the LANDFIRE team
 + learn the intricacies of examining each model description
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

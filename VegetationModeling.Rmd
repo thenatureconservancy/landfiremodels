@@ -182,3 +182,5 @@ knitr::include_graphics("images/packages.JPG")
 
 #### What's next?
 + understanding the [characteristics of the model](./perspectives.html){target='blank'} and taking a bird's eye view when considering the BpS model approach
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

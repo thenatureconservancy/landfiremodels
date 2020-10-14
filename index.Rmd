@@ -200,3 +200,5 @@ div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
  <font size="4"> This website was developed by [The Nature Conservancy LANDFIRE Team](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/contacts/Pages/default.aspx){target='blank'} under Agreement G18AC00378 with the U.S. Geological Survey.</font> 
  </center> 
  
+ <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+ 
