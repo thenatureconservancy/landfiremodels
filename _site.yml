@@ -4,8 +4,6 @@ navbar:
   left:
   - text: Vegetation Modeling
     href: VegetationModeling.html
-  - text: Perspectives
-    href: perspectives.html
   - text: Modeling Work
     href: ModelingWork.html
   - text: Advanced Options
