@@ -67,7 +67,127 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 
 4. We introduce techniques for that simulate impacts from climate change in the LANDFIRE vegetation models
 
-________________
+
+## New to modeling? Consider this...
+
+
+Models are everywhere, they may be behind the scenes or in full view. Some common examples of models:
+
+```{=html}
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+```
+
+
+```{r, echo=FALSE, fig.cap="Photo: © Chris Leipelt"} 
+knitr::include_graphics("images/models.jpg")
+
+```
+
++ weather forecasts
++ measuring the state of the economy
++ assessing the condition of a landscape 
++ forecasting a pandemic
++ maps
+
+<br>
+Regardless of their complexity, all models are by definition a simplification of reality. Like the model airplane - it “flies” like an airplane but it cannot carry cargo or passengers.
+
+<br>
+<br>
+
+<center>
+```{r, echo=FALSE, out.width= "45%"} 
+knitr::include_graphics("images/model-simple-vs-complex1.jpg")
+
+```
+</center>
+<br>
+
+>"All models are wrong, so why do we create and use them?" - George Box
+
+<br>
+We create and use models because (as Box _also_ said) they can be useful. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly. 
+
+**Balance and relevance** are what can make a model illuminating.
+
+<center>
+```{r, echo=FALSE, out.width= "45%"} 
+knitr::include_graphics("images/balance-relevance.jpg")
+
+```
+</center>
+<br>
+
+## Developers vs Users: Key Considerations
+
+For the model developer, the key is to balance **precision and bias** of the outputs with the relevance of the model. The goal is to hit your application sweet spot.
+
+<br>
+
+<center>
+
+```{r, echo=FALSE, out.width= "55%"} 
+knitr::include_graphics("images/model-complexity.png")
+
+```
+
+</center>
+<center>
+Image courtesy: [Francesco Pochetti](francescopochetti.com){target='blank'}
+</center>
+<br>
+
+The model should provide useful information but must also function for the user (i.e. have the right level of complexity). Complexity should have a purpose: to provide more refined information, or in some cases provide the same information with more fidelity. 
+
+### Complex models
+
++ typically require more input information
++ are more difficult to develop and de-bug
++ take longer to run 
+
+>[LANDFIRE BpS models](./VegetationModeling.html){target='blank'}, with their limited number of states and transitions, are less complex and provide relatively few and coarser level outputs. This also makes them easier to create and use. 
+
+Models such as [SIMPPLLE](https://www.fs.usda.gov/treesearch/pubs/40241){target='blank'} and [LANDIS II](http://www.landis-ii.org/){target='blank'} sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost.
+
+<br>
+
+### Understanding model characterstics
+<br>
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+- What factors/inputs are included?
+- What factors/inputs are _not_ included? 
+- Can you provide the inputs at the level of accuracy required? 
+- What modeling technique was used? 
+- How was the model intended to be applied? 
+- What is the “scale” of the model?
+</div>
+<br>
+
+### Advice for using BpS models
+
+1. Adhere to established modeling standards.
+
+2. Have a goal and a plan. Don’t just wing it!
+
+3. Work through the model changes in a stepwise fashion. Add states and transitions one at a time.
+
+4. Review the results and plan the next steps.
+
+5. Keep it simple. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.
+
+6. Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.
+
+***
 
 #### What's next?
 + learn what a [state-and-transition model](./VegetationModeling.html){target='blank'} (STSM) is
@@ -79,4 +199,6 @@ ________________
 
  <font size="4"> This website was developed by [The Nature Conservancy LANDFIRE Team](https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/contacts/Pages/default.aspx){target='blank'} under Agreement G18AC00378 with the U.S. Geological Survey.</font> 
  </center> 
+ 
+ <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
  

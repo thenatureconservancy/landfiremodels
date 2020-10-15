@@ -180,3 +180,5 @@ Spatial Modeling Using ST-Sim
 ### What's next?
 + learn how to incorporate [climate change](./climateChange.html){target='blank'} impacts into BpS models
 + see a simple set of simulations (designed to reflect climate change impacts) and how they may impact our [Inter-Mountain Basins Montane Sagebrush Steppe BpS](./ModelingWork.html){target='blank'}
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

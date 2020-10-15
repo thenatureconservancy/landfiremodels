@@ -358,9 +358,6 @@ div.tocify {
   <a href="VegetationModeling.html">Vegetation Modeling</a>
 </li>
 <li>
-  <a href="perspectives.html">Perspectives</a>
-</li>
-<li>
   <a href="ModelingWork.html">Modeling Work</a>
 </li>
 <li>
@@ -434,6 +431,100 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 <li><p>We explore options for modifying vegetation models to represent current or projected future landscape conditions</p></li>
 <li><p>We introduce techniques for that simulate impacts from climate change in the LANDFIRE vegetation models</p></li>
 </ol>
+</div>
+<div id="new-to-modeling-consider-this" class="section level2">
+<h2>New to modeling? Consider this…</h2>
+<p>Models are everywhere, they may be behind the scenes or in full view. Some common examples of models:</p>
+<style type="text/css">
+  .figure {
+    float: right;
+    width: 65%;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+<div class="figure">
+<img src="images/models.jpg" alt="Photo: © Chris Leipelt" width="3000" />
+<p class="caption">
+Photo: © Chris Leipelt
+</p>
+</div>
+<ul>
+<li>weather forecasts</li>
+<li>measuring the state of the economy</li>
+<li>assessing the condition of a landscape</li>
+<li>forecasting a pandemic</li>
+<li>maps</li>
+</ul>
+<p><br> Regardless of their complexity, all models are by definition a simplification of reality. Like the model airplane - it “flies” like an airplane but it cannot carry cargo or passengers.</p>
+<p><br> <br></p>
+<center>
+<img src="images/model-simple-vs-complex1.jpg" width="45%" />
+</center>
+<p><br></p>
+<blockquote>
+<p>“All models are wrong, so why do we create and use them?” - George Box</p>
+</blockquote>
+<p><br> We create and use models because (as Box <em>also</em> said) they can be useful. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly.</p>
+<p><strong>Balance and relevance</strong> are what can make a model illuminating.</p>
+<center>
+<img src="images/balance-relevance.jpg" width="45%" />
+</center>
+<p><br></p>
+</div>
+<div id="developers-vs-users-key-considerations" class="section level2">
+<h2>Developers vs Users: Key Considerations</h2>
+<p>For the model developer, the key is to balance <strong>precision and bias</strong> of the outputs with the relevance of the model. The goal is to hit your application sweet spot.</p>
+<p><br></p>
+<center>
+<p><img src="images/model-complexity.png" width="55%" /></p>
+</center>
+<center>
+Image courtesy: <a href="francescopochetti.com" target="blank">Francesco Pochetti</a>
+</center>
+<p><br></p>
+<p>The model should provide useful information but must also function for the user (i.e. have the right level of complexity). Complexity should have a purpose: to provide more refined information, or in some cases provide the same information with more fidelity.</p>
+<div id="complex-models" class="section level3">
+<h3>Complex models</h3>
+<ul>
+<li>typically require more input information</li>
+<li>are more difficult to develop and de-bug</li>
+<li>take longer to run</li>
+</ul>
+<blockquote>
+<p><a href="./VegetationModeling.html" target="blank">LANDFIRE BpS models</a>, with their limited number of states and transitions, are less complex and provide relatively few and coarser level outputs. This also makes them easier to create and use.</p>
+</blockquote>
+<p>Models such as <a href="https://www.fs.usda.gov/treesearch/pubs/40241" target="blank">SIMPPLLE</a> and <a href="http://www.landis-ii.org/" target="blank">LANDIS II</a> sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost.</p>
+<p><br></p>
+</div>
+<div id="understanding-model-characterstics" class="section level3">
+<h3>Understanding model characterstics</h3>
+<br>
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class="blue">
+<ul>
+<li>What factors/inputs are included?</li>
+<li>What factors/inputs are <em>not</em> included?</li>
+<li>Can you provide the inputs at the level of accuracy required?</li>
+<li>What modeling technique was used?</li>
+<li>How was the model intended to be applied?</li>
+<li>What is the “scale” of the model?</li>
+</ul>
+</div>
+<p><br></p>
+</div>
+<div id="advice-for-using-bps-models" class="section level3">
+<h3>Advice for using BpS models</h3>
+<ol style="list-style-type: decimal">
+<li><p>Adhere to established modeling standards.</p></li>
+<li><p>Have a goal and a plan. Don’t just wing it!</p></li>
+<li><p>Work through the model changes in a stepwise fashion. Add states and transitions one at a time.</p></li>
+<li><p>Review the results and plan the next steps.</p></li>
+<li><p>Keep it simple. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.</p></li>
+<li><p>Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.</p></li>
+</ol>
 <hr />
 <div id="whats-next" class="section level4">
 <h4>What’s next?</h4>
@@ -446,6 +537,10 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 <p><br></p>
 <font size="4"> This website was developed by <a href="https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/contacts/Pages/default.aspx" target="blank">The Nature Conservancy LANDFIRE Team</a> under Agreement G18AC00378 with the U.S. Geological Survey.</font>
 </center>
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+
+</div>
+</div>
 </div>
 </div>
 

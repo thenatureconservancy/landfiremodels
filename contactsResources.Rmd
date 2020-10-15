@@ -45,3 +45,5 @@ If you need help with Syncrosim software, try posting a question on the [SyncroS
 * [ApexRMS](http://www.apexrms.com/){target='blank'} (developers of SyncroSim software)
 * [SyncroSim documentation](http://docs.syncrosim.com/){target='blank'}
 * [ST-Sim publications](http://docs.stsim.net/publications.html){target='blank'}
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

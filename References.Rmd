@@ -46,3 +46,5 @@ Westoby, M., B. Walker, and I. Noy-Meir. 1989. [Opportunistic management for ran
 
  <font size="4"> **This website was developed by The Nature Conservancy LANDFIRE Team under Agreement G18AC00378 with the U.S. Geological Survey.** </font> 
  </center> 
+ 
+ <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
