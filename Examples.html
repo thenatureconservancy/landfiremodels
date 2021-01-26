@@ -27,6 +27,15 @@
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -71,6 +80,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -429,7 +439,7 @@ div.tocify {
 </style>
 <br> Click arrows to see photo of Sagebrush Steppe and distribution map of the <em>example</em> we are working with here (not an all inclusive distribution map):
 <center>
-<iframe title="My embedded document" src="sageSlick2.html" frameborder="0" width="100%" height="450"></iframe>
+<p><iframe title="My embedded document" src="sageSlick2.html" frameborder="0" width="100%" height="450"></iframe></p>
 </center>
 <p><strong>Model Identifier</strong> This model is based on the LANDFIRE 11260_1_7_8_9_10_19 BpS model and description and was modified based on several sources to represent current conditions. The primary source was the unpublished “Mountain Big Sagebrush – With Juniper” model created by Miles Hemstrom for the Blue Mountains.</p>
 <p><strong>Original Model Description</strong> The Inter-Mountain Basins Montane Sagebrush Steppe is found on moderately to deep soils that are well drained and predominantly Mollisols across the northwestern US. It typically occurs as elevations ranging from 3,250 to 10,000ft depending partially on the geography. Mountain big sagebrush (<em>Artemisia tridentata</em> spp. vaseyana) is the dominant big sagebrush subspecies. Other indicator species include antelope bitterbrush, Idaho fescue, rough fescue, bluebunch wheatgrass, Columbia needlegrass and Sandberg bluegrass.</p>
@@ -551,7 +561,7 @@ Photo: © A. Blake Bardner, TNC. Young forest in TNC’s Campbell Parcel, Equino
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

@@ -4,7 +4,7 @@ author:
 date: 
 output:
   html_document:
-    fig_caption: yes
+    fig_caption: false
     toc: yes
     toc_depth: 4
     toc_float:
@@ -24,7 +24,7 @@ If you are already familiar with this modeling framework and ready to get starte
 <br>
 
 <center>
-```{r, echo=FALSE, out.width= "75%"} 
+```{r, echo=FALSE, out.width= "75%", fig.cap="Landscape picture of sagebrush, clouds and brown hills in the background"} 
 knitr::include_graphics("images/sb.jpg")
 
 ```
@@ -46,7 +46,7 @@ Biophysical models help users investigate the effects from (simulated) ecosystem
 
 
 <center>
-```{r, echo=FALSE, out.width= "75%"} 
+```{r, echo=FALSE, out.width= "75%", fig.cap="Hillside full of very tightly spaced orange, yellow, green leafed trees with tall brush in the foreground"} 
 knitr::include_graphics("images/vt.jpg")
 
 ```
@@ -85,10 +85,13 @@ Models are everywhere, they may be behind the scenes or in full view. Some commo
 ```
 
 
-```{r, echo=FALSE, fig.cap="Photo: © Chris Leipelt"} 
+```{r, echo=FALSE, fig.cap="Picture of a man holding a model airplane about ready to launch it with a rock in the background "} 
 knitr::include_graphics("images/models.jpg")
 
 ```
+
+Photo: © Chris Leipelt
+
 
 + weather forecasts
 + measuring the state of the economy
@@ -103,7 +106,7 @@ Regardless of their complexity, all models are by definition a simplification of
 <br>
 
 <center>
-```{r, echo=FALSE, out.width= "45%"} 
+```{r, echo=FALSE, out.width= "45%", fig.cap="Figure depicting the difference between a simple vs. Complex model: simple image is a basic venn diagram with 3 circles – overlapping in the middle. Second picture has three boxes, one circle with arrows coming in and out of the elements depicting a complex model"} 
 knitr::include_graphics("images/model-simple-vs-complex1.jpg")
 
 ```
@@ -118,7 +121,7 @@ We create and use models because (as Box _also_ said) they can be useful. Models
 **Balance and relevance** are what can make a model illuminating.
 
 <center>
-```{r, echo=FALSE, out.width= "45%"} 
+```{r, echo=FALSE, out.width= "45%", fig.cap="Figure: a scale with a double pan with the word balance in one pan and relevance in the other pan – words are equally weighted and balanced"} 
 knitr::include_graphics("images/balance-relevance.jpg")
 
 ```
@@ -133,7 +136,7 @@ For the model developer, the key is to balance **precision and bias** of the out
 
 <center>
 
-```{r, echo=FALSE, out.width= "55%"} 
+```{r, echo=FALSE, out.width= "55%", fig.cap="Graph with error on the Y axis, model complexity on the x axis, a vertical line emerges in the middle of the x axis depicting the optimum model complexity target where the y axis elements (total error, variance and bias) intersect with this optimum model complexity target"} 
 knitr::include_graphics("images/model-complexity.png")
 
 ```

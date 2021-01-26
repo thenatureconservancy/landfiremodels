@@ -27,6 +27,15 @@
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -71,6 +80,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -399,7 +409,7 @@ div.tocify {
 <p>If you are already familiar with this modeling framework and ready to get started, skip ahead to <a href="./ModelingWork.html" target="blank">Modeling Work</a>.</p>
 <p><br></p>
 <center>
-<img src="images/sb.jpg" width="75%" />
+<img src="images/sb.jpg" title="Landscape picture of sagebrush, clouds and brown hills in the background" alt="Landscape picture of sagebrush, clouds and brown hills in the background" width="75%" />
 </center>
 <br>
 <center>
@@ -415,7 +425,7 @@ Photo: © Ian Shive, TNC. Sierra Mountain Foothills, Mojave Desert, Central Cali
 </blockquote>
 <p>Biophysical models help users investigate the effects from (simulated) ecosystem disturbances, and learn how changes in management actions might impact an ecosystem before allocating time or resources to on the ground operations</p>
 <center>
-<img src="images/vt.jpg" width="75%" />
+<img src="images/vt.jpg" title="Hillside full of very tightly spaced orange, yellow, green leafed trees with tall brush in the foreground" alt="Hillside full of very tightly spaced orange, yellow, green leafed trees with tall brush in the foreground" width="75%" />
 </center>
 <br>
 <center>
@@ -443,12 +453,8 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
     text-align: center;
   }
 </style>
-<div class="figure">
-<img src="images/models.jpg" alt="Photo: © Chris Leipelt" width="3000" />
-<p class="caption">
-Photo: © Chris Leipelt
-</p>
-</div>
+<p><img src="images/models.jpg" title="Picture of a man holding a model airplane about ready to launch it with a rock in the background " alt="Picture of a man holding a model airplane about ready to launch it with a rock in the background " width="3000" /></p>
+<p>Photo: © Chris Leipelt</p>
 <ul>
 <li>weather forecasts</li>
 <li>measuring the state of the economy</li>
@@ -459,7 +465,7 @@ Photo: © Chris Leipelt
 <p><br> Regardless of their complexity, all models are by definition a simplification of reality. Like the model airplane - it “flies” like an airplane but it cannot carry cargo or passengers.</p>
 <p><br> <br></p>
 <center>
-<img src="images/model-simple-vs-complex1.jpg" width="45%" />
+<img src="images/model-simple-vs-complex1.jpg" title="Figure depicting the difference between a simple vs. Complex model: simple image is a basic venn diagram with 3 circles – overlapping in the middle. Second picture has three boxes, one circle with arrows coming in and out of the elements depicting a complex model" alt="Figure depicting the difference between a simple vs. Complex model: simple image is a basic venn diagram with 3 circles – overlapping in the middle. Second picture has three boxes, one circle with arrows coming in and out of the elements depicting a complex model" width="45%" />
 </center>
 <p><br></p>
 <blockquote>
@@ -468,7 +474,7 @@ Photo: © Chris Leipelt
 <p><br> We create and use models because (as Box <em>also</em> said) they can be useful. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly.</p>
 <p><strong>Balance and relevance</strong> are what can make a model illuminating.</p>
 <center>
-<img src="images/balance-relevance.jpg" width="45%" />
+<img src="images/balance-relevance.jpg" title="Figure: a scale with a double pan with the word balance in one pan and relevance in the other pan – words are equally weighted and balanced" alt="Figure: a scale with a double pan with the word balance in one pan and relevance in the other pan – words are equally weighted and balanced" width="45%" />
 </center>
 <p><br></p>
 </div>
@@ -477,7 +483,7 @@ Photo: © Chris Leipelt
 <p>For the model developer, the key is to balance <strong>precision and bias</strong> of the outputs with the relevance of the model. The goal is to hit your application sweet spot.</p>
 <p><br></p>
 <center>
-<p><img src="images/model-complexity.png" width="55%" /></p>
+<p><img src="images/model-complexity.png" title="Graph with error on the Y axis, model complexity on the x axis, a vertical line emerges in the middle of the x axis depicting the optimum model complexity target where the y axis elements (total error, variance and bias) intersect with this optimum model complexity target" alt="Graph with error on the Y axis, model complexity on the x axis, a vertical line emerges in the middle of the x axis depicting the optimum model complexity target where the y axis elements (total error, variance and bias) intersect with this optimum model complexity target" width="55%" /></p>
 </center>
 <center>
 Image courtesy: <a href="francescopochetti.com" target="blank">Francesco Pochetti</a>
@@ -555,7 +561,7 @@ div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
