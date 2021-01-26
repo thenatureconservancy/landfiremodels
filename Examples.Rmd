@@ -4,7 +4,7 @@ author:
 date: 
 output:
   html_document:
-    fig_caption: yes
+    fig_caption: false
     toc: yes
     toc_depth: 4
     toc_float:
@@ -50,7 +50,7 @@ By: Kori Blankenship, [Download Kori's notes here](https://tnc.box.com/s/ah8wy1p
 <br>
 Click arrows to see photo of Sagebrush Steppe and distribution map of the *example* we are working with here (not an all inclusive distribution map):
 <center>
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Image 1: sagebrush and sunrise in the distance. Image 2: Picture of Washington, Oregon, Idaho and small pieces of surrounding states with brown highlighting sagebrush steppe distribution in each of these states"}
 
 htmltools::tags$iframe(title = "My embedded document", src = "sageSlick2.html", frameborder = "0", width = "100%", height="450")
 ```
@@ -98,11 +98,11 @@ By: Jim Smith
 </style>
 ```
 
-```{r, echo=FALSE, fig.cap="Photo: © Jim Smith, TNC. Black Earth Prarie, Wisconsin"} 
+```{r, echo=FALSE, fig.cap="Landscape of green grass intermixed with brown prairie with cloudy skyline and trees in background "} 
 knitr::include_graphics("images/BlackEarthPrairieWisc.jpg")
 
 ```
-
+Photo: © Jim Smith, TNC. Black Earth Prarie, Wisconsin
 
 
 **Model Identifier**
@@ -142,10 +142,12 @@ By: Randy Swaty
 </style>
 ```
 
-```{r, echo=FALSE, fig.cap="Photo: © A. Blake Bardner, TNC. Young forest in TNC's Campbell Parcel, Equinox Highlands, Vermont"} 
+```{r, echo=FALSE, fig.cap="Forest landscape picture with closely spaced trees and lush, green understory "} 
 knitr::include_graphics("images/hw.jpg")
 
 ```
+Photo: © A. Blake Bardner, TNC. Young forest in TNC's Campbell Parcel, Equinox Highlands, Vermont
+
 
 **Model Identifier**
 The starter model for this example was from LANDFIRE, Biophysical Setting 13021_41_50_51, the Laurentian-Acadian Northern Hardwoods Forest - Hemlock that occurs in Minnesota, Wisconsin and Michigan.  

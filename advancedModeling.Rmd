@@ -4,7 +4,7 @@ author:
 date: 
 output:
   html_document:
-    fig_caption: yes
+    fig_caption: false
     toc: yes
     toc_depth: 4
     toc_float:
@@ -41,10 +41,12 @@ Visit the websites above to ensure you are seeing the latest version of the soft
 ```
 
 
-```{r, echo=FALSE, fig.cap="Photo: © TNC. Controlled burn in Shawnee County, Kansas"} 
+```{r, echo=FALSE, fig.cap="Controlled burn in grasslands with dark purple sky"} 
 knitr::include_graphics("images/kansas.jpg")
 
 ```
+Photo: © TNC. Controlled burn in Shawnee County, Kansas
+
 <br>
 Here we demonstrate how to address potential scenarios that you may encounter in your modeling process:
 
@@ -58,7 +60,7 @@ Here we demonstrate how to address potential scenarios that you may encounter in
 
 ## Transition Targets
 
-```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
+```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"', fig.cap="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to Transition Targets on the top row of tabs "} 
 knitr::include_graphics("images/transition-targets.JPG")
 
 ```
@@ -74,7 +76,7 @@ Note that you can also set transition targets using a **probability distribution
 It is useful to be able to vary transition probabilities over time not just operational limits (see Transition Targets). **Transition multipliers** allow the user to modify how often a probabilistic transition/disturbance/change will be imposed on a pixel across timesteps or iterations. 
 
 
-```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
+```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"', fig.cap="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Advanced on the top row of tabs and Transition multipliers "} 
 knitr::include_graphics("images/transition-multipliers.JPG")
 
 ```
@@ -117,7 +119,7 @@ For a more detailed description of using a distribution as a transition multipli
 Suppose that you wish to estimate values that are associated with various model states and/or model transitions. Attributes can be used to roll up simulation results according to areas aggregated by either state classes or transitions. 
 
 
-```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
+```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"', fig.cap="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Advanced on the top row of tabs and Attributes on the left side of the screen  "} 
 knitr::include_graphics("images/transition-attributes.JPG")
 
 ```
@@ -143,13 +145,13 @@ We encourage you to progress slowly and use advanced modeling options step-by-st
 ## Spatial Models
 
 We have demonstrated how to modify and apply STSMs aspatially. However, ST-Sim does allow the user to run these models using spatial functionality _if_ the required data sets and information are available. 
-```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
+```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"', fig.cap="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Run Control and blue arrow pointing to Run model spatially"} 
 knitr::include_graphics("images/spatial.JPG")
 
 ```
 A map of initial conditions can be specified as input to the STSM which can then produce a post-simulation output map. In addition, some “contagion” functionality is available that allows for disturbances to “spread” across the simulated landscape from a starting point (fire, insects/disease, etc.). 
 
-```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"'} 
+```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"', fig.cap="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Transition spatial initiation multipliers"} 
 knitr::include_graphics("images/spatial multiplier.JPG")
 
 ```

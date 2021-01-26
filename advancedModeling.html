@@ -422,12 +422,7 @@ div.tocify {
     text-align: center;
   }
 </style>
-<div class="figure">
-<img src="images/kansas.jpg" alt="Photo: © TNC. Controlled burn in Shawnee County, Kansas" width="3008" />
-<p class="caption">
-Photo: © TNC. Controlled burn in Shawnee County, Kansas
-</p>
-</div>
+<p><img src="images/kansas.jpg" title="Controlled burn in grasslands with dark purple sky" alt="Controlled burn in grasslands with dark purple sky" width="3008" /> Photo: © TNC. Controlled burn in Shawnee County, Kansas</p>
 <p><br> Here we demonstrate how to address potential scenarios that you may encounter in your modeling process:</p>
 <ul>
 <li><strong>Implement limits:</strong>
@@ -446,7 +441,7 @@ Photo: © TNC. Controlled burn in Shawnee County, Kansas
 </div>
 <div id="transition-targets" class="section level2">
 <h2>Transition Targets</h2>
-<p><img src="images/transition-targets.JPG" width="65%" style="float:right; padding:10px" /></p>
+<p><img src="images/transition-targets.JPG" title="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to Transition Targets on the top row of tabs " alt="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to Transition Targets on the top row of tabs " width="65%" style="float:right; padding:10px" /></p>
 <p>The <strong>transition targets property</strong> allows the modeler to define targets/limits for the area to transition over time across the landscape for specific types of transitions. Targets can be established as operational constraints based on area, or when costs are added on available budgets. The target can be specified by iteration, BpS, and timestep.</p>
 <p>For example, you can limit the amount of any probabilistic transition/disturbance to a specific number of acres in each timestep and iteration for a BpS based on the budget you expect to be available, or on the operational constraint created by your organization’s capacity or regulatory issues. If you expect your budget or capacity to increase over time, you can increase the target over the timesteps. This option is available for all disturbances/probabilistic transitions.</p>
 <p>Note that you can also set transition targets using a <strong>probability distribution</strong> (such as Normal, Uniform or Beta) if you believe the transition target constraint will vary over time according to distribution (rather than a specific amount). Once selected, you can specify the standard deviation, minimum and maximum values for the distribution, and how often to draw a new value from the distribution.</p>
@@ -454,7 +449,7 @@ Photo: © TNC. Controlled burn in Shawnee County, Kansas
 <div id="transition-multipliers" class="section level2">
 <h2>Transition Multipliers</h2>
 <p>It is useful to be able to vary transition probabilities over time not just operational limits (see Transition Targets). <strong>Transition multipliers</strong> allow the user to modify how often a probabilistic transition/disturbance/change will be imposed on a pixel across timesteps or iterations.</p>
-<p><img src="images/transition-multipliers.JPG" width="65%" style="float:right; padding:10px" /></p>
+<p><img src="images/transition-multipliers.JPG" title="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Advanced on the top row of tabs and Transition multipliers " alt="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Advanced on the top row of tabs and Transition multipliers " width="65%" style="float:right; padding:10px" /></p>
 <p>For example, under different climate change scenarios, transition probabilities will vary over time (i.e. fire may increase, succession/growth may speed up or slow down, strata may change locations on the landscape). The <strong>transition multiplier values property</strong> specifies multipliers to be applied to transition probabilities over the course of the simulation (i.e. increase the amount of thinning by 50% for the first 10 timesteps, and then increase by 100% for the remaining timesteps). The user can also use an <strong>expected distribution of multipliers</strong> they create from past events or recent information, or they can select the Beta or Normal statistical distributions packaged with the software. Using statistical distributions may require additional information such as minimum, maximum and standard deviation.</p>
 <div id="temporal-variability-in-transitions" class="section level3">
 <h3>Temporal Variability in Transitions</h3>
@@ -485,7 +480,7 @@ These videos describe how transition multipliers have been used with LANDFIRE Bp
 <div id="state-and-transition-attributes" class="section level2">
 <h2>State and Transition Attributes</h2>
 <p>Suppose that you wish to estimate values that are associated with various model states and/or model transitions. Attributes can be used to roll up simulation results according to areas aggregated by either state classes or transitions.</p>
-<p><img src="images/transition-attributes.JPG" width="65%" style="float:right; padding:10px" /></p>
+<p><img src="images/transition-attributes.JPG" title="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Advanced on the top row of tabs and Attributes on the left side of the screen  " alt="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Advanced on the top row of tabs and Attributes on the left side of the screen  " width="65%" style="float:right; padding:10px" /></p>
 <p>For example, how much smoke would be produced in a surface fire in a specific seral state (add an attribute reflecting average smoke production to surface fire transition)?</p>
 <p>What is the total habitat score for a particular species under each simulated scenario (add a habitat value score attribute to each seral state)? These values can then be summarized over the simulations to provide additional results that can be compared across scenarios. Do I produce more or less smoke in this scenario? Do I increase or decrease the habitat score in this scenario?</p>
 <blockquote>
@@ -502,8 +497,8 @@ Here’s one application example from <a href="http://www.apexrms.com/" target="
 </div>
 <div id="spatial-models" class="section level2">
 <h2>Spatial Models</h2>
-<p>We have demonstrated how to modify and apply STSMs aspatially. However, ST-Sim does allow the user to run these models using spatial functionality <em>if</em> the required data sets and information are available. <img src="images/spatial.JPG" width="65%" style="float:right; padding:10px" /> A map of initial conditions can be specified as input to the STSM which can then produce a post-simulation output map. In addition, some “contagion” functionality is available that allows for disturbances to “spread” across the simulated landscape from a starting point (fire, insects/disease, etc.).</p>
-<p><img src="images/spatial%20multiplier.JPG" width="65%" style="float:right; padding:10px" /></p>
+<p>We have demonstrated how to modify and apply STSMs aspatially. However, ST-Sim does allow the user to run these models using spatial functionality <em>if</em> the required data sets and information are available. <img src="images/spatial.JPG" title="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Run Control and blue arrow pointing to Run model spatially" alt="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Run Control and blue arrow pointing to Run model spatially" width="65%" style="float:right; padding:10px" /> A map of initial conditions can be specified as input to the STSM which can then produce a post-simulation output map. In addition, some “contagion” functionality is available that allows for disturbances to “spread” across the simulated landscape from a starting point (fire, insects/disease, etc.).</p>
+<p><img src="images/spatial%20multiplier.JPG" title="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Transition spatial initiation multipliers" alt="Screenshot of the SyncroSim modeling environment, specific scenario with a blue arrow pointing to the tab called Transition spatial initiation multipliers" width="65%" style="float:right; padding:10px" /></p>
 <div id="limitations" class="section level3">
 <h3>Limitations</h3>
 <p>Running these models spatially can provide significant value, however, there are two cautions:</p>

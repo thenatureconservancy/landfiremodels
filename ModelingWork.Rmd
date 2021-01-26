@@ -4,7 +4,7 @@ author:
 date:
 output:
   html_document:
-    fig_caption: yes
+    fig_caption: false
     toc: yes
     toc_depth: 4
     toc_float:
@@ -38,7 +38,7 @@ In the map below, pan, zoom, scroll to your area of interest, then hover over th
 
 <br>
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Map of the United States where users can zoom in and select their area of interest"}
 htmltools::tags$iframe(title = "My embedded document", src = "leafletSIM2carto.html", frameborder = "0", width = "100%", height="400")
 ```
 
@@ -50,7 +50,7 @@ Visit the [LANDFIRE BpS Download](http://landfirereview.org/search.php){target='
 <br>
 
 <center>
-```{r, echo=FALSE, out.width= "85%"} 
+```{r, echo=FALSE, out.width= "85%", fig.cap="Zoomed in screenshot of header of a BpS, screenshot depicts the Inter-Mountain Basins Montane Sagebrush Steppe; Model number: 11260; Map Zone(s): 1,7,8,9,10,19; Vegetation Type: Steppe/Savanna"} 
 knitr::include_graphics("images/sageSteppeDownload.JPG")
 
 ```

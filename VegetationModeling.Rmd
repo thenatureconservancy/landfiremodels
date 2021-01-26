@@ -2,7 +2,7 @@
 title: "Vegetation Modeling"
 output:
   html_document:
-    fig_caption: yes
+    fig_caption: false
     toc: yes
     toc_depth: 4
     toc_float:
