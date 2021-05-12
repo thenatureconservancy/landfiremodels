@@ -13,6 +13,8 @@ Blankenship, K., L. Frid, J. L. Smith. 2015. [A state-and-transition simulation 
 
 Blankenship, K., J. Smith, R. Swaty, A. J. Shlisky, J. Patton, and S. Hagen. 2012. [Modeling on the grand scale: LANDFIRE lessons learned](https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_004.pdf){target='blank'}. Pages 43-56 in B. K. Kerns, A. J. Shlisky, and C. J. Daniel, editors. Proceedings of the first landscape state-and-transition simulation modeling conference, Portland, Oregon June 14–16, 2011. PNW-GTR-869. USDA Forest Service, Paciﬁc Northwest Research Station, Portland, Oregon, USA.
 
+Blankenship K., R. Swaty, K. R. Hall, S. Hagen, K. Pohl, A. Shlisky Hunt, J. Patton, L. Frid, and J. Smith. 2021. [Vegetation dynamics models: a comprehensive set for natural resource assessment and planning in the United States](https://doi.org/10.1002/ecs2.3484){target='blank'} Ecosphere 12(4)
+
 Cattau, M.E., C.W. Wessman, A. Mahood, J.K. Balch. 2020. [Anthropogenic and lightening-started fires are becoming larger and more frequent over a longer season length in the U.S.A.](https://doi.org/10.1111/geb.13058){target='blank'}. Global Ecology and Biogeography 29:668-681.
 
 Costanza, J. K., R. C. Abt, A. J. McKerrow, J. A. Collazo. 2015a. [Linking state-and-transition simulation and timber supply models for forest biomass production scenarios](https://www.aimspress.com/article/10.3934/environsci.2015.2.180){target='blank'}. AIMS Environmental Science 2:180-202.
