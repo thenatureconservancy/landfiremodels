@@ -12,7 +12,7 @@
 <meta name="author" content="" />
 
 
-<title>References</title>
+<title>For Educators</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -259,6 +262,75 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
 
 </head>
 
@@ -266,6 +338,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -318,38 +400,49 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">References</h1>
+<h1 class="title toc-ignore">For Educators</h1>
 
 </div>
 
 
+<hr />
+<div id="this-page" class="section level3">
+<h3>This page:</h3>
+<ul>
+<li>Details on integrating BpS powered vegetation, State-and-Transition-Simulation modeling into your college classroom (educators - see below - June 16)</li>
+<li>Find free training that supports curriculum development</li>
+<li>Resources to support integration of STSMs in college classroom(s)</li>
+</ul>
+<hr />
+</div>
+<div id="state-and-transition-modeling-in-real-life-a-3-part-miniseries" class="section level2">
+<h2>State-and-Transition-Modeling in Real Life: A 3-Part Miniseries</h2>
+<p>When: June 2, 9, 16 Time: 1 pm (ET)* <a href="https://bit.ly/3c64jWt" target="blank">REGISTER for the miniseries</a> (one link provides access for entire series)</p>
+<p>In this 3-part modeling miniseries, we will take a wide-ranging look at State-and-Transition-Simulation-Models (STSMs) and use the LANDFIRE BpS models as a launching point for inquiry about ecosystem change over time. We will communicate practical ways to use STSM in real-life research, management and academia. There will be 15-20 min at the end of each section for Q &amp; A.</p>
+<p><strong>June 2</strong> - Part 1: Kori Blankenship (LANDFIRE Fire Ecologist) will discuss the basics of (STSMs), introduce the LANDFIRE BpS models and share resources for both novice and intermediate state-and-transition modelers.</p>
+<p><strong>June 9</strong> - Part 2: Leonardo Frid (Systems Ecologist at Apex Resource Management Solutions) will showcase real-life STSM applications with the ST-Sim package for SyncroSim, demonstrate how to use both the Graphical User Interface and rsyncrosim R package and discuss different approaches for applying state and transition modeling tools in real-life management scenarios.</p>
+<p><strong>June 16</strong> - Part 3: Randy Swaty (LANDFIRE Ecologist) &amp; Dr. Priscilla Nyamai (Asst. Professor, Grand Valley State Univ.) will discuss how integrating STSMs in the classroom can be useful for conceptualizing ecosystem changes.</p>
+<p>*Live captioning will be provided for all attendees</p>
+<p>Sponsored by: International Association of Landscape Ecologists, Apex RMS</p>
 <p><br></p>
-<p>Bal, T.L., Storer, A.J., Jurgensen, M.F., Doskey, P.V. and Amacher, M.C., 2015. <a href="https://doi.org/10.1093/forestry/cpu051" target="blank">Nutrient stress predisposes and contributes to sugar maple dieback across its northern range: a review</a>. Forestry: An International Journal of Forest Research, 88(1), pp.64-83.</p>
-<p>Blankenship, K., L. Frid, J. L. Smith. 2015. <a href="https://www.aimspress.com/article/10.3934/environsci.2015.2.253" target="blank">A state-and-transition simulation modeling approach for estimating the historical range of variability</a>. AIMS Environmental Science 2:253-268.</p>
-<p>Blankenship, K., J. Smith, R. Swaty, A. J. Shlisky, J. Patton, and S. Hagen. 2012. <a href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_004.pdf" target="blank">Modeling on the grand scale: LANDFIRE lessons learned</a>. Pages 43-56 in B. K. Kerns, A. J. Shlisky, and C. J. Daniel, editors. Proceedings of the first landscape state-and-transition simulation modeling conference, Portland, Oregon June 14–16, 2011. PNW-GTR-869. USDA Forest Service, Paciﬁc Northwest Research Station, Portland, Oregon, USA.</p>
-<p>Blankenship K., R. Swaty, K. R. Hall, S. Hagen, K. Pohl, A. Shlisky Hunt, J. Patton, L. Frid, and J. Smith. 2021. <a href="https://doi.org/10.1002/ecs2.3484" target="blank">Vegetation dynamics models: a comprehensive set for natural resource assessment and planning in the United States</a>. Ecosphere 12(4)</p>
-<p>Cattau, M.E., C.W. Wessman, A. Mahood, J.K. Balch. 2020. <a href="https://doi.org/10.1111/geb.13058" target="blank">Anthropogenic and lightening-started fires are becoming larger and more frequent over a longer season length in the U.S.A.</a>. Global Ecology and Biogeography 29:668-681.</p>
-<p>Costanza, J. K., R. C. Abt, A. J. McKerrow, J. A. Collazo. 2015a. <a href="https://www.aimspress.com/article/10.3934/environsci.2015.2.180" target="blank">Linking state-and-transition simulation and timber supply models for forest biomass production scenarios</a>. AIMS Environmental Science 2:180-202.</p>
-<p>Costanza, J. K., A. J. Terando, A. J. Mckerrow, and J. A. Collazo. 2015b. <a href="https://www.sciencedirect.com/science/article/pii/S0301479714006112" target="blank">Modeling climate change, urbanization, and fire effects on Pinus palustris ecosystems of the southeastern U.S.</a>. Journal of Environmental Management 151:186–99.</p>
-<p>Czembor, C. A., W. K. Morris, B. A. Wintle, and P. A. Vesk. 2011. <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2011.01971.x" target="blank">Quantifying variance components in ecological models based on expert opinion</a>. Journal of Applied Ecology 48:736-745.</p>
-<p>Daniel, C.J. and Frid, L., 2012. <a href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_002.pdf">Predicting landscape vegetation dynamics using state-and-transition simulation models</a>{target = ‘blank’}. In In: Kerns, Becky K.; Shlisky, Ayn J.; Daniel, Colin J., tech. eds. Proceedings of the First Landscape State-and-Transition Simulation Modeling Conference, June 14–16, 2011, Portland, Oregon. Gen. Tech. Rep. PNW-GTR-869. Portland, OR: US Department of Agriculture, Forest Service, Pacific Northwest Research Station: 5-22. (pp. 5-22).</p>
-<p>Daniel, C. J., L. Frid, B. M. Sleeter, and M. -J.Fortin. 2016. <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12597" target="blank">State-and-transition simulation models: a framework for forecasting landscape change</a>. Methods in Ecology and Evolution 7:1413–23.</p>
-<p>Donato, D. C., J. S. Halofsky, and M. J. Reilly. 2020. <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2013" target="blank">Corralling a black swan: natural range of variation in a forest landscape driven by rare, extreme events</a>. Ecological Applications 30:e02013.</p>
-<p>Jarnevich, C. S., C. Cullinane Thomas, N. E. Young, D. Backer, S. Cline, L. Frid, and P. Grissom. 2019. <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2730" target="blank">Developing an expert elicited simulation model to evaluate invasive species and fire management alternatives</a>. Ecosphere 10.</p>
-<p>Low, G., L. Provencher, and S. L. Abele. 2010. <a href="https://www.conservationgateway.org/Documents/Enhanced%20conservation%20action%20planning_assessing%20landscape%20condition.pdf" target="blank">Enhanced conservation action planning: assessing landscape condition and predicting benefits of conservation strategies</a>. Journal of Conservation 6:36-60.</p>
-<p>Provencher, L., L. Frid, C. Czembor, and J. T. Morisette. 2016. State‐and‐transition models: conceptual versus simulation perspectives, usefulness and breadth of use, and land management applications. Pages 371-407 in J. M. Germino, C. J. Chambers, and S. C. Brown, editors. <a href="https://www.springer.com/gp/book/9783319249285" target="blank">Exotic brome‐grasses in arid and semiarid ecosystems of the western US: causes, consequences, and management implications</a>. Springer International Publishing, Germany.</p>
-<p>Rollins, M. G. 2009. <a href="https://www.publish.csiro.au/wf/WF08088" target="blank">LANDFIRE: a nationally consistent vegetation, wildland fire, and fuel assessment</a>. International Journal of Wildland Fire 18:235-249.</p>
-<p>Swearingen, A., J. Price, J. Silbernagel, R. Swaty, and N. Miller. 2015. <a href="https://www.aimspress.com/fileOther/PDF/environmental/201503737.pdf" target="blank">State-and-transition simulation modeling to compare outcomes of alternative management scenarios under two natural disturbance regimes in a forested landscape in northeastern Wisconsin, USA</a>. AIMS Environmental Science 2:737-63.</p>
-<p>Thomas, C.M., Sofaer, H.R., Cline, S.A. and Jarnevich, C.S., 2019. <a href="https://www.reabic.net/journals/mbi/2019/1/MBI_2019_CullinaneThomas_etal.pdf" target="blank">Integrating landscape simulation models with economic and decision tools for invasive species control</a>. Management of Biological Invasions 10:6-22.</p>
-<p>Westoby, M., B. Walker, and I. Noy-Meir. 1989. <a href="http://rangelandarchive.ucdavis.edu/files/187350.pdf" target="blank">Opportunistic management for rangelands not at equilibrium</a>. Journal of Range Management. 42:266-274.</p>
-<font size="4"> <strong>This website was developed by The Nature Conservancy LANDFIRE Team under Agreement G18AC00378 with the U.S. Geological Survey.</strong> </font>
-</center>
-<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
-
+</div>
+<div id="access-free-training" class="section level2">
+<h2>Access Free Training</h2>
+<p><a href="https://apexrms.com/" target="blank">Apex RMS</a> is offering a <a href="https://apexrms.com/st-sim-course-details/" target="blank">free, two-day self-directed online course</a> that will provide:</p>
+<blockquote>
+<p>“…a foundation for developing and running state-and-transition simulation models of landscape change using the free ST-Sim software. The course covers state-and-transition simulation modeling concepts, how to use ST-Sim to create models of landscape change and terrestrial carbon dynamics, and how to run the models and interpret the results.”</p>
+</blockquote>
+<p>Learn more about using the <a href="https://syncrosim.com/r-package/" target="blank">rsyncrosim R package</a> <br> <br></p>
+</div>
+<div id="stsm-in-action-in-the-classroom" class="section level2">
+<h2>STSM in action (in the classroom)</h2>
+<p>Watch our recorded webinar from June 16, 2021</p>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -382,6 +475,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
