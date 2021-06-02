@@ -25,7 +25,7 @@ Czembor, C. A., W. K. Morris, B. A. Wintle, and P. A. Vesk. 2011. [Quantifying v
 
 Daniel, C.J. and Frid, L., 2012. [Predicting landscape vegetation dynamics using state-and-transition simulation models](https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_002.pdf){target = 'blank'}. In In: Kerns, Becky K.; Shlisky, Ayn J.; Daniel, Colin J., tech. eds. Proceedings of the First Landscape State-and-Transition Simulation Modeling Conference, June 14–16, 2011, Portland, Oregon. Gen. Tech. Rep. PNW-GTR-869. Portland, OR: US Department of Agriculture, Forest Service, Pacific Northwest Research Station: 5-22. (pp. 5-22).
 
-Daniel, C. J., L. Frid, B. M. Sleeter, and M. -J.Fortin. 2016. [State-and-transition simulation models: a framework for forecasting landscape change](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12597){target='blank'}. Methods in Ecology and Evolution 7:1413–23.
+Daniel, C. J., L. Frid, B. M. Sleeter, and M. J.Fortin. 2016. [State-and-transition simulation models: a framework for forecasting landscape change](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12597) {target='blank'}. Methods in Ecology and Evolution 7:1413–23.
 
 Donato, D. C., J. S. Halofsky, and M. J. Reilly. 2020. [Corralling a black swan: natural range of variation in a forest landscape driven by rare, extreme events](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2013){target='blank'}. Ecological Applications 30:e02013.
 
