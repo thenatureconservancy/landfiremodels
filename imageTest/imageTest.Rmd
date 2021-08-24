@@ -1,0 +1,22 @@
+---
+title: "imageTest"
+author: "The Nature Conservancy's LANDFIRE team"
+date: "8/24/2021"
+output: html_document
+---
+
+```{r}
+
+library(palmerpenguins)
+library(ggplot2)
+```
+
+
+
+```{r fig.cap="Bigger flippers, bigger bills", fig.alt = "Scatterplot of flipper length by bill length of 3 penguin species, where we show penguins with bigger flippers have bigger bills."}
+ggplot(data = penguins, aes(x = flipper_length_mm,
+                            y = bill_length_mm,
+                            color = species)) +
+  geom_point(aes(shape = species), alpha = 0.8) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) 
+```
