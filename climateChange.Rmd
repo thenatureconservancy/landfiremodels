@@ -12,6 +12,42 @@ output:
       smooth_scroll: false
 ---
 
+
+```{r function, message=FALSE, warning=FALSE, include=FALSE}
+my_plot_hook <- function(x, options) {
+    base <- knitr::opts_knit$get('base.url')
+    if (is.null(base)) {
+        base <- ""
+    }
+    alt <- ifelse(is.null(options$alt), "", options$alt)
+    cap <- ifelse(is.null(options$caption), "", options$caption)
+    tit <- ifelse(is.null(options$title), "", options$title)
+    w <- options[['out.width']]
+    h <- options[['out.height']]
+    if (!is.null(w) | !is.null(h)) {
+        str <- paste(c(sprintf('width=%s', w),
+                       sprintf('height=%s', h)), collapse = " ")
+        str <- paste("{", str, "}")
+    }
+    if (cap == "") {
+        sprintf('![%s](%s%s %s)%s\\', alt, base, x, paste0("'", tit, "'"), str)
+    }
+    else {
+        sprintf('![%s](%s%s %s)%s\\\n\n<blockquote><p class = "caption">%s</p></blockquote>', alt, base, x, paste0("'", tit, "'"), str, cap)
+    }
+}
+```
+
+
+
+```{r setHook, message=FALSE, warning=FALSE, include=FALSE}
+library("knitr")
+knit_hooks$set(plot = my_plot_hook)
+
+```
+
+
+
 ***
 
 ### This page:
@@ -26,16 +62,28 @@ output:
 The goal of this section is to help you identify questions that the LANDFIRE BpS models (with their built-in simplifications, strengths, and constraints) are best suited to help you explore.
 
 ### Background 
-```{r, echo=FALSE, out.width='45%', out.extra='style="float:right; padding:10px"', fig.cap="curled up fern about to open"} 
+
+```{r firstPhoto, echo = FALSE}
+cap_txt <- "Photo: © Marci Eggers, TNC."
+alt_txt <- "I really want some coffee."
+title_txt <- "Close-up of of fern about to spring open in the Atlantic Forest rainforest, Guaraquecaba, Brazil"
+img_location <- "images/fern.jpg"
+```
+
+
+<div style= "float:right; padding:20px;">
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt} 
 knitr::include_graphics("images/fern.jpg")
 
 ```
+</div>
+
 
 Changes in climate, such as increases in temperature, changes in precipitation patterns, and increases in evaporative demand are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed ecological responses such as species range shifts, and changes in growth and mortality, in addition to ecological theory, allow us to generate hypotheses on how these changes may influence large-scale vegetation patterns. Many of these hypotheses can be productively explored with BpS models in the SyncroSim platform.
 
 Before jumping into modeling, it is important to recognize that BpS models focus on vegetation communities, which presents some limitations in a climate change modeling context. Over evolutionary time, plant species have developed traits that reflect the influence of climate, other abiotic factors, and species interactions such as competition for resources. The suite of species that make up an ecosystem are likely to respond differently to climate change. While growth and mortality transitions for vegetation classes can easily be modified with these models, questions that focus on changes in species dynamics or changes in composition within a vegetation class, are more appropriate for species-focused models. 
 
-Photo: © Marcie Eggers, TNC. Close-up of fern about to spring open in the Atlantic Forest rainforest, Guaraquecaba, Brazil
+
 <br>
 <br>
 <br>
@@ -78,10 +126,20 @@ For this example, information on the drought and fire sensitivity of the dominan
 In the section below, we briefly review the windows in SyncroSim where you make basic changes to BpS models.
 
 ### Altering disturbances
-```{r, echo=FALSE, out.width='30%', out.extra='style="float:right; padding:10px"', fig.cap="Screenshot of a dropdown menu titled Transition type with the following options: Native grazing, alternative succession, competition or maintenance, insects of disease, mixed fire, native grazing, Optional 1, Optional 2, replacement fire, surface fire, wind or weather stress"} 
-knitr::include_graphics("images/disturbance.jpg")
+
+```{r secondPhoto, echo = FALSE}
+
+title_txt2 <- "Screenshot of a dropdown menu titled Transition type with the following options: Native grazing, alternative succession, competition or maintenance, insects of disease, mixed fire, native grazing, Optional 1, Optional 2, replacement fire, surface fire, wind or weather stress"
+img_location2 <- "images/disturbance.jpg"
+```
+
+
+<div style= "float:right; padding:20px;">
+```{r, echo=FALSE, title = title_txt2} 
+knitr::include_graphics(img_location2)
 
 ```
+</div>
 
 * Adding or removing a type of disturbance. Note there is not a specific “drought” factor, so it can be captured under “Wind or Weather or Stress.”
 * Modifying the intensity, or distribution across intensity levels (e.g., low, med, high)
