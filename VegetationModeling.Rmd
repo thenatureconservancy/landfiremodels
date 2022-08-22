@@ -64,12 +64,11 @@ The **[LANDFIRE](https://landfire.gov/){target='blank'}** Program, in collaborat
   }
 </style>
 ```
+<br>
 
+<iframe width="896" height="504" src="https://www.youtube.com/embed/xjaWJCe7udQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-```{r, echo=FALSE, fig.cap = "Photo: © Ian Shive, TNC, \n Independence Lake, Nevada"} 
-knitr::include_graphics("images/independence-lake.jpg")
-
-```
+</br>
 
 Understanding how ecosystems looked and worked prior to European colonization of North America is a focus of the BpS body of work. The process was to:
 
@@ -129,6 +128,10 @@ Each description includes:
 knitr::include_graphics("images/virginia.jpg")
 
 ```
+<br>
+
+Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
+
 Experts developed a state-and-transition simulation model to represent every LANDFIRE BpS. The models are developed and delivered in the SyncroSim software, ST-Sim package. LANDFIRE BpS models are standardized in several ways. Modelers defined each BpS with five or fewer succession classes (i.e. states) and used a subset of the SyncroSim software functions. In addition, modelers used a pre-defined list of disturbances to attribute disturbance transitions. This list included “optional” types that allowed modelers to define and model any disturbance they wanted to include. Modeled states and transitions are described in the model description discussed above. Pairing the model with the description helps the user understand what the various states and transitions represent. It may also offer users additional information such as how disturbance probabilities were calculated, and any assumptions made by model developers.
 <br>
 
@@ -166,7 +169,7 @@ Make sure you download the full package (SyncroSim-setup.exe  check your downloa
 + In SyncroSim, navigate to 'File' -> 'Packages' -> select 'ST-Sim state-and-transition model' and 2020 'landfirevegmodels')-> 'Install' -> OK (see screenshot below).
 
 <center>
-```{r, echo=FALSE, out.width= "85%"} 
+```{r, echo=FALSE, out.width= "85%", fig.cap="screenshot of syncrosim packages, landfirevegmodels, stsim circled"} 
 knitr::include_graphics("images/packages.JPG")
 
 ```

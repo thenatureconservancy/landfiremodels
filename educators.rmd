@@ -23,13 +23,23 @@ output:
 
 ## State-and-Transition-Modeling in Real Life: A 3-Part Miniseries 
 
-When: June 2021 | In this 3-part modeling miniseries, we will take a wide-ranging look at State-and-Transition-Simulation-Models (STSMs) and use the LANDFIRE BpS models as a launching point for inquiry about ecosystem change over time. We will communicate practical ways to use STSM in real-life research, management and academia. There will be 15-20 min at the end of each section for Q & A.  
+In this 3-part modeling miniseries, we will took a wide-ranging look at State-and-Transition-Simulation-Models (STSMs) and the LANDFIRE BpS models. We communicated practical ways to use STSM in real-life research, management and academia. 
+
+Part 1: Kori Blankenship, Fire Ecologist, The Nature Conservancy
  
-[WATCH](https://youtu.be/MRPlzP5Ef5U){target='blank'} - Part 1: Kori Blankenship (LANDFIRE Fire Ecologist) will discuss the basics of (STSMs), introduce the LANDFIRE BpS models and share resources for both novice and intermediate state-and-transition modelers.  
- 
-[WATCH](https://www.youtube.com/watch?v=qeFg40vQU9k&t=0s){target='blank'} - Part 2: Leonardo Frid (Systems Ecologist at Apex Resource Management Solutions) will showcase real-life STSM applications with the ST-Sim package for SyncroSim, demonstrate how to use both the Graphical User Interface and rsyncrosim R package and discuss different approaches for applying state and transition modeling tools in real-life management scenarios. 
- 
-[WATCH](https://www.youtube.com/watch?v=8Ybz75H9YXg&t=0s){target='blank'} - Part 3: Randy Swaty (LANDFIRE Ecologist) & Dr. Priscilla Nyamai (Asst. Professor, Grand Valley State Univ.) will discuss how integrating STSMs in the classroom can be useful for conceptualizing ecosystem changes. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MRPlzP5Ef5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+
+
+Part 2: Leonardo Frid, System Ecologist, Apex Resource Management Solutions
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qeFg40vQU9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+
+
+Part 3: Randy Swaty, Ecologist, The Nature Conservancy & Dr. Priscilla Nyamai, Assistant Professor, Grand Valley State University
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Ybz75H9YXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Sponsored by: International Association of Landscape Ecologists, Apex RMS
 <br>

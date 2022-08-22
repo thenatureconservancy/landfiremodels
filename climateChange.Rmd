@@ -5,6 +5,7 @@ date:
 output:
   html_document:
     fig_caption: FALSE
+    fig.alt: TRUE
     toc: yes
     toc_depth: 4
     toc_float:
@@ -25,21 +26,25 @@ output:
 
 The goal of this section is to help you identify questions that the LANDFIRE BpS models (with their built-in simplifications, strengths, and constraints) are best suited to help you explore.
 
-### Background 
-```{r, echo=FALSE, out.width='45%', out.extra='style="float:right; padding:10px"', fig.cap="curled up fern about to open"} 
+### Background
+
+Changes in climate, such as increases in temperature, changes in precipitation patterns, and increases in evaporative demand are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed ecological responses such as species range shifts, and changes in growth and mortality, in addition to ecological theory, allow us to generate hypotheses on how these changes may influence large-scale vegetation patterns. Many of these hypotheses can be productively explored with BpS models in the SyncroSim platform.
+<br>
+
+<br>
+<center>
+```{r, echo=FALSE, out.width="45%", fig.cap="curled up fern about to open"} 
 knitr::include_graphics("images/fern.jpg")
 
 ```
+<br>
 
-Changes in climate, such as increases in temperature, changes in precipitation patterns, and increases in evaporative demand are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed ecological responses such as species range shifts, and changes in growth and mortality, in addition to ecological theory, allow us to generate hypotheses on how these changes may influence large-scale vegetation patterns. Many of these hypotheses can be productively explored with BpS models in the SyncroSim platform.
-
+© Marcie Eggers, TNC. Close-up of fern about to spring open in the Atlantic Forest rainforest, Guaraquecaba, Brazil
+</center>
+<br>
 Before jumping into modeling, it is important to recognize that BpS models focus on vegetation communities, which presents some limitations in a climate change modeling context. Over evolutionary time, plant species have developed traits that reflect the influence of climate, other abiotic factors, and species interactions such as competition for resources. The suite of species that make up an ecosystem are likely to respond differently to climate change. While growth and mortality transitions for vegetation classes can easily be modified with these models, questions that focus on changes in species dynamics or changes in composition within a vegetation class, are more appropriate for species-focused models. 
 
-Photo: © Marcie Eggers, TNC. Close-up of fern about to spring open in the Atlantic Forest rainforest, Guaraquecaba, Brazil
 <br>
-<br>
-<br>
-
 
 <style>
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
