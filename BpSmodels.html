@@ -9,12 +9,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="" />
 
 
 <title>BpS Models</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -63,6 +63,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -314,7 +318,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -360,6 +364,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">BpS Models</h1>
+<h4 class="author"></h4>
 
 </div>
 
@@ -369,20 +374,35 @@ div.tocify {
 <h3>This page:</h3>
 <ul>
 <li>Short introduction to the LANDFIRE program</li>
-<li>Description of the Biophysical Settings (BpS), plus reference conditions delivered in the BpS descriptions and models</li>
+<li>Description of the Biophysical Settings (BpS), plus reference
+conditions delivered in the BpS descriptions and models</li>
 <li>Discussion of application scale</li>
 </ul>
 <hr />
 </div>
 <div id="landfire" class="section level2">
 <h2>LANDFIRE</h2>
-<p>In 2004 <a href="https://www.landfire.gov/" target="blank">LANDFIRE</a> was created. <em>“LANDFIRE is a shared program between the wildland fire management programs of the U.S. Department of Agriculture Forest Service and U.S. Department of the Interior that provides 20+ national geo-spatial layers (e.g. vegetation, fuel, disturbance, etc.), databases, and ecological models that are available to the public for the US and insular areas”.</em></p>
+<p>In 2004 <a href="https://www.landfire.gov/"
+target="blank">LANDFIRE</a> was created. <em>“LANDFIRE is a shared
+program between the wildland fire management programs of the U.S.
+Department of Agriculture Forest Service and U.S. Department of the
+Interior that provides 20+ national geo-spatial layers (e.g. vegetation,
+fuel, disturbance, etc.), databases, and ecological models that are
+available to the public for the US and insular areas”.</em></p>
 <style>
 div.blue { background-color:#E4EEF4; border-radius: 5px; padding: 20px;}
 </style>
-<div class="blue">
-<h3 id="landfire-biophysical-settings">LANDFIRE Biophysical Settings</h3>
-<p><strong><a href="https://www.landfire.gov/bps.php" target="blank">LANDFIRE BpS</a></strong> represent vegetation that may have been dominant on the landscape just prior to European colonization of North America. They are based on <a href="https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states" target="blank">NatureServe’s Ecological Systems</a>. <strong>Biophysical Settings</strong> are mapped (for more information on the spatial data visit <a href="https://www.landfire.gov/bps.php" target="blank">this site</a>), described below, and modeled using SyncroSim.</p>
+<div id="landfire-biophysical-settings" class="section level3 blue">
+<h3>LANDFIRE Biophysical Settings</h3>
+<p><strong><a href="https://www.landfire.gov/bps.php"
+target="blank">LANDFIRE BpS</a></strong> represent vegetation that may
+have been dominant on the landscape just prior to European colonization
+of North America. They are based on <a
+href="https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states"
+target="blank">NatureServe’s Ecological Systems</a>. <strong>Biophysical
+Settings</strong> are mapped (for more information on the spatial data
+visit <a href="https://www.landfire.gov/bps.php" target="blank">this
+site</a>), described below, and modeled using SyncroSim.</p>
 <p>The descriptions and models are the focus of our work here.</p>
 </div>
 <p><br></p>
@@ -403,20 +423,43 @@ div.blue { background-color:#E4EEF4; border-radius: 5px; padding: 20px;}
 Photo: © Ian Shive, TNC, Independence Lake, Nevada
 </p>
 </div>
-<p><br> Understanding how ecosystems looked and worked prior to European colonization of North America is a focus of the BpS body of work. The process was to:</p>
+<p><br> Understanding how ecosystems looked and worked prior to European
+colonization of North America is a focus of the BpS body of work. The
+process was to:</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Classify and define the ecosystems.</strong> LANDFIRE calls the historic ecosystems “Biophysical Settings”, and used <a href="https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states" target="blank">NatureServe’s Ecological Systems</a></p></li>
+<li><p><strong>Classify and define the ecosystems.</strong> LANDFIRE
+calls the historic ecosystems “Biophysical Settings”, and used <a
+href="https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states"
+target="blank">NatureServe’s Ecological Systems</a></p></li>
 <li><p>The LANDFIRE team held expert workshops to:</p>
 <ul>
-<li><strong>Describe the BpSs</strong>, including their nested states or <a href="https://www.landfire.gov/sclass.php" target="blank">succession classes</a>. BpS can have up to 5 succession classes, each of which is described by its canopy height, canopy cover, and species composition.</li>
-<li><strong>Use state and transition modeling techniques</strong> to get an estimate of how much of each succession class would have been on the landscape historically, (prior to European colonization of North America). Boxes represent state classes of vegetation condition and the arrows represent the transition from one state class to another, these are assigned probabilities to simulate future conditions.The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into SyncroSim (just like you will be doing soon!).</li>
+<li><strong>Describe the BpSs</strong>, including their nested states or
+<a href="https://www.landfire.gov/sclass.php" target="blank">succession
+classes</a>. BpS can have up to 5 succession classes, each of which is
+described by its canopy height, canopy cover, and species
+composition.</li>
+<li><strong>Use state and transition modeling techniques</strong> to get
+an estimate of how much of each succession class would have been on the
+landscape historically, (prior to European colonization of North
+America). Boxes represent state classes of vegetation condition and the
+arrows represent the transition from one state class to another, these
+are assigned probabilities to simulate future conditions.The estimated
+amount of each succession class depends on the natural disturbance
+regimes that the experts input into SyncroSim (just like you will be
+doing soon!).</li>
 </ul></li>
 </ol>
-<p>From 2015 to 2019, the Conservancy’s LANDFIRE team led a review of the models that resulted in updating content for over 300 of them.</p>
+<p>From 2015 to 2019, the Conservancy’s LANDFIRE team led a review of
+the models that resulted in updating content for over 300 of them.</p>
 <p><br></p>
 <div id="descriptions" class="section level4">
 <h4>Descriptions</h4>
-<p>Each BpS has an <a href="http://landfirereview.org/search.php" target="blank">extensive description</a>. See the description from the <a href="http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&amp;hPP=20&amp;idx=lf_landfire_dev&amp;p=0&amp;is_v=1" target="blank">Inter-Mountain Basins Montane Sagebrush Steppe Ecosystem</a> example.</p>
+<p>Each BpS has an <a href="http://landfirereview.org/search.php"
+target="blank">extensive description</a>. See the description from the
+<a
+href="http://landfirereview.org/search.php?q=Montane%20Sage%20Steppe&amp;hPP=20&amp;idx=lf_landfire_dev&amp;p=0&amp;is_v=1"
+target="blank">Inter-Mountain Basins Montane Sagebrush Steppe
+Ecosystem</a> example.</p>
 <p>Each description includes:</p>
 <style>
   .col2 {
@@ -441,8 +484,21 @@ Photo: © Ian Shive, TNC, Independence Lake, Nevada
 </div>
 <div id="models" class="section level4">
 <h4>Models</h4>
-<p>Models include the information contained in the SyncroSim library. Downloading and running the BpS models using the SyncroSim software gives users immediate access to over 900 models that were created by experts in collaboration with LANDFIRE.</p>
-<p>LANDFIRE BpS models are standardized in several ways. Modelers defined each BpS with five or fewer succession classes (i.e. states) and used a subset of the SyncroSim software functions. In addition, modelers used a pre-defined list of disturbances to attribute disturbance transitions. This list included “optional” types that allowed modelers to define and model any disturbance they wanted to include. Modeled states and transitions are described in the model description discussed above. Pairing the model with the description helps the user understand what the various states and transitions represent. It may also offer users additional information such as how disturbance probabilities were calculated, and any assumptions made by model developers.</p>
+<p>Models include the information contained in the SyncroSim library.
+Downloading and running the BpS models using the SyncroSim software
+gives users immediate access to over 900 models that were created by
+experts in collaboration with LANDFIRE.</p>
+<p>LANDFIRE BpS models are standardized in several ways. Modelers
+defined each BpS with five or fewer succession classes (i.e. states) and
+used a subset of the SyncroSim software functions. In addition, modelers
+used a pre-defined list of disturbances to attribute disturbance
+transitions. This list included “optional” types that allowed modelers
+to define and model any disturbance they wanted to include. Modeled
+states and transitions are described in the model description discussed
+above. Pairing the model with the description helps the user understand
+what the various states and transitions represent. It may also offer
+users additional information such as how disturbance probabilities were
+calculated, and any assumptions made by model developers.</p>
 <center>
 <p><img src="images/virginia.jpg" width="75%" /></p>
 Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
@@ -452,9 +508,16 @@ Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
 </div>
 <div id="application-scale-of-the-models" class="section level3">
 <h3>Application scale of the models</h3>
-<p>These models and descriptions were designed for use over large areas - not your back yard. BpS models were developed for use at the <a href="https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/docs/partitioning-us-into-mapping-zones.pdf" target="blank">National Land Cover Database Map Zone</a> level (hundreds of thousands of acres - see <a href="./GetModels.html" target="blank">Get Models</a>). That said, people do use them for smaller areas. Success of downscaling depends on factors such as:</p>
+<p>These models and descriptions were designed for use over large areas
+- not your back yard. BpS models were developed for use at the <a
+href="https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/docs/partitioning-us-into-mapping-zones.pdf"
+target="blank">National Land Cover Database Map Zone</a> level (hundreds
+of thousands of acres - see <a href="./GetModels.html"
+target="blank">Get Models</a>). That said, people do use them for
+smaller areas. Success of downscaling depends on factors such as:</p>
 <ul>
-<li>How much review, and how comfortable are users with the information included in the models?</li>
+<li>How much review, and how comfortable are users with the information
+included in the models?</li>
 <li>How important are the decisions and how much risk is involved?</li>
 <li>How much supporting information is there? <br></li>
 </ul>
@@ -462,12 +525,17 @@ Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
 <div id="for-more-information" class="section level3">
 <h3>For more information</h3>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s" target="blank">Watch an introduction to SyncroSim</a> Note: some features of SyncroSim may be different than what you see in the video due to versioning.</li>
+<li><a
+href="https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s"
+target="blank">Watch an introduction to SyncroSim</a> Note: some
+features of SyncroSim may be different than what you see in the video
+due to versioning.</li>
 </ul>
 <hr />
 <div id="whats-next" class="section level4">
 <h4>What’s next?</h4>
-<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
 
 </div>
 </div>

@@ -14,7 +14,8 @@
 
 <title>Get to (Modeling) Work</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -63,6 +64,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -83,6 +85,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -314,7 +319,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -360,6 +365,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Get to (Modeling) Work</h1>
+<h4 class="author"></h4>
 
 </div>
 
@@ -372,7 +378,8 @@ div.tocify {
 <ul>
 <li>Understanding and finding your Map Zone</li>
 <li>Downloading a BpS description</li>
-<li><a href="./isolateLoadModel.pdf" target="blank">Isolate and loading your model</a> into SyncroSim</li>
+<li><a href="./isolateLoadModel.pdf" target="blank">Isolate and loading
+your model</a> into SyncroSim</li>
 </ul></li>
 <li>Modifying reference condition models in Syncrosim
 <ul>
@@ -382,52 +389,88 @@ div.tocify {
 </ul></li>
 </ul>
 <hr />
-<p>We will walk through the process with the <strong>Inter-Mountain Basins Montane Sagebrush Steppe</strong> Biophysical Setting of the northwestern United States. This ecosystem will be the subject of later tutorials.</p>
+<p>We will walk through the process with the <strong>Inter-Mountain
+Basins Montane Sagebrush Steppe</strong> Biophysical Setting of the
+northwestern United States. This ecosystem will be the subject of later
+tutorials.</p>
 </div>
 <div id="understand-and-find-your-map-zone" class="section level2">
 <h2>Understand and find your Map Zone</h2>
-<p>There are hundreds of Biophysical Settings in the U.S., and some of them occur in more than one Map Zone. A Map Zone is a product delivery and summary polygon from the <a href="https://www.mrlc.gov/national-land-cover-database-nlcd-2016" target="blank">National Landcover Database Program</a>.</p>
-<p>In the map below, pan, zoom, scroll to your area of interest, then hover over the Map Zone you need the number for. A tooltip will pop up with that info. Take note of it for the next step.</p>
-<p><strong>For the Inter-Mountain Basins Montane Sagebrush Steppe example, scroll to eastern Oregon, Map Zone 9.</strong></p>
+<p>There are hundreds of Biophysical Settings in the U.S., and some of
+them occur in more than one Map Zone. A Map Zone is a product delivery
+and summary polygon from the <a
+href="https://www.mrlc.gov/national-land-cover-database-nlcd-2016"
+target="blank">National Landcover Database Program</a>.</p>
+<p>In the map below, pan, zoom, scroll to your area of interest, then
+hover over the Map Zone you need the number for. A tooltip will pop up
+with that info. Take note of it for the next step.</p>
+<p><strong>For the Inter-Mountain Basins Montane Sagebrush Steppe
+example, scroll to eastern Oregon, Map Zone 9.</strong></p>
 <p><br></p>
 <p><iframe title="My embedded document" src="leafletSIM2carto.html" frameborder="0" width="100%" height="400"></iframe></p>
 <p><br></p>
 </div>
 <div id="download-a-bps-description" class="section level2">
 <h2>Download a BpS Description</h2>
-<p>Visit the <a href="http://landfirereview.org/search.php" target="blank">LANDFIRE BpS Download</a> to search for and retrieve LANDFIRE BpS models and descriptions. Download the <a href="http://landfirereview.org/search.php?q=Inter-Mountain%20Basins%20Montane%20Sagebrush%20Steppe&amp;hPP=20&amp;idx=lf_landfire_dev&amp;p=0&amp;is_v=1" target="blank">Inter-Mountain Basins Montane Sagebrush Steppe description</a> for Map Zones 1, 7, 8, 9, 10, 19. Note: selecting “Map Zones” on left panel at above link will shorten the search list. <br> <br></p>
+<p>Visit the <a href="http://landfirereview.org/search.php"
+target="blank">LANDFIRE BpS Download</a> to search for and retrieve
+LANDFIRE BpS models and descriptions. Download the <a
+href="http://landfirereview.org/search.php?q=Inter-Mountain%20Basins%20Montane%20Sagebrush%20Steppe&amp;hPP=20&amp;idx=lf_landfire_dev&amp;p=0&amp;is_v=1"
+target="blank">Inter-Mountain Basins Montane Sagebrush Steppe
+description</a> for Map Zones 1, 7, 8, 9, 10, 19. Note: selecting “Map
+Zones” on left panel at above link will shorten the search list. <br>
+<br></p>
 <center>
 <p><img src="images/sageSteppeDownload.JPG" title="Zoomed in screenshot of header of a BpS, screenshot depicts the Inter-Mountain Basins Montane Sagebrush Steppe; Model number: 11260; Map Zone(s): 1,7,8,9,10,19; Vegetation Type: Steppe/Savanna" alt="Zoomed in screenshot of header of a BpS, screenshot depicts the Inter-Mountain Basins Montane Sagebrush Steppe; Model number: 11260; Map Zone(s): 1,7,8,9,10,19; Vegetation Type: Steppe/Savanna" width="85%" /></p>
-Correct Inter-Mountain Basins Montane Sagebrush Steppe BpS model and description.
+Correct Inter-Mountain Basins Montane Sagebrush Steppe BpS model and
+description.
 </center>
 <p><br> <br></p>
 </div>
 <div id="isolate-and-load-your-model" class="section level2">
 <h2>Isolate and load your model</h2>
-<p>Once you have SyncroSim installed <a href="./VegetationModeling.html" target="blank">(see Vegetation Modeling)</a> and both ST-Sim and lfvegmodels packages loaded, you will want to isolate one (of the ~ 900) BpS models to work with. The lfvegmodels package loads all of the models into your SyncroSim environment – you do not need to work with all 900 models (though that is possible)!</p>
+<p>Once you have SyncroSim installed <a href="./VegetationModeling.html"
+target="blank">(see Vegetation Modeling)</a> and both ST-Sim and
+lfvegmodels packages loaded, you will want to isolate one (of the ~ 900)
+BpS models to work with. The lfvegmodels package loads all of the models
+into your SyncroSim environment – you do not need to work with all 900
+models (though that is possible)!</p>
 <p><br></p>
 <style>
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
 <div class="blue">
 <center>
-<font size="4"> <strong><a href="./isolateLoadModel.pdf" target="blank">Instructions for isolating and loading a single BpS model</a>.</strong> </font>
+<font size="4"> <strong><a href="./isolateLoadModel.pdf"
+target="blank">Instructions for isolating and loading a single BpS
+model</a>.</strong> </font>
 </center>
 </div>
 <p><br></p>
 </div>
 <div id="modifying-a-reference-condition-model" class="section level2">
 <h2>Modifying a reference condition model</h2>
-<p>Within SyncroSim there are a wide range of techniques available to modify a model. Here we introduce the main ways for modifying a model while working through the Inter-Mountain Basins Montane Sagebrush Steppe example.</p>
+<p>Within SyncroSim there are a wide range of techniques available to
+modify a model. Here we introduce the main ways for modifying a model
+while working through the Inter-Mountain Basins Montane Sagebrush Steppe
+example.</p>
 <ol style="list-style-type: decimal">
 <li>Feel ready to start tinkering with the model? Read on.</li>
-<li>Feel unsure and need more guidance? See this <a href="http://www.apexrms.com/tutorials/" target="blank">extensive list</a> of tutorial from ApexRMS. <br> <br></li>
+<li>Feel unsure and need more guidance? See this <a
+href="http://www.apexrms.com/tutorials/" target="blank">extensive
+list</a> of tutorial from ApexRMS. <br> <br></li>
 </ol>
-<div id="change-the-probability-of-a-disturbance-in-one-state-class" class="section level3">
+<div id="change-the-probability-of-a-disturbance-in-one-state-class"
+class="section level3">
 <h3>Change the probability of a disturbance in one state class</h3>
-<p>A key starting point in modifying a model is to <strong>change disturbances</strong>. There are multiple methods for this including changing them one at a time, per state class. Here we will show you how to change the replacement fire probability in one class.</p>
-<p>Download Video 1 script for printing <a href="scripts/video1oneDist.pdf" target="blank">here.</a></p>
-<p>To make any of the videos below larger, click play and select full screen view (bottom right corner).<br />
+<p>A key starting point in modifying a model is to <strong>change
+disturbances</strong>. There are multiple methods for this including
+changing them one at a time, per state class. Here we will show you how
+to change the replacement fire probability in one class.</p>
+<p>Download Video 1 script for printing <a
+href="scripts/video1oneDist.pdf" target="blank">here.</a></p>
+<p>To make any of the videos below larger, click play and select full
+screen view (bottom right corner).<br />
 <br></p>
 <center>
 <iframe width="896" height="504" src="https://www.youtube.com/embed/GxxeSp0mzvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -435,10 +478,23 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </center>
 <p><br> <br></p>
 </div>
-<div id="change-the-probability-of-a-disturbance-across-the-entire-model" class="section level3">
+<div
+id="change-the-probability-of-a-disturbance-across-the-entire-model"
+class="section level3">
 <h3>Change the probability of a disturbance across the entire model</h3>
-<p>While getting to know your models we recommend changing one parameter at a time. This will allow you to get a feel for how it works, and for the sensitivities to adjust to various changes. That said, there are times where you may make “global” changes to the model. For example, you may “turn off” all fires as a way to explore impacts of fire suppression. Or, you may not have perfect fire suppression, but suppress 90% of all fires. Instead of changing one fire transition at a time we will show you how to use <strong>transition multipliers</strong> to modify a type of transition everywhere it occurs in the model in a few easy steps.</p>
-<p>Download Video 2 script for printing <a href="scripts/video2changeTransAcrossBpS.pdf" target="blank">here.</a> <br></p>
+<p>While getting to know your models we recommend changing one parameter
+at a time. This will allow you to get a feel for how it works, and for
+the sensitivities to adjust to various changes. That said, there are
+times where you may make “global” changes to the model. For example, you
+may “turn off” all fires as a way to explore impacts of fire
+suppression. Or, you may not have perfect fire suppression, but suppress
+90% of all fires. Instead of changing one fire transition at a time we
+will show you how to use <strong>transition multipliers</strong> to
+modify a type of transition everywhere it occurs in the model in a few
+easy steps.</p>
+<p>Download Video 2 script for printing <a
+href="scripts/video2changeTransAcrossBpS.pdf" target="blank">here.</a>
+<br></p>
 <center>
 <iframe width="896" height="504" src="https://www.youtube.com/embed/75PogiK56GU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
@@ -447,8 +503,13 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </div>
 <div id="introduce-a-new-disturbance" class="section level3">
 <h3>Introduce a new disturbance</h3>
-<p>There are many new transitions on the landscape today including exotic pests, multiple types of logging and tree planting. Here we will show you how to add in a new <strong>probabilistic transition</strong>.</p>
-<p>Download Video 3 script for printing <a href="scripts/video3newdisturbance.pdf" target="blank">here.</a> <br></p>
+<p>There are many new transitions on the landscape today including
+exotic pests, multiple types of logging and tree planting. Here we will
+show you how to add in a new <strong>probabilistic
+transition</strong>.</p>
+<p>Download Video 3 script for printing <a
+href="scripts/video3newdisturbance.pdf" target="blank">here.</a>
+<br></p>
 <center>
 <iframe width="896" height="504" src="https://www.youtube.com/embed/YgTCwCabojo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
@@ -457,8 +518,14 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </div>
 <div id="add-a-new-state" class="section level3">
 <h3>Add a new state</h3>
-<p>New and/or altered transitions often result in <strong>new states</strong>. For example, in the Great Lakes combinations of modern transitions have resulted in what some call “maple monocultures”. These are forests that would typically have 5+ species represented, but now generally have one, sugar maple. Here we demonstrate how to <strong>add a state</strong>.</p>
-<p>Download Video 4 script for printing <a href="scripts/video4newState.pdf" target="blank">here.</a> <br></p>
+<p>New and/or altered transitions often result in <strong>new
+states</strong>. For example, in the Great Lakes combinations of modern
+transitions have resulted in what some call “maple monocultures”. These
+are forests that would typically have 5+ species represented, but now
+generally have one, sugar maple. Here we demonstrate how to <strong>add
+a state</strong>.</p>
+<p>Download Video 4 script for printing <a
+href="scripts/video4newState.pdf" target="blank">here.</a> <br></p>
 <center>
 <iframe width="896" height="504" src="https://www.youtube.com/embed/-EbW8vAg_bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
@@ -467,8 +534,11 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </div>
 <div id="delete-a-state" class="section level3">
 <h3>Delete a state</h3>
-<p>Occasionally, because of natural factors (e.g., an exotic pest) or user error you may want to <strong>delete an entire state</strong>. Here we will show you how to do that.</p>
-Download Video 5 script for printing <a href="scripts/video5deleteState.pdf" target="blank">here.</a><br />
+<p>Occasionally, because of natural factors (e.g., an exotic pest) or
+user error you may want to <strong>delete an entire state</strong>. Here
+we will show you how to do that.</p>
+Download Video 5 script for printing <a
+href="scripts/video5deleteState.pdf" target="blank">here.</a><br />
 <br>
 <center>
 <iframe width="896" height="504" src="https://www.youtube.com/embed/Z9O3VHv0Vs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -478,10 +548,13 @@ Download Video 5 script for printing <a href="scripts/video5deleteState.pdf" tar
 <div id="whats-next" class="section level4">
 <h4>What’s next?</h4>
 <ul>
-<li>learn about the capability of ST-Sim to incorporate <a href="./advancedModeling.html" target="blank">variability and limits</a> into BpS models</li>
+<li>learn about the capability of ST-Sim to incorporate <a
+href="./advancedModeling.html" target="blank">variability and limits</a>
+into BpS models</li>
 <li>dive into the complexities of using spatial models</li>
 </ul>
-<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
 
 </div>
 </div>

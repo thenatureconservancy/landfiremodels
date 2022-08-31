@@ -67,6 +67,7 @@ knitr::include_graphics("images/transition-targets.JPG")
 
 ```
 
+
 The **transition targets property** allows the modeler to define targets/limits for the area to transition over time across the landscape for specific types of transitions. Targets can be established as operational constraints based on area, or when costs are added on available budgets. The target can be specified by iteration, BpS, and timestep.
 
 For example, you can limit the amount of any probabilistic transition/disturbance to a specific number of acres in each timestep and iteration for a BpS based on the budget you expect to be available, or on the operational constraint created by your organization’s capacity or regulatory issues. If you expect your budget or capacity to increase over time, you can increase the target over the timesteps. This option is available for all disturbances/probabilistic transitions.

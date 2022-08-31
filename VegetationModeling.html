@@ -13,7 +13,8 @@
 
 <title>Vegetation Modeling</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -62,6 +63,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -313,7 +318,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -367,36 +372,89 @@ div.tocify {
 <div id="this-page" class="section level3">
 <h3>This page:</h3>
 <ul>
-<li>Introduction to state-and-transition simulation (STSM) and LANDFIRE biophysical settings (BpS) models</li>
+<li>Introduction to state-and-transition simulation (STSM) and LANDFIRE
+biophysical settings (BpS) models</li>
 <li>BpS Description and explanation</li>
 <li>Application scale of the models</li>
-<li>Getting started with <a href="https://syncrosim.com/" target="blank">SyncroSim</a></li>
+<li>Getting started with <a href="https://syncrosim.com/"
+target="blank">SyncroSim</a></li>
 </ul>
 <hr />
 </div>
 <div id="state-and-transition-models" class="section level2">
 <h2>State-and-transition models</h2>
-<p>A <strong>state-and-transition model</strong> (STM) conceptualizes vegetation in terms of discrete states and the transitions or pathways between them <a href="http://rangelandarchive.ucdavis.edu/files/187350.pdf" target="blank">(Westoby 1989)</a>. States are often used to represent discrete development (seral) stages, and transitions may represent disturbances such as hurricanes, fire, or grazing, but can also represent management actions such as thinning, livestock management, or herbicide application.</p>
+<p>A <strong>state-and-transition model</strong> (STM) conceptualizes
+vegetation in terms of discrete states and the transitions or pathways
+between them <a
+href="http://rangelandarchive.ucdavis.edu/files/187350.pdf"
+target="blank">(Westoby 1989)</a>. States are often used to represent
+discrete development (seral) stages, and transitions may represent
+disturbances such as hurricanes, fire, or grazing, but can also
+represent management actions such as thinning, livestock management, or
+herbicide application.</p>
 </div>
 <div id="state-and-transition-simulation-model" class="section level2">
 <h2>State-and-transition <em>simulation</em> model</h2>
-<p>When a STM is built in a software environment with rates of growth between states and probabilities for each transition, it is known as a <strong>state-and-transition simulation model</strong> (STSM; <a href="https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12597" target="blank">Daniel et al. 2016</a>). A STSM can be used to <strong>simulate the dynamics of a system over time and space.</strong> STSMs have been widely applied in natural resource management to estimate historical conditions (<a href="https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/eap.2013" target="blank">Donato et al. 2020</a>, <a href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_004.pdf" target="blank">Blankenship et al. 2012</a>), simulate the spread of invasive species (<a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2730" target="blank">Jarnevich et al. 2019</a>), test various management scenarios (<a href="https://www.conservationgateway.org/Documents/Enhanced%20conservation%20action%20planning_assessing%20landscape%20condition.pdf" target="blank">Low et al. 2010</a>, <a href="https://www.aimspress.com/article/10.3934/environsci.2015.2.180" target="blank">Costanza et al. 2015a</a>), and forecast future landscape conditions under different climates (<a href="https://www.springer.com/gp/book/9783319249285" target="blank">Provencher et al. 2016</a>, <a href="https://www.aimspress.com/fileOther/PDF/environmental/201503737.pdf" target="blank">Swearingen et al. 2015</a>, <a href="https://www.sciencedirect.com/science/article/pii/S0301479714006112" target="blank">Costanza et al. 2015b</a>).</p>
+<p>When a STM is built in a software environment with rates of growth
+between states and probabilities for each transition, it is known as a
+<strong>state-and-transition simulation model</strong> (STSM; <a
+href="https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/2041-210X.12597"
+target="blank">Daniel et al. 2016</a>). A STSM can be used to
+<strong>simulate the dynamics of a system over time and space.</strong>
+STSMs have been widely applied in natural resource management to
+estimate historical conditions (<a
+href="https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/eap.2013"
+target="blank">Donato et al. 2020</a>, <a
+href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_004.pdf"
+target="blank">Blankenship et al. 2012</a>), simulate the spread of
+invasive species (<a
+href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2730"
+target="blank">Jarnevich et al. 2019</a>), test various management
+scenarios (<a
+href="https://www.conservationgateway.org/Documents/Enhanced%20conservation%20action%20planning_assessing%20landscape%20condition.pdf"
+target="blank">Low et al. 2010</a>, <a
+href="https://www.aimspress.com/article/10.3934/environsci.2015.2.180"
+target="blank">Costanza et al. 2015a</a>), and forecast future landscape
+conditions under different climates (<a
+href="https://www.springer.com/gp/book/9783319249285"
+target="blank">Provencher et al. 2016</a>, <a
+href="https://www.aimspress.com/fileOther/PDF/environmental/201503737.pdf"
+target="blank">Swearingen et al. 2015</a>, <a
+href="https://www.sciencedirect.com/science/article/pii/S0301479714006112"
+target="blank">Costanza et al. 2015b</a>).</p>
 <br> Click through the example below to see how a STSM works:
 <center>
 <p><iframe title="My embedded document" src="kbslick5.html" frameborder="0" width="100%" height="450"></iframe></p>
 </center>
 </div>
-<div id="landfire-bps-models-a-complete-set-for-the-u.s." class="section level2">
+<div id="landfire-bps-models-a-complete-set-for-the-u.s."
+class="section level2">
 <h2>LANDFIRE BpS models: a complete set for the U.S.</h2>
 <style>
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </style>
 <div class="blue">
-<p>The <strong><a href="https://landfire.gov/" target="blank">LANDFIRE</a></strong> Program, in collaboration with experts around the country, created a set of over 900 STSMs for ecosystems in the United States <a href="https://doi.org/10.1002/ecs2.3484" target="blank">Blankenship et al. 2021</a>. Each LANDFIRE STSM represents a <strong>Biophysical Setting</strong> (BpS). A BpS is a vegetation concept that describes the vegetation community likely to have been dominant on the landscape prior to European colonization of North America given an approximation of historical disturbance regimes and the current biophysical environment.</p>
+<p>The <strong><a href="https://landfire.gov/"
+target="blank">LANDFIRE</a></strong> Program, in collaboration with
+experts around the country, created a set of over 900 STSMs for
+ecosystems in the United States <a
+href="https://doi.org/10.1002/ecs2.3484" target="blank">Blankenship et
+al. 2021</a>. Each LANDFIRE STSM represents a <strong>Biophysical
+Setting</strong> (BpS). A BpS is a vegetation concept that describes the
+vegetation community likely to have been dominant on the landscape prior
+to European colonization of North America given an approximation of
+historical disturbance regimes and the current biophysical
+environment.</p>
 </div>
 <p><br></p>
 <blockquote>
-<p><strong><a href="https://www.landfire.gov/bps-models.php" target="blank">LANDFIRE BpS models</a></strong> are reference condition models that define natural vegetation communities and their historical disturbance regimes. On the <a href="./ModelingWork.html" target="blank">modeling work</a> page you will learn more about these models and how to modify them to represent current landscapes and simulate possible future conditions.</p>
+<p><strong><a href="https://www.landfire.gov/bps-models.php"
+target="blank">LANDFIRE BpS models</a></strong> are reference condition
+models that define natural vegetation communities and their historical
+disturbance regimes. On the <a href="./ModelingWork.html"
+target="blank">modeling work</a> page you will learn more about these
+models and how to modify them to represent current landscapes and
+simulate possible future conditions.</p>
 </blockquote>
 <style type="text/css">
   .figure {
@@ -410,19 +468,39 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 <iframe width="896" height="504" src="https://www.youtube.com/embed/xjaWJCe7udQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <p></br></p>
-<p>Understanding how ecosystems looked and worked prior to European colonization of North America is a focus of the BpS body of work. The process was to:</p>
+<p>Understanding how ecosystems looked and worked prior to European
+colonization of North America is a focus of the BpS body of work. The
+process was to:</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Classify and define the ecosystems.</strong> LANDFIRE calls the historic ecosystems “Biophysical Settings”, and used <a href="https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states" target="blank">NatureServe’s Ecological Systems</a></p></li>
+<li><p><strong>Classify and define the ecosystems.</strong> LANDFIRE
+calls the historic ecosystems “Biophysical Settings”, and used <a
+href="https://www.natureserve.org/conservation-tools/terrestrial-ecological-systems-united-states"
+target="blank">NatureServe’s Ecological Systems</a></p></li>
 <li><p>The LANDFIRE team held expert workshops to:</p>
 <ul>
-<li><strong>Describe the BpSs</strong>, including their nested states or <a href="https://www.landfire.gov/sclass.php" target="blank">succession classes</a>. BpS can have up to 5 succession classes, each of which is described by its canopy height, canopy cover, and species composition.</li>
-<li><strong>Use state and transition modeling techniques</strong> to estimate how much of each succession class would have been on the landscape historically, (prior to European colonization). The estimated amount of each succession class depends on the natural disturbance regimes that the experts input into SyncroSim (just like you will be doing soon! See section below for SyncroSim info.</li>
+<li><strong>Describe the BpSs</strong>, including their nested states or
+<a href="https://www.landfire.gov/sclass.php" target="blank">succession
+classes</a>. BpS can have up to 5 succession classes, each of which is
+described by its canopy height, canopy cover, and species
+composition.</li>
+<li><strong>Use state and transition modeling techniques</strong> to
+estimate how much of each succession class would have been on the
+landscape historically, (prior to European colonization). The estimated
+amount of each succession class depends on the natural disturbance
+regimes that the experts input into SyncroSim (just like you will be
+doing soon! See section below for SyncroSim info.</li>
 </ul></li>
 </ol>
-<p>Each LANDFIRE BpS has a description document and a state-and-transition simulation model. <br> <br></p>
+<p>Each LANDFIRE BpS has a description document and a
+state-and-transition simulation model. <br> <br></p>
 <div id="bps-descriptions" class="section level3">
 <h3>BpS Descriptions</h3>
-<p>Each BpS has an <a href="http://landfirereview.org/search.php" target="blank">extensive description</a>. See the description from the <a href="http://landfirereview.org/search.php?q=Inter-Mountain%20Basins%20Montane%20Sagebrush%20Steppe&amp;hPP=20&amp;idx=lf_landfire_dev&amp;p=0&amp;dFR%5Bmap_zones.Number%5D%5B0%5D=1&amp;is_v=1" target="blank">Inter-Mountain Basins Montane Sagebrush Steppe Ecosystem</a> example.</p>
+<p>Each BpS has an <a href="http://landfirereview.org/search.php"
+target="blank">extensive description</a>. See the description from the
+<a
+href="http://landfirereview.org/search.php?q=Inter-Mountain%20Basins%20Montane%20Sagebrush%20Steppe&amp;hPP=20&amp;idx=lf_landfire_dev&amp;p=0&amp;dFR%5Bmap_zones.Number%5D%5B0%5D=1&amp;is_v=1"
+target="blank">Inter-Mountain Basins Montane Sagebrush Steppe
+Ecosystem</a> example.</p>
 <p>Each description includes:</p>
 <style>
   .col2 {
@@ -455,15 +533,37 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
     text-align: center;
   }
 </style>
-<p><img src="images/virginia.jpg" title="Photo: © Mark Godfrey, TNC, Virginia Coast Reserve" alt="Photo: © Mark Godfrey, TNC, Virginia Coast Reserve" width="2142" /> <br></p>
+<p><img src="images/virginia.jpg" title="Photo: © Mark Godfrey, TNC, Virginia Coast Reserve" alt="Photo: © Mark Godfrey, TNC, Virginia Coast Reserve" width="2142" />
+<br></p>
 <p>Photo: © Mark Godfrey, TNC, Virginia Coast Reserve</p>
-<p>Experts developed a state-and-transition simulation model to represent every LANDFIRE BpS. The models are developed and delivered in the SyncroSim software, ST-Sim package. LANDFIRE BpS models are standardized in several ways. Modelers defined each BpS with five or fewer succession classes (i.e. states) and used a subset of the SyncroSim software functions. In addition, modelers used a pre-defined list of disturbances to attribute disturbance transitions. This list included “optional” types that allowed modelers to define and model any disturbance they wanted to include. Modeled states and transitions are described in the model description discussed above. Pairing the model with the description helps the user understand what the various states and transitions represent. It may also offer users additional information such as how disturbance probabilities were calculated, and any assumptions made by model developers. <br></p>
+<p>Experts developed a state-and-transition simulation model to
+represent every LANDFIRE BpS. The models are developed and delivered in
+the SyncroSim software, ST-Sim package. LANDFIRE BpS models are
+standardized in several ways. Modelers defined each BpS with five or
+fewer succession classes (i.e. states) and used a subset of the
+SyncroSim software functions. In addition, modelers used a pre-defined
+list of disturbances to attribute disturbance transitions. This list
+included “optional” types that allowed modelers to define and model any
+disturbance they wanted to include. Modeled states and transitions are
+described in the model description discussed above. Pairing the model
+with the description helps the user understand what the various states
+and transitions represent. It may also offer users additional
+information such as how disturbance probabilities were calculated, and
+any assumptions made by model developers. <br></p>
 </div>
 <div id="application-scale-of-the-models" class="section level3">
 <h3>Application scale of the models</h3>
-<p>LANDFIRE models and descriptions were designed for use over large areas - not your back yard. BpS models were developed to represent conditions at the <a href="https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/docs/partitioning-us-into-mapping-zones.pdf" target="blank">National Land Cover Database Map Zone</a> level <a href="./ModelingWork.html" target="blank">Modeling Work</a>. That said, people do use them for smaller areas. Success of downscaling depends on factors such as:</p>
+<p>LANDFIRE models and descriptions were designed for use over large
+areas - not your back yard. BpS models were developed to represent
+conditions at the <a
+href="https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/docs/partitioning-us-into-mapping-zones.pdf"
+target="blank">National Land Cover Database Map Zone</a> level <a
+href="./ModelingWork.html" target="blank">Modeling Work</a>. That said,
+people do use them for smaller areas. Success of downscaling depends on
+factors such as:</p>
 <ul>
-<li>How much review, and how comfortable are users with the information included in the models?</li>
+<li>How much review, and how comfortable are users with the information
+included in the models?</li>
 <li>How important are the decisions and how much risk is involved?</li>
 <li>How much supporting information is there? <br></li>
 </ul>
@@ -471,22 +571,44 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 </div>
 <div id="syncrosim-software" class="section level2">
 <h2>SyncroSim software</h2>
-<p>LANDFIRE currently develops and delivers its STSMs in the <a href="http://docs.syncrosim.com/" target="blank">SyncroSim</a> modeling platform. SyncroSim is a free and flexible platform designed to manage data for simulation modeling. Packages developed for SyncroSim can be used for any kind of simulation model with structured input and output data. ST-Sim is a SyncroSim package that LANDFIRE uses to develop its STSMs. ST-Sim can be used to model vegetation and land use and land cover changes for virtually any ecosystem or landscape. The model is stochastic (randomly determined) and can be run either spatially or non-spatially. While LANDFIRE BpS models are non-spatial, there are many examples of spatial STSMs (see <a href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_002.pdf" target="blank">Daniel and Frid 2011</a>. <br></p>
+<p>LANDFIRE currently develops and delivers its STSMs in the <a
+href="http://docs.syncrosim.com/" target="blank">SyncroSim</a> modeling
+platform. SyncroSim is a free and flexible platform designed to manage
+data for simulation modeling. Packages developed for SyncroSim can be
+used for any kind of simulation model with structured input and output
+data. ST-Sim is a SyncroSim package that LANDFIRE uses to develop its
+STSMs. ST-Sim can be used to model vegetation and land use and land
+cover changes for virtually any ecosystem or landscape. The model is
+stochastic (randomly determined) and can be run either spatially or
+non-spatially. While LANDFIRE BpS models are non-spatial, there are many
+examples of spatial STSMs (see <a
+href="https://www.fs.fed.us/pnw/pubs/pnw_gtr869/pnw_gtr869_002.pdf"
+target="blank">Daniel and Frid 2011</a>. <br></p>
 <div id="getting-started-in-syncrosim" class="section level3">
 <h3>Getting started in SyncroSim</h3>
-<p>We recommend that users follow the steps below for downloading SyncroSim and St-Sim</p>
+<p>We recommend that users follow the steps below for downloading
+SyncroSim and St-Sim</p>
 <div id="step-1-download-syncrosim" class="section level4">
 <h4>Step 1: Download SyncroSim</h4>
 <ul>
-<li><a href="https://syncrosim.com/" target="blank">SyncroSim software</a>. Make sure you download the full package (SyncroSim-setup.exe check your downloads file. Note - SyncroSim is <em>not</em> the same as SyncroSim Lite) <br> <br></li>
+<li><a href="https://syncrosim.com/" target="blank">SyncroSim
+software</a>. Make sure you download the full package
+(SyncroSim-setup.exe check your downloads file. Note - SyncroSim is
+<em>not</em> the same as SyncroSim Lite) <br> <br></li>
 </ul>
 </div>
 <div id="step-2-install-required-packages" class="section level4">
 <h4>Step 2: Install required packages</h4>
 <p><strong>Do not skip this step.</strong></p>
 <ul>
-<li><p>To work through this tutorial you will need to load 2 packages: 1) St-Sim and 2) landfirevegmodels. The “landfirevegmodels” package gives users quick access to all of the BpS models, tables of Succession Class (or in STSM language “states”) definitions and mapping rules.</p></li>
-<li><p>In SyncroSim, navigate to ‘File’ -&gt; ‘Packages’ -&gt; select ‘ST-Sim state-and-transition model’ and 2020 ‘landfirevegmodels’)-&gt; ‘Install’ -&gt; OK (see screenshot below).</p></li>
+<li><p>To work through this tutorial you will need to load 2 packages:
+1) St-Sim and 2) landfirevegmodels. The “landfirevegmodels” package
+gives users quick access to all of the BpS models, tables of Succession
+Class (or in STSM language “states”) definitions and mapping
+rules.</p></li>
+<li><p>In SyncroSim, navigate to ‘File’ -&gt; ‘Packages’ -&gt; select
+‘ST-Sim state-and-transition model’ and 2020 ‘landfirevegmodels’)-&gt;
+‘Install’ -&gt; OK (see screenshot below).</p></li>
 </ul>
 <center>
 <img src="images/packages.JPG" title="screenshot of syncrosim packages, landfirevegmodels, stsim circled" alt="screenshot of syncrosim packages, landfirevegmodels, stsim circled" width="85%" />
@@ -497,16 +619,25 @@ div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
 <div id="for-more-information" class="section level3">
 <h3>For more information</h3>
 <ul>
-<li>Read the overview of <a href="http://docs.syncrosim.com/getting_started/overview.html" target="blank">SyncroSim</a></li>
-<li><a href="https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s" target="blank">Watch an introduction to SyncroSim</a> Note: some features of SyncroSim may be different than what you see in the video due to versioning.</li>
+<li>Read the overview of <a
+href="http://docs.syncrosim.com/getting_started/overview.html"
+target="blank">SyncroSim</a></li>
+<li><a
+href="https://www.youtube.com/watch?v=e1BBcbImrrM&amp;list=PLDFF9036BBFE46CE6&amp;index=6&amp;t=0s"
+target="blank">Watch an introduction to SyncroSim</a> Note: some
+features of SyncroSim may be different than what you see in the video
+due to versioning.</li>
 </ul>
 <hr />
 <div id="whats-next" class="section level4">
 <h4>What’s next?</h4>
 <ul>
-<li>understanding the <a href="./perspectives.html" target="blank">characteristics of the model</a> and taking a bird’s eye view when considering the BpS model approach</li>
+<li>understanding the <a href="./perspectives.html"
+target="blank">characteristics of the model</a> and taking a bird’s eye
+view when considering the BpS model approach</li>
 </ul>
-<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
 
 </div>
 </div>

@@ -62,11 +62,6 @@ knit_hooks$set(plot = my_plot_hook)
 
 The goal of this section is to help you identify questions that the LANDFIRE BpS models (with their built-in simplifications, strengths, and constraints) are best suited to help you explore.
 
-<<<<<<< HEAD
-### Background
-=======
-### Background 
-
 ```{r firstPhoto, echo = FALSE}
 cap_txt <- "Photo: © Marci Eggers, TNC."
 alt_txt <- "I really want some coffee."
@@ -82,31 +77,14 @@ knitr::include_graphics("images/fern.jpg")
 ```
 </div>
 
->>>>>>> 9f773b4b91697c7d5d84379f178850b2759f055e
 
 Changes in climate, such as increases in temperature, changes in precipitation patterns, and increases in evaporative demand are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed ecological responses such as species range shifts, and changes in growth and mortality, in addition to ecological theory, allow us to generate hypotheses on how these changes may influence large-scale vegetation patterns. Many of these hypotheses can be productively explored with BpS models in the SyncroSim platform.
 <br>
 
-<<<<<<< HEAD
+<right>
 =======
 Before jumping into modeling, it is important to recognize that BpS models focus on vegetation communities, which presents some limitations in a climate change modeling context. Over evolutionary time, plant species have developed traits that reflect the influence of climate, other abiotic factors, and species interactions such as competition for resources. The suite of species that make up an ecosystem are likely to respond differently to climate change. While growth and mortality transitions for vegetation classes can easily be modified with these models, questions that focus on changes in species dynamics or changes in composition within a vegetation class, are more appropriate for species-focused models. 
 
-
->>>>>>> 9f773b4b91697c7d5d84379f178850b2759f055e
-<br>
-<center>
-```{r, echo=FALSE, out.width="45%", fig.cap="curled up fern about to open"} 
-knitr::include_graphics("images/fern.jpg")
-
-```
-<br>
-
-© Marcie Eggers, TNC. Close-up of fern about to spring open in the Atlantic Forest rainforest, Guaraquecaba, Brazil
-</center>
-<br>
-Before jumping into modeling, it is important to recognize that BpS models focus on vegetation communities, which presents some limitations in a climate change modeling context. Over evolutionary time, plant species have developed traits that reflect the influence of climate, other abiotic factors, and species interactions such as competition for resources. The suite of species that make up an ecosystem are likely to respond differently to climate change. While growth and mortality transitions for vegetation classes can easily be modified with these models, questions that focus on changes in species dynamics or changes in composition within a vegetation class, are more appropriate for species-focused models. 
-
-<br>
 
 <style>
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
@@ -216,28 +194,21 @@ Photo: © Chris Helzer, TNC. Niobrara River near the headquarters of The Nature 
 <br>
 <br>
 
-
-```{=html}
-<style type="text/css">
-  .figure {
-    float: right;
-    width: 35%;
-    padding: 10px;
-    text-align: center;
-  }
-</style>
-```
-
 ### Larger fires
 
-```{r, echo=FALSE, out.width='45%', out.extra='style="float:right; padding:10px"', fig.cap="hiker hiking along ridge in Banff National Park with dense wildfire smoke surrounding the landscape"} 
+<center>
+```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"', fig.cap="hiker hiking along ridge in Bamff National Park, dense wildfire smoke surrounding landscape"} 
 knitr::include_graphics("images/large-fire.jpg")
 
 ```
 
+Photo: © Stavros Mitchelides, TNC Photo Contest 2019. Dense wildfire smoke in Banff National Park.
+</center>
+<br>
+
+
 Similarly, as climate continues to change we are seeing an increase in the spatial extent of fires. In the aspatial LANDFIRE BpS models, you can simulate this in the same way as you would model an increase in fire frequency – by using a higher fire frequency value. As a result of using the same approach for both patterns (larger fires, and more frequent fires), it is not possible to separate out impacts in the aspatial models. With spatial models, you can add this additional complexity.
 
-Photo: © Stavros Mitchelides, TNC Photo Contest 2019. Dense wildfire smoke in Banff National Park.
 
 <br>
 
@@ -248,10 +219,14 @@ Insect outbreaks that promote a state change in vegetation are not found in all 
 
 ## Transitions in vegetation classes
 
+<center>
+
 ```{r, echo=FALSE, out.width='45%', out.extra='style="float:right; padding:10px"', fig.cap="hand crumbling soil"} 
 knitr::include_graphics("images/soil.jpg")
 
 ```
+</center>
+<br>
 
 
 ```{=html}
@@ -265,9 +240,9 @@ knitr::include_graphics("images/soil.jpg")
 </style>
 ```
 
-In some vegetation systems, managers have observed that increases in the intensity or extent of fires is leading to a failure of the ecological system to regenerate – reasons may include a lack of seed sources close to the newly burned area. This observation could be modeled by adding a new vegetation class (perhaps a grass or shrub class), then transitioning some (using the proportion field) or all of the burned cells to this new class.
-
 Photo: © Devan King/TNC
+
+In some vegetation systems, managers have observed that increases in the intensity or extent of fires is leading to a failure of the ecological system to regenerate – reasons may include a lack of seed sources close to the newly burned area. This observation could be modeled by adding a new vegetation class (perhaps a grass or shrub class), then transitioning some (using the proportion field) or all of the burned cells to this new class.
 
 While BpS models are [aspatial](./advancedModeling.html){target='blank'} as delivered, you can capture that variation by developing separate iterations of the same model if you have information on how vegetation dynamics might vary within an assessment area. For example, site conditions may strongly influence the sensitivity of a system to a disturbance, the rate of recovery after a disturbance, or the probability that a disturbance will shift a vegetation type to a new class.
 
