@@ -14,7 +14,8 @@
 
 <title>LANDFIRE Vegetation Modeling</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.27.1/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,7 +30,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -63,6 +64,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -83,6 +85,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +145,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -173,8 +182,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -182,16 +191,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -314,7 +316,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -360,53 +362,101 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">LANDFIRE Vegetation Modeling</h1>
+<h4 class="author"></h4>
 
 </div>
 
 
 <div id="welcome" class="section level2">
 <h2>Welcome</h2>
-<p>Hello and welcome to The Nature Conservancy’s LANDFIRE vegetation dynamics modeling site. We created this site to help you harness the potential of the vegetation dynamics modeling framework to accomplish your analysis, management, and restoration objectives. We recognize the importance of having the best resources to accomplish your goals and LANDFIRE is continually improving our products to get you the tools and data that you need. <br></p>
-<p><strong>How to use this website?</strong> We designed this website as a resource for both new and seasoned Biophysical Setting (BpS) modelers. We use the Montane Sage-Steppe ecosystem model throughout the website. By weaving this model into all the tutorials, we can dive deeper into exploring, modifying, and understanding the model’s “story”. We hope you find our website useful and most importantly, we hope you use these BpS models to their fullest extent.</p>
-<p>If you are already familiar with this modeling framework and ready to get started, skip ahead to <a href="./ModelingWork.html" target="blank">Modeling Work</a>.</p>
+<p>Hello and welcome to The Nature Conservancy’s LANDFIRE vegetation
+dynamics modeling site. We created this site to help you harness the
+potential of the vegetation dynamics modeling framework to accomplish
+your analysis, management, and restoration objectives. We recognize the
+importance of having the best resources to accomplish your goals and
+LANDFIRE is continually improving our products to get you the tools and
+data that you need. <br></p>
+<p><strong>How to use this website?</strong> We designed this website as
+a resource for both new and seasoned Biophysical Setting (BpS) modelers.
+We use the Montane Sage-Steppe ecosystem model throughout the website.
+By weaving this model into all the tutorials, we can dive deeper into
+exploring, modifying, and understanding the model’s “story”. We hope you
+find our website useful and most importantly, we hope you use these BpS
+models to their fullest extent.</p>
+<p>If you are already familiar with this modeling framework and ready to
+get started, skip ahead to <a href="./ModelingWork.html"
+target="blank">Modeling Work</a>.</p>
 <p><br></p>
 <center>
-<img src="images/sb.jpg" title="Landscape picture of sagebrush, clouds and brown hills in the background" alt="Landscape picture of sagebrush, clouds and brown hills in the background" width="75%" />
+<div class="figure">
+<img src="images/sb.jpg" alt="Landscape picture of sagebrush, clouds and brown hills in the background" width="75%" />
+<p class="caption">
+Landscape picture of sagebrush, clouds and brown hills in the background
+</p>
+</div>
 </center>
 <br>
 <center>
-Photo: © Ian Shive, TNC. Sierra Mountain Foothills, Mojave Desert, Central California
+Photo: © Ian Shive, TNC. Sierra Mountain Foothills, Mojave Desert,
+Central California
 </center>
 <p><br></p>
 </div>
-<div id="why-integrate-this-into-your-current-work" class="section level2">
+<div id="why-integrate-this-into-your-current-work"
+class="section level2">
 <h2>Why integrate this into your current work?</h2>
-<p>This framework provides a national baseline for assessing current vegetation conditions while accounting for historical ecology. Integrating this knowledge with current projections of climate and other factors has the potential to improve the way we manage land while providing ecological context.</p>
+<p>This framework provides a national baseline for assessing current
+vegetation conditions while accounting for historical ecology.
+Integrating this knowledge with current projections of climate and other
+factors has the potential to improve the way we manage land while
+providing ecological context.</p>
 <blockquote>
-<p>This modeling framework can help you make projections about future landscape conditions as management and natural environments evolve. When used within the intended context, BpS modeling can be a powerful tool for managers.</p>
+<p>This modeling framework can help you make projections about future
+landscape conditions as management and natural environments evolve. When
+used within the intended context, BpS modeling can be a powerful tool
+for managers.</p>
 </blockquote>
-<p>Biophysical models help users investigate the effects from (simulated) ecosystem disturbances, and learn how changes in management actions might impact an ecosystem before allocating time or resources to on the ground operations</p>
+<p>Biophysical models help users investigate the effects from
+(simulated) ecosystem disturbances, and learn how changes in management
+actions might impact an ecosystem before allocating time or resources to
+on the ground operations</p>
 <center>
-<img src="images/vt.jpg" title="Hillside full of very tightly spaced orange, yellow, green leafed trees with tall brush in the foreground" alt="Hillside full of very tightly spaced orange, yellow, green leafed trees with tall brush in the foreground" width="75%" />
+<div class="figure">
+<img src="images/vt.jpg" alt="Hillside full of very tightly spaced orange, yellow, green leafed trees with tall brush in the foreground" width="75%" />
+<p class="caption">
+Hillside full of very tightly spaced orange, yellow, green leafed trees
+with tall brush in the foreground
+</p>
+</div>
 </center>
 <br>
 <center>
-Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
+Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain,
+Vermont.
 </center>
 <p><br></p>
 </div>
 <div id="what-will-you-learn" class="section level2">
 <h2>What will you learn?</h2>
 <ol style="list-style-type: decimal">
-<li><p>We demonstrate the flexible software environment, <a href="https://syncrosim.com/" target="blank">SyncroSim</a> which allows users to explore and manipulate LANDFIRE’s vegetation dynamics models</p></li>
-<li><p>We illustrate how LANDFIRE’s vegetation dynamics models can be used to investigate historical vegetation dynamics and use these historical models to jumpstart your exploration into current and possible future landscape conditions in your area of interest</p></li>
-<li><p>We explore options for modifying vegetation models to represent current or projected future landscape conditions</p></li>
-<li><p>We introduce techniques for that simulate impacts from climate change in the LANDFIRE vegetation models</p></li>
+<li><p>We demonstrate the flexible software environment, <a
+href="https://syncrosim.com/" target="blank">SyncroSim</a> which allows
+users to explore and manipulate LANDFIRE’s vegetation dynamics
+models</p></li>
+<li><p>We illustrate how LANDFIRE’s vegetation dynamics models can be
+used to investigate historical vegetation dynamics and use these
+historical models to jumpstart your exploration into current and
+possible future landscape conditions in your area of interest</p></li>
+<li><p>We explore options for modifying vegetation models to represent
+current or projected future landscape conditions</p></li>
+<li><p>We introduce techniques for that simulate impacts from climate
+change in the LANDFIRE vegetation models</p></li>
 </ol>
 </div>
 <div id="new-to-modeling-consider-this" class="section level2">
 <h2>New to modeling? Consider this…</h2>
-<p>Models are everywhere, they may be behind the scenes or in full view. Some common examples of models:</p>
+<p>Models are everywhere, they may be behind the scenes or in full view.
+Some common examples of models:</p>
 <style type="text/css">
   .figure {
     float: right;
@@ -415,7 +465,13 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
     text-align: center;
   }
 </style>
-<p><img src="images/models.jpg" title="Picture of a man holding a model airplane about ready to launch it with a rock in the background " alt="Picture of a man holding a model airplane about ready to launch it with a rock in the background " width="3000" /></p>
+<div class="figure">
+<img src="images/models.jpg" alt="Picture of a man holding a model airplane about ready to launch it with a rock in the background " width="3000" />
+<p class="caption">
+Picture of a man holding a model airplane about ready to launch it with
+a rock in the background
+</p>
+</div>
 <p>Photo: © Chris Leipelt</p>
 <ul>
 <li>weather forecasts</li>
@@ -424,34 +480,69 @@ Photo: © Eamon Mac Mahon, TNC, Autumn foliage near Burnt Mountain, Vermont.
 <li>forecasting a pandemic</li>
 <li>maps</li>
 </ul>
-<p><br> Regardless of their complexity, all models are by definition a simplification of reality. Like the model airplane - it “flies” like an airplane but it cannot carry cargo or passengers.</p>
+<p><br> Regardless of their complexity, all models are by definition a
+simplification of reality. Like the model airplane - it “flies” like an
+airplane but it cannot carry cargo or passengers.</p>
 <p><br> <br></p>
 <center>
-<img src="images/model-simple-vs-complex1.jpg" title="Figure depicting the difference between a simple vs. Complex model: simple image is a basic venn diagram with 3 circles – overlapping in the middle. Second picture has three boxes, one circle with arrows coming in and out of the elements depicting a complex model" alt="Figure depicting the difference between a simple vs. Complex model: simple image is a basic venn diagram with 3 circles – overlapping in the middle. Second picture has three boxes, one circle with arrows coming in and out of the elements depicting a complex model" width="45%" />
+<div class="figure">
+<img src="images/model-simple-vs-complex1.jpg" alt="Figure depicting the difference between a simple vs. Complex model: simple image is a basic venn diagram with 3 circles – overlapping in the middle. Second picture has three boxes, one circle with arrows coming in and out of the elements depicting a complex model" width="45%" />
+<p class="caption">
+Figure depicting the difference between a simple vs. Complex model:
+simple image is a basic venn diagram with 3 circles – overlapping in the
+middle. Second picture has three boxes, one circle with arrows coming in
+and out of the elements depicting a complex model
+</p>
+</div>
 </center>
 <p><br></p>
 <blockquote>
-<p>“All models are wrong, so why do we create and use them?” - George Box</p>
+<p>“All models are wrong, so why do we create and use them?” - George
+Box</p>
 </blockquote>
-<p><br> We create and use models because (as Box <em>also</em> said) they can be useful. Models can illuminate through prediction or explanation. They can promote understanding and exploration if used properly.</p>
-<p><strong>Balance and relevance</strong> are what can make a model illuminating.</p>
+<p><br> We create and use models because (as Box <em>also</em> said)
+they can be useful. Models can illuminate through prediction or
+explanation. They can promote understanding and exploration if used
+properly.</p>
+<p><strong>Balance and relevance</strong> are what can make a model
+illuminating.</p>
 <center>
-<img src="images/balance-relevance.jpg" title="Figure: a scale with a double pan with the word balance in one pan and relevance in the other pan – words are equally weighted and balanced" alt="Figure: a scale with a double pan with the word balance in one pan and relevance in the other pan – words are equally weighted and balanced" width="45%" />
+<div class="figure">
+<img src="images/balance-relevance.jpg" alt="Figure: a scale with a double pan with the word balance in one pan and relevance in the other pan – words are equally weighted and balanced" width="45%" />
+<p class="caption">
+Figure: a scale with a double pan with the word balance in one pan and
+relevance in the other pan – words are equally weighted and balanced
+</p>
+</div>
 </center>
 <p><br></p>
 </div>
 <div id="developers-vs-users-key-considerations" class="section level2">
 <h2>Developers vs Users: Key Considerations</h2>
-<p>For the model developer, the key is to balance <strong>precision and bias</strong> of the outputs with the relevance of the model. The goal is to hit your application sweet spot.</p>
+<p>For the model developer, the key is to balance <strong>precision and
+bias</strong> of the outputs with the relevance of the model. The goal
+is to hit your application sweet spot.</p>
 <p><br></p>
 <center>
-<p><img src="images/model-complexity.png" title="Graph with error on the Y axis, model complexity on the x axis, a vertical line emerges in the middle of the x axis depicting the optimum model complexity target where the y axis elements (total error, variance and bias) intersect with this optimum model complexity target" alt="Graph with error on the Y axis, model complexity on the x axis, a vertical line emerges in the middle of the x axis depicting the optimum model complexity target where the y axis elements (total error, variance and bias) intersect with this optimum model complexity target" width="55%" /></p>
+<div class="figure">
+<img src="images/model-complexity.png" alt="Graph with error on the Y axis, model complexity on the x axis, a vertical line emerges in the middle of the x axis depicting the optimum model complexity target where the y axis elements (total error, variance and bias) intersect with this optimum model complexity target" width="55%" />
+<p class="caption">
+Graph with error on the Y axis, model complexity on the x axis, a
+vertical line emerges in the middle of the x axis depicting the optimum
+model complexity target where the y axis elements (total error, variance
+and bias) intersect with this optimum model complexity target
+</p>
+</div>
 </center>
 <center>
-Image courtesy: <a href="francescopochetti.com" target="blank">Francesco Pochetti</a>
+Image courtesy: <a href="francescopochetti.com" target="blank">Francesco
+Pochetti</a>
 </center>
 <p><br></p>
-<p>The model should provide useful information but must also function for the user (i.e. have the right level of complexity). Complexity should have a purpose: to provide more refined information, or in some cases provide the same information with more fidelity.</p>
+<p>The model should provide useful information but must also function
+for the user (i.e. have the right level of complexity). Complexity
+should have a purpose: to provide more refined information, or in some
+cases provide the same information with more fidelity.</p>
 <div id="complex-models" class="section level3">
 <h3>Complex models</h3>
 <ul>
@@ -460,9 +551,17 @@ Image courtesy: <a href="francescopochetti.com" target="blank">Francesco Pochett
 <li>take longer to run</li>
 </ul>
 <blockquote>
-<p><a href="./VegetationModeling.html" target="blank">LANDFIRE BpS models</a>, with their limited number of states and transitions, are less complex and provide relatively few and coarser level outputs. This also makes them easier to create and use.</p>
+<p><a href="./VegetationModeling.html" target="blank">LANDFIRE BpS
+models</a>, with their limited number of states and transitions, are
+less complex and provide relatively few and coarser level outputs. This
+also makes them easier to create and use.</p>
 </blockquote>
-<p>Models such as <a href="https://www.fs.usda.gov/treesearch/pubs/40241" target="blank">SIMPPLLE</a> and <a href="http://www.landis-ii.org/" target="blank">LANDIS II</a> sit nearer the middle or upper end of the complexity scale and can provide more types of outputs but at higher operational cost.</p>
+<p>Models such as <a
+href="https://www.fs.usda.gov/treesearch/pubs/40241"
+target="blank">SIMPPLLE</a> and <a href="http://www.landis-ii.org/"
+target="blank">LANDIS II</a> sit nearer the middle or upper end of the
+complexity scale and can provide more types of outputs but at higher
+operational cost.</p>
 <p><br></p>
 </div>
 <div id="understanding-model-characterstics" class="section level3">
@@ -488,24 +587,37 @@ div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
 <ol style="list-style-type: decimal">
 <li><p>Adhere to established modeling standards.</p></li>
 <li><p>Have a goal and a plan. Don’t just wing it!</p></li>
-<li><p>Work through the model changes in a stepwise fashion. Add states and transitions one at a time.</p></li>
+<li><p>Work through the model changes in a stepwise fashion. Add states
+and transitions one at a time.</p></li>
 <li><p>Review the results and plan the next steps.</p></li>
-<li><p>Keep it simple. The number of states directly impacts the number of transitions you need and the amount of information you need to support the model. As the model becomes more complicated it becomes more difficult to create, parametrize, understand, modify and utilize appropriately.</p></li>
-<li><p>Expect the unexpected. If you knew the answer with certainty, you probably did not need the model. An answer that seems strange to you may be correct, and indeed illuminating.</p></li>
+<li><p>Keep it simple. The number of states directly impacts the number
+of transitions you need and the amount of information you need to
+support the model. As the model becomes more complicated it becomes more
+difficult to create, parametrize, understand, modify and utilize
+appropriately.</p></li>
+<li><p>Expect the unexpected. If you knew the answer with certainty, you
+probably did not need the model. An answer that seems strange to you may
+be correct, and indeed illuminating.</p></li>
 </ol>
 <hr />
 <div id="whats-next" class="section level4">
 <h4>What’s next?</h4>
 <ul>
-<li>learn what a <a href="./VegetationModeling.html" target="blank">state-and-transition model</a> (STSM) is</li>
-<li>learn how 900 LANDFIRE STSMs were built and how to use them with SyncroSim</li>
+<li>learn what a <a href="./VegetationModeling.html"
+target="blank">state-and-transition model</a> (STSM) is</li>
+<li>learn how 900 LANDFIRE STSMs were built and how to use them with
+SyncroSim</li>
 <li>get acquainted with biophysical settings</li>
 </ul>
 <center>
 <p><br></p>
-<font size="4"> This website was developed by <a href="https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/contacts/Pages/default.aspx" target="blank">The Nature Conservancy LANDFIRE Team</a> under Agreement G18AC00378 with the U.S. Geological Survey.</font>
+<font size="4"> This website was developed by <a
+href="https://www.conservationgateway.org/ConservationPractices/FireLandscapes/LANDFIRE/contacts/Pages/default.aspx"
+target="blank">The Nature Conservancy LANDFIRE Team</a> under Agreement
+G18AC00378 with the U.S. Geological Survey.</font>
 </center>
-<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
 
 </div>
 </div>

@@ -14,7 +14,8 @@
 
 <title>Isolate and load your model</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -63,6 +64,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -83,6 +85,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -308,7 +313,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -380,29 +385,52 @@ body {
 <li>Load the LANDFIRE BpS Reference Condition Models library</li>
 <li>Make a new library with one Biophysical Setting.</li>
 </ol>
-<p>While we are focused on the sage-brush steppe, and introducing transitions you might not have on your landscape, these basic tasks will apply to almost all modeling efforts.</p>
-<p>In this document the “&gt;” sign will be analogous to “then click”, meaning a single left mouse click unless otherwise noted.</p>
+<p>While we are focused on the sage-brush steppe, and introducing
+transitions you might not have on your landscape, these basic tasks will
+apply to almost all modeling efforts.</p>
+<p>In this document the “&gt;” sign will be analogous to “then click”,
+meaning a single left mouse click unless otherwise noted.</p>
 </div>
-<div id="load-the-landfire-bps-reference-condition-models-library" class="section level3">
+<div id="load-the-landfire-bps-reference-condition-models-library"
+class="section level3">
 <h3>Load the LANDFIRE BpS Reference Condition Models library</h3>
-<p>Within SyncroSim there are 3 main levels of organization: 1) libraries, 2) projects and 3) scenarios. Most of your work will be at the scenario level, but first we have to load the LANDFIRE BpS Reference Condition Models (May 28, 2020) into the SyncroSim software. To do this you will:</p>
+<p>Within SyncroSim there are 3 main levels of organization: 1)
+libraries, 2) projects and 3) scenarios. Most of your work will be at
+the scenario level, but first we have to load the LANDFIRE BpS Reference
+Condition Models (May 28, 2020) into the SyncroSim software. To do this
+you will:</p>
 <ol style="list-style-type: decimal">
 <li>Open SyncroSim</li>
-<li>Click File (top left) &gt; New Library… (near the top) &gt; landfirevegmodels (upper middle) &gt; Reference Models &gt; OK</li>
-<li>Pour a beverage and wait. You are downloading the library that contains nearly 1,000 vegetation models. It may take a while.</li>
-<li>Once complete you will see the library in the Library Explorer pane.</li>
+<li>Click File (top left) &gt; New Library… (near the top) &gt;
+landfirevegmodels (upper middle) &gt; Reference Models &gt; OK</li>
+<li>Pour a beverage and wait. You are downloading the library that
+contains nearly 1,000 vegetation models. It may take a while.</li>
+<li>Once complete you will see the library in the Library Explorer
+pane.</li>
 </ol>
 </div>
-<div id="create-a-new-library-with-the-sage-steppe-bps-model-scenario" class="section level3">
+<div id="create-a-new-library-with-the-sage-steppe-bps-model-scenario"
+class="section level3">
 <h3>Create a new library with the Sage Steppe BpS model scenario</h3>
-<p>The LANDFIRE BpS Reference Condition Models library is the master library with all of the LANDFIRE BpS models for the entire country. Unless you are doing something like testing fire suppression for every BpS in the country or something similar you will want to create a new library with only the BpSs you are interested in.</p>
+<p>The LANDFIRE BpS Reference Condition Models library is the master
+library with all of the LANDFIRE BpS models for the entire country.
+Unless you are doing something like testing fire suppression for every
+BpS in the country or something similar you will want to create a new
+library with only the BpSs you are interested in.</p>
 <p>To create the new library you will:</p>
 <ol style="list-style-type: decimal">
-<li>Highlight the Project (e.g., word “Definitions”) of the “LANDFIRE BpS Reference Condition Models (there will be a date here)” Library.</li>
+<li>Highlight the Project (e.g., word “Definitions”) of the “LANDFIRE
+BpS Reference Condition Models (there will be a date here)”
+Library.</li>
 <li>Go to Edit -&gt; Export LFVM Strata</li>
-<li>Select the BpS(s) of interest. For this exercise you can paste “11260_1_7_8_9_10_19” into the Search box. Note, you could also type in words such as “sage” and/or “steppe”. Check the box(es) of the BpSs you want to export to your new SyncroSim library.</li>
-<li>In the “File Name” box type the desired name of the new library, e.g., “lfSageSteppe”.</li>
-<li>Browse to the folder where you would like the new library to live.</li>
+<li>Select the BpS(s) of interest. For this exercise you can paste
+“11260_1_7_8_9_10_19” into the Search box. Note, you could also type in
+words such as “sage” and/or “steppe”. Check the box(es) of the BpSs you
+want to export to your new SyncroSim library.</li>
+<li>In the “File Name” box type the desired name of the new library,
+e.g., “lfSageSteppe”.</li>
+<li>Browse to the folder where you would like the new library to
+live.</li>
 <li>Hit OK. It takes a little time to make the new library.</li>
 </ol>
 <center>
@@ -410,7 +438,8 @@ body {
 </center>
 <br>
 <center>
-Screenshot of Inter-Mountain Basins Montane Sagebrush Steppe Export LFVM Strata
+Screenshot of Inter-Mountain Basins Montane Sagebrush Steppe Export LFVM
+Strata
 </center>
 <p><br></p>
 <p>NICE. You now have a library with just one BpS in it.</p>
