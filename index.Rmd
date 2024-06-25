@@ -21,27 +21,10 @@ Hello and welcome to The Nature Conservancy's LANDFIRE vegetation dynamics model
 
 If you are already familiar with this modeling framework and ready to get started, skip ahead to [Modeling Work](./ModelingWork.html){target='blank'}.
 
-
-
-```{=html}
-<style type="text/css">
-  .figure {
-    float: right;
-    width: 55%;
-    padding: 10px;
-    text-align: center;
-  }
-</style>
-```
-
-
-```{r, echo=FALSE, fig.cap="Landscape picture of sagebrush, clouds and brown hills in the background"} 
-knitr::include_graphics("images/sb.jpg")
-
-```
 <br>
 
-Photo: © Ian Shive, TNC. Sierra Mountain Foothills, Mojave Desert, Central California
+![Photo: © Ian Shive, TNC. Sierra Mountain Foothills, Mojave Desert, Central California](images/sb.jpg){style="float:right; margin-left: 5%; fig-align:right; width:55%;" fig-alt="\"Landscape picture of sagebrush, clouds and brown hills in the background"}
+<br>
 
 ## Why integrate this into your current work?
 
