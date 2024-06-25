@@ -14,7 +14,7 @@
 
 <title>Model Examples</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.27.1/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -30,7 +30,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -145,11 +145,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -178,8 +182,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +191,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -423,7 +420,7 @@ target="blank">Download Kori’s notes here</a></p>
 of the <em>example</em> we are working with here (not an all inclusive
 distribution map):
 <center>
-<p><iframe title="My embedded document" src="sageSlick2.html" frameborder="0" width="100%" height="450"></iframe></p>
+<iframe title="My embedded document" src="sageSlick2.html" frameborder="0" width="100%" height="450"></iframe>
 </center>
 <p><strong>Model Identifier</strong> This model is based on the LANDFIRE
 11260_1_7_8_9_10_19 BpS model and description and was modified based on
@@ -482,8 +479,14 @@ data</li>
     text-align: center;
   }
 </style>
-<p><img src="images/BlackEarthPrairieWisc.jpg" title="Landscape of green grass intermixed with brown prairie with cloudy skyline and trees in background " alt="Landscape of green grass intermixed with brown prairie with cloudy skyline and trees in background " width="1632" />
-Photo: © Jim Smith, TNC. Black Earth Prarie, Wisconsin</p>
+<div class="figure">
+<img src="images/BlackEarthPrairieWisc.jpg" alt="Landscape of green grass intermixed with brown prairie with cloudy skyline and trees in background " width="1632" />
+<p class="caption">
+Landscape of green grass intermixed with brown prairie with cloudy
+skyline and trees in background
+</p>
+</div>
+<p>Photo: © Jim Smith, TNC. Black Earth Prarie, Wisconsin</p>
 <p><strong>Model Identifier</strong> Note that the modifications
 illustrated in this example were applied to a locally-modified LANDFIRE
 BpS model 11320_32_34_35-Central Mixed Grass Prairie . You do not have
@@ -546,9 +549,15 @@ Hemlock</h2>
     text-align: center;
   }
 </style>
-<p><img src="images/hw.jpg" title="Forest landscape picture with closely spaced trees and lush, green understory " alt="Forest landscape picture with closely spaced trees and lush, green understory " width="2186" />
-Photo: © A. Blake Bardner, TNC. Young forest in TNC’s Campbell Parcel,
-Equinox Highlands, Vermont</p>
+<div class="figure">
+<img src="images/hw.jpg" alt="Forest landscape picture with closely spaced trees and lush, green understory " width="2186" />
+<p class="caption">
+Forest landscape picture with closely spaced trees and lush, green
+understory
+</p>
+</div>
+<p>Photo: © A. Blake Bardner, TNC. Young forest in TNC’s Campbell
+Parcel, Equinox Highlands, Vermont</p>
 <p><strong>Model Identifier</strong> The starter model for this example
 was from LANDFIRE, Biophysical Setting 13021_41_50_51, the
 Laurentian-Acadian Northern Hardwoods Forest - Hemlock that occurs in

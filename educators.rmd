@@ -14,53 +14,44 @@ output:
 ---
 ***
 
-### This page:
-+ Details on integrating BpS powered vegetation, State-and-Transition-Simulation modeling into your college classroom 
-+ Find free training that supports curriculum development
-+ Resources to support integration of STSMs in college classroom(s)
+## Using SyncroSim in the post-secondary classroom: A collaboration with Dr. Priscilla Nyamai
 
-***
+The following resources can be used to support the publication “Demystifying ecological modeling: a hands-on activity to acquaint students with modeling ecosystem responses to natural and anthropogenic disturbances” *(in prep June 2024).*
 
-## State-and-Transition-Modeling in Real Life: A 3-Part Miniseries 
+This paper describes a framework for post-secondary instructors as they teach ecological modeling to college level students. The authors propose that students can enhance their ecological learning objectives, improve ecological literacy, and gain a deeper understanding of the role of ecological and anthropogenic perturbations in the environment by utilizing these hands-on creative modeling tools.
 
-In this 3-part modeling miniseries, we will took a wide-ranging look at State-and-Transition-Simulation-Models (STSMs) and the LANDFIRE BpS models. We communicated practical ways to use STSM in real-life research, management and academia. 
 
-Part 1: Kori Blankenship, Fire Ecologist, The Nature Conservancy
+The idea of ecological modeling can be an intimidating subject to learn (and in some cases teach). For that reason, we have provided this page as a one-stop-shop for anyone interested in starting this learning process. 
+
+
  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MRPlzP5Ef5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
-
-Part 2: Leonardo Frid, System Ecologist, Apex Resource Management Solutions
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qeFg40vQU9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Ybz75H9YXg?si=nzv6J2-JWGSleQmi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-Part 3: Randy Swaty, Ecologist, The Nature Conservancy & Dr. Priscilla Nyamai, Assistant Professor, Grand Valley State University
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8Ybz75H9YXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Sponsored by: International Association of Landscape Ecologists, Apex RMS
 <br>
 <br>
 
 
 
-## Do you want to work with the LANDFIRE Team? 
-Get in touch on the [Resources](./contactsResources.html){target='blank'} page. We are looking to **integrate LANDFIRE powered modeling** in the college classroom. 
+### Get started here
+
+1. [Software installation and updating guide document](assets/Supplemental material 1_ Software installation and updating guide.docx)
+2. [Step by step modeling guide PowerPint presentation](assets/Supplemental material 2_ Step by step modeling guide.pptx)
+3. [Additional disturbances to model](assets/Supplemental material 3_ Additional disturbances to model.docx)
+4. [SyncroSim library for the exercise](assets/13100_51.ssim)
+5. [Background literature for Dry Mesic Oak Forest (ecosystem we are modeling) document](assets/Supplemental material 5_ Background literature for Dry Mesic oak forest.docx)
+6. [Glossary of terms document](assets/Supplemental material 6_ Glossary of terms_.docx)
+
+
 <br>
-<br>
 
 
 
-## Access Free Training
+### Access Free Training
 
 [Apex RMS](https://apexrms.com/){target='blank'} is offering a [free, two-day self-directed online course](https://apexrms.com/st-sim-course-details/){target='blank'} that will provide:
 
 >"...a foundation for developing and running state-and-transition simulation models of landscape change using the free ST-Sim software. The course covers state-and-transition simulation modeling concepts, how to use ST-Sim to create models of landscape change and terrestrial carbon dynamics, and how to run the models and interpret the results."
 
-
-Learn more about using the [rsyncrosim R package](https://syncrosim.com/r-package/){target='blank'}
-<br>
-<br>
