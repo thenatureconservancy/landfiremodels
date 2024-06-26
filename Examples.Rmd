@@ -11,6 +11,40 @@ output:
       collapsed: false
       smooth_scroll: false
 ---
+
+
+```{r function, message=FALSE, warning=FALSE, include=FALSE}
+my_plot_hook <- function(x, options) {
+    base <- knitr::opts_knit$get('base.url')
+    if (is.null(base)) {
+        base <- ""
+    }
+    alt <- ifelse(is.null(options$alt), "", options$alt)
+    cap <- ifelse(is.null(options$caption), "", options$caption)
+    tit <- ifelse(is.null(options$title), "", options$title)
+    w <- options[['out.width']]
+    h <- options[['out.height']]
+    if (!is.null(w) | !is.null(h)) {
+        str <- paste(c(sprintf('width=%s', w),
+                       sprintf('height=%s', h)), collapse = " ")
+        str <- paste("{", str, "}")
+    }
+    if (cap == "") {
+        sprintf('![%s](%s%s %s)%s\\', alt, base, x, paste0("'", tit, "'"), str)
+    }
+    else {
+        sprintf('![%s](%s%s %s)%s\\\n\n<blockquote><p class = "caption">%s</p></blockquote>', alt, base, x, paste0("'", tit, "'"), str, cap)
+    }
+}
+```
+
+
+```{r setHook, message=FALSE, warning=FALSE, include=FALSE}
+library("knitr")
+knit_hooks$set(plot = my_plot_hook)
+
+```
+
 ***
 
 ### This page:
