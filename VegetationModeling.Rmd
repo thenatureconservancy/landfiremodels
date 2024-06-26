@@ -10,6 +10,42 @@ output:
       smooth_scroll: false
 
 ---
+
+
+```{r function, message=FALSE, warning=FALSE, include=FALSE}
+my_plot_hook <- function(x, options) {
+    base <- knitr::opts_knit$get('base.url')
+    if (is.null(base)) {
+        base <- ""
+    }
+    alt <- ifelse(is.null(options$alt), "", options$alt)
+    cap <- ifelse(is.null(options$caption), "", options$caption)
+    tit <- ifelse(is.null(options$title), "", options$title)
+    w <- options[['out.width']]
+    h <- options[['out.height']]
+    if (!is.null(w) | !is.null(h)) {
+        str <- paste(c(sprintf('width=%s', w),
+                       sprintf('height=%s', h)), collapse = " ")
+        str <- paste("{", str, "}")
+    }
+    if (cap == "") {
+        sprintf('![%s](%s%s %s)%s\\', alt, base, x, paste0("'", tit, "'"), str)
+    }
+    else {
+        sprintf('![%s](%s%s %s)%s\\\n\n<blockquote><p class = "caption">%s</p></blockquote>', alt, base, x, paste0("'", tit, "'"), str, cap)
+    }
+}
+```
+
+
+```{r setHook, message=FALSE, warning=FALSE, include=FALSE}
+library("knitr")
+knit_hooks$set(plot = my_plot_hook)
+
+```
+
+
+
 ***
 
 ### This page:
@@ -112,29 +148,29 @@ Each description includes:
 
 ### BpS Models
 
-```{=html}
-<style type="text/css">
-  .figure {
-    float: right;
-    width: 65%;
-    padding: 10px;
-    text-align: center;
-  }
-</style>
+
+```{r sagePhoto, echo = FALSE}
+cap_txt <- "Photo: © Mark Godfrey, TNC, Virginia Coast Reserve"
+alt_txt <- "I really want some coffee."
+title_txt <- "Decorative image of a coastal area in Virginia."
+img_location <- "images/virginia.jpg"
 ```
 
 
-```{r, echo=FALSE, fig.cap = "Photo: © Mark Godfrey, TNC, Virginia Coast Reserve"} 
+<div style= "float:right; padding:20px;width:55%;">
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt} 
 knitr::include_graphics("images/virginia.jpg")
 
 ```
-<br>
+</div>
 
-Photo: © Mark Godfrey, TNC, Virginia Coast Reserve
+
+
 
 Experts developed a state-and-transition simulation model to represent every LANDFIRE BpS. The models are developed and delivered in the SyncroSim software, ST-Sim package. LANDFIRE BpS models are standardized in several ways. Modelers defined each BpS with five or fewer succession classes (i.e. states) and used a subset of the SyncroSim software functions. In addition, modelers used a pre-defined list of disturbances to attribute disturbance transitions. This list included “optional” types that allowed modelers to define and model any disturbance they wanted to include. Modeled states and transitions are described in the model description discussed above. Pairing the model with the description helps the user understand what the various states and transitions represent. It may also offer users additional information such as how disturbance probabilities were calculated, and any assumptions made by model developers.
-<br>
 
+<br>
+<br>
 
 ### Application scale of the models
 

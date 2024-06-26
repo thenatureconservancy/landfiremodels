@@ -60,7 +60,6 @@ knit_hooks$set(plot = my_plot_hook)
 
 ## Climate Change and STSM Modeling
 
-The goal of this section is to help you identify questions that the LANDFIRE BpS models (with their built-in simplifications, strengths, and constraints) are best suited to help you explore.
 
 ```{r firstPhoto, echo = FALSE}
 cap_txt <- "Photo: © Marci Eggers, TNC."
@@ -78,6 +77,8 @@ knitr::include_graphics("images/fern.jpg")
 </div>
 
 
+The goal of this section is to help you identify questions that the LANDFIRE BpS models (with their built-in simplifications, strengths, and constraints) are best suited to help you explore.
+
 Changes in climate, such as increases in temperature, changes in precipitation patterns, and increases in evaporative demand are influencing vegetation dynamics through many mechanisms operating at a range of scales, from genes to biomes. Observed ecological responses such as species range shifts, and changes in growth and mortality, in addition to ecological theory, allow us to generate hypotheses on how these changes may influence large-scale vegetation patterns. Many of these hypotheses can be productively explored with BpS models in the SyncroSim platform.
 <br>
 
@@ -85,6 +86,9 @@ Changes in climate, such as increases in temperature, changes in precipitation p
 =======
 Before jumping into modeling, it is important to recognize that BpS models focus on vegetation communities, which presents some limitations in a climate change modeling context. Over evolutionary time, plant species have developed traits that reflect the influence of climate, other abiotic factors, and species interactions such as competition for resources. The suite of species that make up an ecosystem are likely to respond differently to climate change. While growth and mortality transitions for vegetation classes can easily be modified with these models, questions that focus on changes in species dynamics or changes in composition within a vegetation class, are more appropriate for species-focused models. 
 
+
+<br>
+<br>
 
 <style>
 div.blue { background-color:#cde6c8; border-radius: 5px; padding: 20px;}
@@ -122,21 +126,26 @@ For this example, information on the drought and fire sensitivity of the dominan
 ## Reviewing the tools
 In the section below, we briefly review the windows in SyncroSim where you make basic changes to BpS models.
 
+<br>
+
 ### Altering disturbances
 
-```{r secondPhoto, echo = FALSE}
-
-title_txt2 <- "Screenshot of a dropdown menu titled Transition type with the following options: Native grazing, alternative succession, competition or maintenance, insects of disease, mixed fire, native grazing, Optional 1, Optional 2, replacement fire, surface fire, wind or weather stress"
-img_location2 <- "images/disturbance.jpg"
+```{r screenTransTypes, echo = FALSE}
+cap_txt <- "Screenshot of Transition Types"
+alt_txt <- "I really want some coffee."
+title_txt <- "Screenshot of a dropdown menu titled Transition type with the following options: Native grazing, alternative succession, competition or maintenance, insects of disease, mixed fire, native grazing, Optional 1, Optional 2, replacement fire, surface fire, wind or weather stress"
+img_location <- "images/disturbance.jpg"
 ```
 
 
-<div style= "float:right; padding:20px;">
-```{r, echo=FALSE, title = title_txt2} 
-knitr::include_graphics(img_location2)
+<div style= "float:right; padding:20px;width:45%;">
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt} 
+knitr::include_graphics("images/disturbance.jpg")
 
 ```
 </div>
+
+<br>
 
 * Adding or removing a type of disturbance. Note there is not a specific “drought” factor, so it can be captured under “Wind or Weather or Stress.”
 * Modifying the intensity, or distribution across intensity levels (e.g., low, med, high)
@@ -145,16 +154,32 @@ knitr::include_graphics(img_location2)
 
 
 <br>
+<br>
+<br>
+<br>
 
 ### Altering states
-```{r, echo=FALSE, out.width='75%', out.extra='style="float:right; padding:10px"', fig.cap="Screenshot of a dropdown menu titled Scenario all models, Transition pathways is selected, the tab To class is selected with multiple dropdown options viewable."} 
-knitr::include_graphics("images/states.jpg")
 
-```
 
 * Adding or removing vegetation classes (i.e., adding a new grass-dominated state that might be expected if fire frequencies in a forest or shrubland become very high, or adding an invasive plant species that is favored by some aspect of climate change)
 * Slowing down or speeding up succession to represent a change in growth rates, or slower recovery
 * Transitioning a vegetation class to a new BpS
+
+<br>
+
+```{r alterStates, echo = FALSE}
+cap_txt <- "Screenshot of Transition Types"
+alt_txt <- "I really want some coffee."
+title_txt <- "Screenshot of a dropdown menu titled Scenario all models, Transition pathways is selected, the tab To class is selected with multiple dropdown options viewable."
+img_location <- "images/states.jpg"
+```
+
+
+
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt, out.width='70%'} 
+knitr::include_graphics("images/states.jpg")
+
+```
 
 
 <br>
@@ -164,51 +189,62 @@ knitr::include_graphics("images/states.jpg")
 ### More intense fires
 Increases in the intensity of fires is a trend that has been observed in forests with high vegetation density, often in combination with drought. To represent this process, you would increase the probability of high intensity fires in your model – or potentially add this type of disturbance if it was not already in the model.
 
-<center>
-```{r, echo=FALSE, out.width= "70%", fig.cap="Intense wildfire in background with fire approaching a city and body of water in foreground"} 
+
+<br>
+
+```{r caliFire, echo = FALSE}
+cap_txt <- "© Ben Jiang, TNC. One of the 2018 California wildfires."
+alt_txt <- "I really want some coffee."
+title_txt <- "Intense wildfire in background with fire approaching a city and body of water in foreground."
+img_location <- "images/califorina.jpg"
+```
+
+
+
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt, out.width='70%'} 
 knitr::include_graphics("images/califorina.jpg")
 
 ```
-</center>
-<br>
-<center>
-Photo: © Ben Jiang, TNC. One of the 2018 California wildfires.
-</center>
-<br>
+
 
 ### Longer fire seasons
 
-* [Cattau et al. 2020](https://doi.org/10.1111/geb.13058){target='blank'} describe an extension of the duration of the fire season due to climate-related shifts in the timing of natural ignition source- and human-caused fires. Modeling this change would involve decreasing the fire return interval (i.e., increasing the probability).
+[Cattau et al. 2020](https://doi.org/10.1111/geb.13058){target='blank'} describe an extension of the duration of the fire season due to climate-related shifts in the timing of natural ignition source- and human-caused fires. Modeling this change would involve decreasing the fire return interval (i.e., increasing the probability).
 
-<center>
-```{r, echo=FALSE, out.width= "70%", fig.cap="Landscape picture where prescribed fire has recently been completed with river winding through green deciduous trees in background and emerging grasses in foreground and sunrise in the distance"} 
+<br>
+
+```{r nebraska, echo = FALSE}
+cap_txt <- "© Chris Helzer, TNC. Niobrara River near the headquarters of The Nature Conservancy's Nebraska Niobrara Valley Preserve after the 2012 wildfire."
+alt_txt <- "I really want some coffee."
+title_txt <- "Landscape picture where prescribed fire has recently been completed with river winding through green deciduous trees in background and emerging grasses in foreground and sunrise in the distance."
+img_location <- "images/nebraska.jpg"
+```
+
+
+
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt, out.width='70%'} 
 knitr::include_graphics("images/nebraska.jpg")
 
 ```
-</center>
-<br>
-<center>
-Photo: © Chris Helzer, TNC. Niobrara River near the headquarters of The Nature Conservancy's Nebraska Niobrara Valley Preserve after the 2012 wildfire.
-</center>
 
-<br>
-<br>
 
 ### Larger fires
 
-<center>
-```{r, echo=FALSE, out.width='65%', out.extra='style="float:right; padding:10px"', fig.cap="hiker hiking along ridge in Bamff National Park, dense wildfire smoke surrounding landscape"} 
+Similarly, as climate continues to change we are seeing an increase in the spatial extent of fires. In the aspatial LANDFIRE BpS models, you can simulate this in the same way as you would model an increase in fire frequency – by using a higher fire frequency value. As a result of using the same approach for both patterns (larger fires, and more frequent fires), it is not possible to separate out impacts in the aspatial models. With spatial models, you can add this additional complexity.
+
+
+```{r largeFire, echo = FALSE}
+cap_txt <- "© Stavros Mitchelides, TNC Photo Contest 2019. Dense wildfire smoke in Banff National Park"
+title_txt <- "Hiker hiking along ridge in Bamff National Park, dense wildfire smoke surrounding landscape."
+img_location <- "images/large-fire.jpg"
+```
+
+
+
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt, out.width='70%'} 
 knitr::include_graphics("images/large-fire.jpg")
 
 ```
-
-Photo: © Stavros Mitchelides, TNC Photo Contest 2019. Dense wildfire smoke in Banff National Park.
-</center>
-<br>
-
-
-Similarly, as climate continues to change we are seeing an increase in the spatial extent of fires. In the aspatial LANDFIRE BpS models, you can simulate this in the same way as you would model an increase in fire frequency – by using a higher fire frequency value. As a result of using the same approach for both patterns (larger fires, and more frequent fires), it is not possible to separate out impacts in the aspatial models. With spatial models, you can add this additional complexity.
-
 
 <br>
 
@@ -219,28 +255,21 @@ Insect outbreaks that promote a state change in vegetation are not found in all 
 
 ## Transitions in vegetation classes
 
-<center>
 
-```{r, echo=FALSE, out.width='45%', out.extra='style="float:right; padding:10px"', fig.cap="hand crumbling soil"} 
+
+```{r soilHand, echo = FALSE}
+cap_txt <- "© Devan King/TNC"
+title_txt <- "Hand picking through soil."
+img_location <- "images/soil.jpg"
+```
+
+
+<div style= "float:right; padding:20px;width:50%;">
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt} 
 knitr::include_graphics("images/soil.jpg")
 
 ```
-</center>
-<br>
-
-
-```{=html}
-<style type="text/css">
-  .figure {
-    float: right;
-    width: 65%;
-    padding: 10px;
-    text-align: center;
-  }
-</style>
-```
-
-Photo: © Devan King/TNC
+</div>
 
 In some vegetation systems, managers have observed that increases in the intensity or extent of fires is leading to a failure of the ecological system to regenerate – reasons may include a lack of seed sources close to the newly burned area. This observation could be modeled by adding a new vegetation class (perhaps a grass or shrub class), then transitioning some (using the proportion field) or all of the burned cells to this new class.
 

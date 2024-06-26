@@ -119,7 +119,6 @@ Regardless of their complexity, all models are by definition a simplification of
 
 <br>
 <br>
-<br>
 
 
 ```{r modelDiagram, echo = FALSE}
@@ -130,12 +129,11 @@ img_location <- "images/model-simple-vs-complex1.jpg"
 ```
 
 
-<div style= "width:50%;">
-```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt, out.width='90%'} 
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt, out.width='70%'} 
 knitr::include_graphics("images/model-simple-vs-complex1.jpg")
 
 ```
-</div>
+
 
 <br>
 
@@ -158,12 +156,12 @@ img_location <- "images/balance-relevance.jpg"
 w <- '70%'
 ```
 
-<div style= "width:50%;">
-```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt, out.width='90%'} 
+
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt, out.width='70%'} 
 knitr::include_graphics("images/balance-relevance.jpg")
 
 ```
-</div>
+
 
 <br>
 
