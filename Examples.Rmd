@@ -86,23 +86,22 @@ Represent current conditions in the Blue Mountains ecoregion including the impac
 
 ## Example 2: Central Mixed Grass Prairie
 
-By: Jim Smith
-```{=html}
-<style type="text/css">
-  .figure {
-    float: right;
-    width: 65%;
-    padding: 10px;
-    text-align: center;
-  }
-</style>
+By: Sarah Hagen
+
+```{r prairiePhoto, echo = FALSE}
+cap_txt <- "Photo: © Jim Smith, TNC. Black Earth Prairie, Wisconsin"
+alt_txt <- "I really want some coffee."
+title_txt <- "Landscape of green grass intermixed with brown prairie with cloudy skyline and trees in background"
+img_location <- "images/BlackEarthPrairieWisc.jpg"
 ```
 
-```{r, echo=FALSE, fig.cap="Landscape of green grass intermixed with brown prairie with cloudy skyline and trees in background "} 
+
+<div style= "float:right; padding:20px;width:55%;">
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt} 
 knitr::include_graphics("images/BlackEarthPrairieWisc.jpg")
 
 ```
-Photo: © Jim Smith, TNC. Black Earth Prarie, Wisconsin
+</div>
 
 
 **Model Identifier**
@@ -131,22 +130,23 @@ Investigate how grazing management may have changed landscape conditions since E
 ## Example 3: Laurentian-Acadian Northern Hardwoods Forest - Hemlock 
 
 By: Randy Swaty
-```{=html}
-<style type="text/css">
-  .figure {
-    float: right;
-    width: 65%;
-    padding: 10px;
-    text-align: center;
-  }
-</style>
+
+```{r hardwoodsPhoto, echo = FALSE}
+cap_txt <- "© A. Blake Bardner, TNC. Young forest in TNC's Campbell Parcel, Equinox Highlands, Vermont"
+alt_txt <- "I really want some coffee."
+title_txt <- "Forest landscape picture with closely spaced trees and lush, green understory"
+img_location <- "images/hw.jpg"
 ```
 
-```{r, echo=FALSE, fig.cap="Forest landscape picture with closely spaced trees and lush, green understory "} 
+
+<div style= "float:right; padding:20px;width:55%;">
+```{r, echo=FALSE, caption = cap_txt, alt = alt_txt, title = title_txt} 
 knitr::include_graphics("images/hw.jpg")
 
 ```
-Photo: © A. Blake Bardner, TNC. Young forest in TNC's Campbell Parcel, Equinox Highlands, Vermont
+</div>
+
+
 
 
 **Model Identifier**
