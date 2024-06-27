@@ -37,12 +37,12 @@ The idea of ecological modeling can be an intimidating subject to learn (and in 
 
 ### Get started here
 
-1. [Software installation and updating guide document](assets/Supplemental material 1_ Software installation and updating guide.docx)
-2. [Step by step modeling guide PowerPoint presentation](assets/Supplemental material 2_ Step by step modeling guide.pptx)
+1. [Software installation and updating guide](assets/Supplemental material 1_ Software installation and updating guide.docx)
+2. [Step by step modeling guide ](assets/Supplemental material 2_ Step by step modeling guide.pptx)
 3. [Additional disturbances to model](assets/Supplemental material 3_ Additional disturbances to model.docx)
-4. [SyncroSim library for the exercise](assets/13100_51.ssim)
-5. [Background literature for Dry Mesic Oak Forest (ecosystem we are modeling) document](assets/Supplemental material 5_ Background literature for Dry Mesic oak forest.docx)
-6. [Glossary of terms document](assets/Supplemental material 6_ Glossary of terms_.docx)
+4. [SyncroSim libraries to use](assets/13100_51.ssim)
+5. [Background literature for ecosystems](assets/Supplemental material 5_ Background literature for Dry Mesic oak forest.docx)
+6. [Glossary of terms](assets/Supplemental material 6_ Glossary of terms_.docx)
 
 
 <br>
