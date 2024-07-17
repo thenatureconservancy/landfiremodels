@@ -37,12 +37,18 @@ The idea of ecological modeling can be an intimidating subject to learn (and in 
 
 ### Get started here
 
-1. [Software installation and updating guide](assets/Supplemental material 1_ Software installation and updating guide.docx)
-2. [Step by step modeling guide ](assets/Supplemental material 2_ Step by step modeling guide.pptx)
-3. [Additional disturbances to model](assets/Supplemental material 3_ Additional disturbances to model.docx)
-4. [SyncroSim libraries to use](assets/13100_51.ssim)
-5. [Background literature for ecosystems](assets/Supplemental material 5_ Background literature for Dry Mesic oak forest.docx)
-6. [Glossary of terms](assets/Supplemental material 6_ Glossary of terms_.docx)
+1. [Software installation and updating guide](assets/Supplemental Material 1_ Software installation & updating guide.DOC)
+2. Background literature for ecosystems
+    a. [Oak Forest](assets/Supplemental material 2a_oak forest.docx)
+    b. [Northern Pine-Oak Forest](assets/Supplemental material 2b_npo forest.docx)
+    c. [Sugar Maple-Basswood Forest](assets/Supplemental material 2c_SMB forest.docx)
+3. [Step by step modeling guide](assets/Supplemental material 3_modeling activity guide.pptx)
+4. [Additional disturbances to model](assets/Supplemental material 4_ Additional disturbances.docx)
+5. SyncroSim Libraries to Use
+    a. [Oak Forest](assets/Supplemental material 5a_oak.ssim)
+    b. [Northern Pine-Oak Forest](assets/Supplemental material 5b_npo.ssim)
+    c. [Sugar Maple-Basswood Forest](assets/Supplemental material 5c_smb.ssim)
+6. [Glossary of terms](assets/Supplemental material 6_Glossary of terms.docx)
 
 
 <br>
