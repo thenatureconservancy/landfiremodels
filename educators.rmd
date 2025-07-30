@@ -37,7 +37,7 @@ The idea of ecological modeling can be an intimidating subject to learn (and in 
 
 ### Get started here
 
-1. [Software installation and updating guide](assets/Supplemental Material 1_ Software installation & updating guide.DOC)
+1. [Software installation and updating guide](assets/Supplemental material 1_ Software installation and updating guide_F.docx)
 2. Background literature for ecosystems
     a. [Oak Forest](assets/Supplemental material 2a_oak forest.docx)
     b. [Northern Pine-Oak Forest](assets/Supplemental material 2b_npo forest.docx)
@@ -48,7 +48,10 @@ The idea of ecological modeling can be an intimidating subject to learn (and in 
     a. [Oak Forest](assets/Supplemental material 5a_oak.ssim)
     b. [Northern Pine-Oak Forest](assets/Supplemental material 5b_npo.ssim)
     c. [Sugar Maple-Basswood Forest](assets/Supplemental material 5c_smb.ssim)
-6. [Glossary of terms](assets/Supplemental material 6_Glossary of terms.docx)
+6. [Glossary of terms](assets/Supplemental material 8_Glossary of terms.docx)
+7. [Additional notes and tips](assets/Supplemental material 6_ Additional Notes and Tips.docx)
+8. [Example student products](assets/Supplemental material 7_ Example student products.docx)
+9. [Quick Start Guide](assets/Supplemental material 9_ Quick Start Guide.docx)
 
 
 <br>
